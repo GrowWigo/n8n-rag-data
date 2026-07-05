@@ -1,0 +1,41 @@
+name: Update n8n RAG Data
+
+on:
+  repository_dispatch:
+    types: [update_n8n]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-rag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Latest n8n Nodes
+        run: |
+          npm install n8n-nodes-base@latest @n8n/n8n-nodes-langchain@latest
+
+      - name: Extract Markdown Files
+        run: |
+          node extractor.js
+
+      - name: Organize Folders
+        run: |
+          node organize.js
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "n8n-rag-updater"
+          git config --global user.email "updater@n8n.local"
+          git add knowledge_base/
+          git commit -m "Auto Update RAG Nodes [skip ci]" || echo "No changes to commit"
+          git push origin main
