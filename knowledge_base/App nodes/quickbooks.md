@@ -1,0 +1,349 @@
+# Node: QuickBooks Online
+
+**Name**: quickbooks
+**Category**: transform
+**Description**: Consume the QuickBooks Online API
+**Version**: 1
+
+## Common Usecase
+This node is an action node. It is used to perform tasks, integrate with APIs, or manipulate data within the workflow.
+
+## Inputs
+["main"]
+
+## Outputs
+["main"]
+
+## Properties & Settings
+These are the settings you can configure for this node:
+
+- **resource** (options): Resource
+  - Option: Bill (value: bill)
+  - Option: Customer (value: customer)
+  - Option: Employee (value: employee)
+  - Option: Estimate (value: estimate)
+  - Option: Invoice (value: invoice)
+  - Option: Item (value: item)
+  - Option: Payment (value: payment)
+  - Option: Purchase (value: purchase)
+  - Option: Transaction (value: transaction)
+  - Option: Vendor (value: vendor)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **VendorRef** (options): The ID of the vendor who the bill is for. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **Line** (collection): Individual line item of a transaction
+  - Option: accountId (value: undefined)
+  - Option: Amount (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: DetailType (value: undefined)
+  - Option: itemId (value: undefined)
+  - Option: LineNum (value: undefined)
+- **additionalFields** (collection): Additional Fields
+  - Option: APAccountRef (value: undefined)
+  - Option: Balance (value: undefined)
+  - Option: DueDate (value: undefined)
+  - Option: SalesTermRef (value: undefined)
+  - Option: TotalAmt (value: undefined)
+  - Option: TxnDate (value: undefined)
+- **billId** (string): The ID of the bill to delete
+- **billId** (string): The ID of the bill to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: query (value: undefined)
+- **billId** (string): The ID of the bill to update
+- **updateFields** (collection): Update Fields
+  - Option: APAccountRef (value: undefined)
+  - Option: DueDate (value: undefined)
+  - Option: SalesTermRef (value: undefined)
+  - Option: TxnDate (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **displayName** (string): The display name of the customer to create
+- **additionalFields** (collection): Additional Fields
+  - Option: Active (value: undefined)
+  - Option: Balance (value: undefined)
+  - Option: BalanceWithJobs (value: undefined)
+  - Option: BillAddr (value: undefined)
+  - Option: BillWithParent (value: undefined)
+  - Option: CompanyName (value: undefined)
+  - Option: FamilyName (value: undefined)
+  - Option: FullyQualifiedName (value: undefined)
+  - Option: GivenName (value: undefined)
+  - Option: PreferredDeliveryMethod (value: undefined)
+  - Option: PrimaryEmailAddr (value: undefined)
+  - Option: PrimaryPhone (value: undefined)
+  - Option: PrintOnCheckName (value: undefined)
+  - Option: Taxable (value: undefined)
+- **customerId** (string): The ID of the customer to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: query (value: undefined)
+- **customerId** (string): The ID of the customer to update
+- **updateFields** (collection): Update Fields
+  - Option: Active (value: undefined)
+  - Option: Balance (value: undefined)
+  - Option: BalanceWithJobs (value: undefined)
+  - Option: BillAddr (value: undefined)
+  - Option: BillWithParent (value: undefined)
+  - Option: CompanyName (value: undefined)
+  - Option: FamilyName (value: undefined)
+  - Option: FullyQualifiedName (value: undefined)
+  - Option: GivenName (value: undefined)
+  - Option: PreferredDeliveryMethod (value: undefined)
+  - Option: PrimaryEmailAddr (value: undefined)
+  - Option: PrimaryPhone (value: undefined)
+  - Option: PrintOnCheckName (value: undefined)
+  - Option: Taxable (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **FamilyName** (string): Family Name
+- **GivenName** (string): Given Name
+- **additionalFields** (collection): Additional Fields
+  - Option: Active (value: undefined)
+  - Option: BillableTime (value: undefined)
+  - Option: DisplayName (value: undefined)
+  - Option: BillAddr (value: undefined)
+  - Option: PrimaryPhone (value: undefined)
+  - Option: PrintOnCheckName (value: undefined)
+  - Option: SSN (value: undefined)
+- **employeeId** (string): The ID of the employee to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: query (value: undefined)
+- **employeeId** (string): The ID of the employee to update
+- **updateFields** (collection): Update Fields
+  - Option: Active (value: undefined)
+  - Option: BillableTime (value: undefined)
+  - Option: DisplayName (value: undefined)
+  - Option: BillAddr (value: undefined)
+  - Option: PrimaryPhone (value: undefined)
+  - Option: PrintOnCheckName (value: undefined)
+  - Option: SSN (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Send (value: send)
+  - Option: Update (value: update)
+- **CustomerRef** (options): The ID of the customer who the estimate is for. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **Line** (collection): Individual line item of a transaction
+  - Option: Amount (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: DetailType (value: undefined)
+  - Option: itemId (value: undefined)
+  - Option: LineNum (value: undefined)
+  - Option: TaxCodeRef (value: undefined)
+- **additionalFields** (collection): Additional Fields
+  - Option: ApplyTaxAfterDiscount (value: undefined)
+  - Option: BillAddr (value: undefined)
+  - Option: BillEmail (value: undefined)
+  - Option: CustomFields (value: undefined)
+  - Option: CustomerMemo (value: undefined)
+  - Option: DocNumber (value: undefined)
+  - Option: EmailStatus (value: undefined)
+  - Option: PrintStatus (value: undefined)
+  - Option: ShipAddr (value: undefined)
+  - Option: TotalAmt (value: undefined)
+  - Option: TxnDate (value: undefined)
+  - Option: TotalTax (value: undefined)
+- **estimateId** (string): The ID of the estimate to delete
+- **estimateId** (string): The ID of the estimate to retrieve
+- **download** (boolean): Whether to download the estimate as a PDF file
+- **binaryProperty** (string): Put Output File in Field
+- **fileName** (string): Name of the file that will be downloaded
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: query (value: undefined)
+- **estimateId** (string): The ID of the estimate to send
+- **email** (string): The email of the recipient of the estimate
+- **estimateId** (string): The ID of the estimate to update
+- **updateFields** (collection): Update Fields
+  - Option: ApplyTaxAfterDiscount (value: undefined)
+  - Option: BillAddr (value: undefined)
+  - Option: BillEmail (value: undefined)
+  - Option: CustomFields (value: undefined)
+  - Option: CustomerMemo (value: undefined)
+  - Option: DocNumber (value: undefined)
+  - Option: EmailStatus (value: undefined)
+  - Option: PrintStatus (value: undefined)
+  - Option: ShipAddr (value: undefined)
+  - Option: TxnDate (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Send (value: send)
+  - Option: Update (value: update)
+  - Option: Void (value: void)
+- **CustomerRef** (options): The ID of the customer who the invoice is for. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **Line** (collection): Individual line item of a transaction
+  - Option: Amount (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: DetailType (value: undefined)
+  - Option: itemId (value: undefined)
+  - Option: LineNum (value: undefined)
+  - Option: TaxCodeRef (value: undefined)
+  - Option: Qty (value: undefined)
+- **additionalFields** (collection): Additional Fields
+  - Option: Balance (value: undefined)
+  - Option: BillAddr (value: undefined)
+  - Option: BillEmail (value: undefined)
+  - Option: CustomerMemo (value: undefined)
+  - Option: CustomFields (value: undefined)
+  - Option: DocNumber (value: undefined)
+  - Option: DueDate (value: undefined)
+  - Option: EmailStatus (value: undefined)
+  - Option: PrintStatus (value: undefined)
+  - Option: ShipAddr (value: undefined)
+  - Option: TotalAmt (value: undefined)
+  - Option: TxnDate (value: undefined)
+- **invoiceId** (string): The ID of the invoice to delete
+- **invoiceId** (string): The ID of the invoice to retrieve
+- **download** (boolean): Whether to download the invoice as a PDF file
+- **binaryProperty** (string): Put Output File in Field
+- **fileName** (string): Name of the file that will be downloaded
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: query (value: undefined)
+- **invoiceId** (string): The ID of the invoice to send
+- **email** (string): The email of the recipient of the invoice
+- **invoiceId** (string): The ID of the invoice to void
+- **invoiceId** (string): The ID of the invoice to update
+- **updateFields** (collection): Update Fields
+  - Option: BillAddr (value: undefined)
+  - Option: BillEmail (value: undefined)
+  - Option: CustomerMemo (value: undefined)
+  - Option: CustomFields (value: undefined)
+  - Option: DocNumber (value: undefined)
+  - Option: DueDate (value: undefined)
+  - Option: EmailStatus (value: undefined)
+  - Option: PrintStatus (value: undefined)
+  - Option: ShipAddr (value: undefined)
+  - Option: TxnDate (value: undefined)
+- **operation** (options): Operation
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+- **itemId** (string): The ID of the item to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: query (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Send (value: send)
+  - Option: Update (value: update)
+  - Option: Void (value: void)
+- **CustomerRef** (options): The ID of the customer who the payment is for. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **TotalAmt** (number): Total amount of the transaction
+- **additionalFields** (collection): Additional Fields
+  - Option: TxnDate (value: undefined)
+- **paymentId** (string): The ID of the payment to delete
+- **paymentId** (string): The ID of the payment to retrieve
+- **download** (boolean): Whether to download estimate as PDF file
+- **binaryProperty** (string): Put Output File in Field
+- **fileName** (string): Name of the file that will be downloaded
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: query (value: undefined)
+- **paymentId** (string): The ID of the payment to send
+- **email** (string): The email of the recipient of the payment
+- **paymentId** (string): The ID of the payment to void
+- **paymentId** (string): The ID of the payment to update
+- **updateFields** (collection): Update Fields
+  - Option: TxnDate (value: undefined)
+- **operation** (options): Operation
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+- **purchaseId** (string): The ID of the purchase to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: query (value: undefined)
+- **operation** (options): Operation
+  - Option: Get Report (value: getReport)
+- **simple** (boolean): Whether to return a simplified version of the response instead of the raw data
+- **filters** (collection): Filters
+  - Option: appaid (value: undefined)
+  - Option: arpaid (value: undefined)
+  - Option: cleared (value: undefined)
+  - Option: columns (value: undefined)
+  - Option: customer (value: undefined)
+  - Option: dateRangeCustom (value: undefined)
+  - Option: date_macro (value: undefined)
+  - Option: dateRangeCreationCustom (value: undefined)
+  - Option: createdate_macro (value: undefined)
+  - Option: dateRangeDueCustom (value: undefined)
+  - Option: duedate_macro (value: undefined)
+  - Option: dateRangeModificationCustom (value: undefined)
+  - Option: moddate_macro (value: undefined)
+  - Option: department (value: undefined)
+  - Option: docnum (value: undefined)
+  - Option: group_by (value: undefined)
+  - Option: memo (value: undefined)
+  - Option: payment_Method (value: undefined)
+  - Option: printed (value: undefined)
+  - Option: qzurl (value: undefined)
+  - Option: sort_by (value: undefined)
+  - Option: sort_order (value: undefined)
+  - Option: source_account_type (value: undefined)
+  - Option: term (value: undefined)
+  - Option: bothamount (value: undefined)
+  - Option: transaction_type (value: undefined)
+  - Option: vendor (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **displayName** (string): The display name of the vendor to create
+- **additionalFields** (collection): Additional Fields
+  - Option: AcctNum (value: undefined)
+  - Option: Active (value: undefined)
+  - Option: Balance (value: undefined)
+  - Option: BillAddr (value: undefined)
+  - Option: CompanyName (value: undefined)
+  - Option: FamilyName (value: undefined)
+  - Option: GivenName (value: undefined)
+  - Option: PrimaryEmailAddr (value: undefined)
+  - Option: PrimaryPhone (value: undefined)
+  - Option: PrintOnCheckName (value: undefined)
+  - Option: Vendor1099 (value: undefined)
+- **vendorId** (string): The ID of the vendor to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: query (value: undefined)
+- **vendorId** (string): The ID of the vendor to update
+- **updateFields** (collection): Update Fields
+  - Option: AcctNum (value: undefined)
+  - Option: Active (value: undefined)
+  - Option: Balance (value: undefined)
+  - Option: BillAddr (value: undefined)
+  - Option: CompanyName (value: undefined)
+  - Option: FamilyName (value: undefined)
+  - Option: GivenName (value: undefined)
+  - Option: PrimaryEmailAddr (value: undefined)
+  - Option: PrimaryPhone (value: undefined)
+  - Option: PrintOnCheckName (value: undefined)
+  - Option: Vendor1099 (value: undefined)

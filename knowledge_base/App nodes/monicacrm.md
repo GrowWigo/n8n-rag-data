@@ -1,0 +1,255 @@
+# Node: Monica CRM
+
+**Name**: monicaCrm
+**Category**: transform
+**Description**: Consume the Monica CRM API
+**Version**: 1
+
+## Common Usecase
+This node is an action node. It is used to perform tasks, integrate with APIs, or manipulate data within the workflow.
+
+## Inputs
+["main"]
+
+## Outputs
+["main"]
+
+## Properties & Settings
+These are the settings you can configure for this node:
+
+- **resource** (options): Resource
+  - Option: Activity (value: activity)
+  - Option: Call (value: call)
+  - Option: Contact (value: contact)
+  - Option: Contact Field (value: contactField)
+  - Option: Contact Tag (value: contactTag)
+  - Option: Conversation (value: conversation)
+  - Option: Conversation Message (value: conversationMessage)
+  - Option: Journal Entry (value: journalEntry)
+  - Option: Note (value: note)
+  - Option: Reminder (value: reminder)
+  - Option: Tag (value: tag)
+  - Option: Task (value: task)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **activityTypeId** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **contacts** (string): Comma-separated list of IDs of the contacts to associate the activity with
+- **happenedAt** (dateTime): Date when the activity happened
+- **summary** (string): Brief description of the activity - max 255 characters
+- **additionalFields** (collection): Additional Fields
+  - Option: description (value: undefined)
+- **activityId** (string): ID of the activity to delete
+- **activityId** (string): ID of the activity to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **activityId** (string): ID of the activity to update
+- **updateFields** (collection): Update Fields
+  - Option: activity_type_id (value: undefined)
+  - Option: contacts (value: undefined)
+  - Option: description (value: undefined)
+  - Option: happened_at (value: undefined)
+  - Option: summary (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **contactId** (string): ID of the contact to associate the call with
+- **calledAt** (dateTime): Date when the call happened
+- **content** (string): Description of the call - max 100,000 characters
+- **callId** (string): ID of the call to delete
+- **callId** (string): ID of the call to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **callId** (string): ID of the call to update
+- **updateFields** (collection): Update Fields
+  - Option: calledAt (value: undefined)
+  - Option: contactId (value: undefined)
+  - Option: content (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **firstName** (string): First Name
+- **genderId** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **additionalFields** (collection): Additional Fields
+  - Option: birthdate (value: undefined)
+  - Option: deceasedDate (value: undefined)
+  - Option: isDeceased (value: undefined)
+  - Option: last_name (value: undefined)
+  - Option: nickname (value: undefined)
+  - Option: is_partial (value: undefined)
+- **contactId** (string): ID of the contact to delete
+- **contactId** (string): ID of the contact to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: query (value: undefined)
+  - Option: sort (value: undefined)
+- **contactId** (string): ID of the contact to update
+- **updateFields** (collection): Update Fields
+  - Option: birthdate (value: undefined)
+  - Option: deceased_date (value: undefined)
+  - Option: first_name (value: undefined)
+  - Option: gender_id (value: undefined)
+  - Option: is_deceased (value: undefined)
+  - Option: last_name (value: undefined)
+  - Option: nickname (value: undefined)
+  - Option: is_partial (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Update (value: update)
+- **contactId** (string): ID of the contact to associate the contact field with
+- **contactFieldTypeId** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **data** (string): Content of the contact field - max 255 characters
+- **contactFieldId** (string): ID of the contactField to delete
+- **contactFieldId** (string): ID of the contact field to retrieve
+- **contactId** (string): ID of the contact whose fields to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **contactId** (string): ID of the contact to associate the contact field with
+- **contactFieldId** (string): ID of the contact field to update
+- **contactFieldTypeId** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **data** (string): Content of the contact field - max 255 characters
+- **operation** (options): Operation
+  - Option: Add (value: add)
+  - Option: Remove (value: remove)
+- **contactId** (string): ID of the contact to add a tag to
+- **tagsToAdd** (multiOptions): Tags to add to the contact. Choose from the list, or specify IDs using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **contactId** (string): ID of the contact to remove the tag from
+- **tagsToRemove** (multiOptions): Tags to remove from the contact. Choose from the list, or specify IDs using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Update (value: update)
+- **contactId** (string): ID of the contact to associate the conversation with
+- **contactFieldTypeId** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **happenedAt** (dateTime): Date when the conversation happened
+- **conversationId** (string): ID of the conversation to delete
+- **conversationId** (string): ID of the conversation to retrieve
+- **conversationId** (string): ID of the conversation to update
+- **contactFieldTypeId** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **happenedAt** (dateTime): Date when the conversation happened
+- **operation** (options): Operation
+  - Option: Add (value: add)
+  - Option: Update (value: update)
+- **conversationId** (string): ID of the contact whose conversation
+- **content** (string): Content of the message
+- **writtenAt** (dateTime): Date when the message was written
+- **writtenByMe** (options): Author of the message
+  - Option: User (value: true)
+  - Option: Contact (value: false)
+- **messageId** (string): ID of the message to update
+- **conversationId** (string): ID of the conversation whose message to update
+- **updateFields** (collection): Update Fields
+  - Option: contact_id (value: undefined)
+  - Option: content (value: undefined)
+  - Option: written_at (value: undefined)
+  - Option: written_by_me (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **title** (string): Title of the journal entry - max 250 characters
+- **post** (string): Content of the journal entry - max 100,000 characters
+- **journalId** (string): ID of the journal entry to delete
+- **journalId** (string): ID of the journal entry to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **journalId** (string): ID of the journal entry to update
+- **updateFields** (collection): Update Fields
+  - Option: post (value: undefined)
+  - Option: title (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **contactId** (string): ID of the contact to associate the note with
+- **body** (string): Body of the note - max 100,000 characters
+- **additionalFields** (collection): Additional Fields
+  - Option: isFavorited (value: undefined)
+- **noteId** (string): ID of the note to delete
+- **noteId** (string): ID of the note to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **noteId** (string): ID of the note to update
+- **updateFields** (collection): Update Fields
+  - Option: body (value: undefined)
+  - Option: contact_id (value: undefined)
+  - Option: is_favorited (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **contactId** (string): ID of the contact to associate the reminder with
+- **frequencyType** (options): Type of frequency of the reminder
+  - Option: Once (value: one_time)
+  - Option: Weekly (value: week)
+  - Option: Monthly (value: month)
+  - Option: Yearly (value: year)
+- **frequencyNumber** (number): Interval for the reminder
+- **initialDate** (dateTime): Date of the reminder
+- **title** (string): Title of the reminder - max 100,000 characters
+- **additionalFields** (collection): Additional Fields
+  - Option: description (value: undefined)
+- **reminderId** (string): ID of the reminder to delete
+- **reminderId** (string): ID of the reminder to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **reminderId** (string): ID of the reminder to update
+- **updateFields** (collection): Update Fields
+  - Option: contact_id (value: undefined)
+  - Option: description (value: undefined)
+  - Option: frequency_type (value: undefined)
+  - Option: initial_data (value: undefined)
+  - Option: frequency_number (value: undefined)
+  - Option: title (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **name** (string): Name of the tag - max 250 characters
+- **tagId** (string): ID of the tag to delete
+- **tagId** (string): ID of the tag to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **tagId** (string): ID of the tag to update
+- **name** (string): Name of the tag - max 250 characters
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **contactId** (string): ID of the contact to associate the task with
+- **title** (string): Title of the task entry - max 250 characters
+- **additionalFields** (collection): Additional Fields
+  - Option: description (value: undefined)
+- **taskId** (string): ID of the task to delete
+- **taskId** (string): ID of the task to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **taskId** (string): ID of the task to update
+- **updateFields** (collection): Update Fields
+  - Option: contactId (value: undefined)
+  - Option: completed (value: undefined)
+  - Option: description (value: undefined)
+  - Option: title (value: undefined)

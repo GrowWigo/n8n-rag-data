@@ -1,0 +1,245 @@
+# Node: TheHive
+
+**Name**: theHive
+**Category**: transform
+**Description**: Consume TheHive API
+**Version**: 1
+
+## Common Usecase
+This node is an action node. It is used to perform tasks, integrate with APIs, or manipulate data within the workflow.
+
+## Inputs
+["main"]
+
+## Outputs
+["main"]
+
+## Properties & Settings
+These are the settings you can configure for this node:
+
+- **resource** (options): Resource
+  - Option: Alert (value: alert)
+  - Option: Case (value: case)
+  - Option: Log (value: log)
+  - Option: Observable (value: observable)
+  - Option: Task (value: task)
+- **operation** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **id** (string): Title of the alert
+- **caseId** (string): Case ID
+- **title** (string): Title of the alert
+- **description** (string): Description of the alert
+- **severity** (options): Severity of the alert. Default=Medium.
+  - Option: Low (value: 1)
+  - Option: Medium (value: 2)
+  - Option: High (value: 3)
+- **date** (dateTime): Date and time when the alert was raised default=now
+- **tags** (string): Case Tags
+- **tlp** (options): Traffict Light Protocol (TLP). Default=Amber.
+  - Option: White (value: 0)
+  - Option: Green (value: 1)
+  - Option: Amber (value: 2)
+  - Option: Red (value: 3)
+- **status** (options): Status of the alert
+  - Option: New (value: New)
+  - Option: Updated (value: Updated)
+  - Option: Ignored (value: Ignored)
+  - Option: Imported (value: Imported)
+- **type** (string): Type of the alert
+- **source** (string): Source of the alert
+- **sourceRef** (string): Source reference of the alert
+- **follow** (boolean): Whether the alert becomes active when updated default=true
+- **artifactUi** (fixedCollection): Artifact attributes
+  - Option: artifactValues (value: undefined)
+- **responder** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **jsonParameters** (boolean): JSON Parameters
+- **additionalFields** (collection): Additional Fields
+  - Option: caseTemplate (value: undefined)
+  - Option: customFieldsUi (value: undefined)
+  - Option: customFieldsJson (value: undefined)
+- **additionalFields** (collection): Additional Fields
+  - Option: caseTemplate (value: undefined)
+- **updateFields** (collection): Update Fields
+  - Option: artifactUi (value: undefined)
+  - Option: customFieldsUi (value: undefined)
+  - Option: customFieldsJson (value: undefined)
+  - Option: caseTemplate (value: undefined)
+  - Option: description (value: undefined)
+  - Option: follow (value: undefined)
+  - Option: severity (value: undefined)
+  - Option: status (value: undefined)
+  - Option: tags (value: undefined)
+  - Option: title (value: undefined)
+  - Option: tlp (value: undefined)
+- **options** (collection): Options
+  - Option: sort (value: undefined)
+- **options** (collection): Options
+  - Option: includeSimilar (value: undefined)
+- **filters** (collection): Filters
+  - Option: customFieldsUi (value: undefined)
+  - Option: description (value: undefined)
+  - Option: follow (value: undefined)
+  - Option: severity (value: undefined)
+  - Option: tags (value: undefined)
+  - Option: title (value: undefined)
+  - Option: tlp (value: undefined)
+- **operation** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **caseId** (string): ID of the case
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **id** (string): ID of the observable
+- **dataType** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **data** (string): Data
+- **binaryProperty** (string): The name of the input binary field that represent the attachment file
+- **message** (string): Description of the observable in the context of the case
+- **startDate** (dateTime): Date and time of the begin of the case default=now
+- **tlp** (options): Traffict Light Protocol (TLP). Default=Amber.
+  - Option: White (value: 0)
+  - Option: Green (value: 1)
+  - Option: Amber (value: 2)
+  - Option: Red (value: 3)
+- **ioc** (boolean): Whether the observable is an IOC (Indicator of compromise)
+- **sighted** (boolean): Whether sighted previously
+- **status** (options): Status of the observable. Default=Ok.
+  - Option: Ok (value: Ok)
+  - Option: Deleted (value: Deleted)
+- **analyzers** (multiOptions): Choose from the list, or specify IDs using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **responder** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **options** (collection): Options
+  - Option: tags (value: undefined)
+- **updateFields** (collection): Update Fields
+  - Option: message (value: undefined)
+  - Option: tags (value: undefined)
+  - Option: tlp (value: undefined)
+  - Option: ioc (value: undefined)
+  - Option: sighted (value: undefined)
+  - Option: status (value: undefined)
+- **options** (collection): Options
+  - Option: sort (value: undefined)
+- **filters** (collection): Filters
+  - Option: dataType (value: undefined)
+  - Option: range (value: undefined)
+  - Option: description (value: undefined)
+  - Option: ioc (value: undefined)
+  - Option: keyword (value: undefined)
+  - Option: message (value: undefined)
+  - Option: tags (value: undefined)
+  - Option: sighted (value: undefined)
+  - Option: Status (value: undefined)
+  - Option: tlp (value: undefined)
+  - Option: data (value: undefined)
+- **operation** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **id** (string): ID of the case
+- **title** (string): Title of the case
+- **description** (string): Description of the case
+- **severity** (options): Severity of the alert. Default=Medium.
+  - Option: Low (value: 1)
+  - Option: Medium (value: 2)
+  - Option: High (value: 3)
+- **startDate** (dateTime): Date and time of the begin of the case default=now
+- **owner** (string): Owner
+- **flag** (boolean): Flag of the case default=false
+- **tlp** (options): Traffict Light Protocol (TLP). Default=Amber.
+  - Option: White (value: 0)
+  - Option: Green (value: 1)
+  - Option: Amber (value: 2)
+  - Option: Red (value: 3)
+- **tags** (string): Tags
+- **responder** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **jsonParameters** (boolean): JSON Parameters
+- **options** (collection): Options
+  - Option: customFieldsUi (value: undefined)
+  - Option: customFieldsJson (value: undefined)
+  - Option: endDate (value: undefined)
+  - Option: summary (value: undefined)
+  - Option: metrics (value: undefined)
+- **updateFields** (collection): Update Fields
+  - Option: customFieldsUi (value: undefined)
+  - Option: customFieldsJson (value: undefined)
+  - Option: description (value: undefined)
+  - Option: endDate (value: undefined)
+  - Option: flag (value: undefined)
+  - Option: impactStatus (value: undefined)
+  - Option: metrics (value: undefined)
+  - Option: owner (value: undefined)
+  - Option: resolutionStatus (value: undefined)
+  - Option: severity (value: undefined)
+  - Option: startDate (value: undefined)
+  - Option: status (value: undefined)
+  - Option: summary (value: undefined)
+  - Option: tags (value: undefined)
+  - Option: title (value: undefined)
+  - Option: tlp (value: undefined)
+- **options** (collection): Options
+  - Option: sort (value: undefined)
+- **filters** (collection): Filters
+  - Option: customFieldsUi (value: undefined)
+  - Option: description (value: undefined)
+  - Option: endDate (value: undefined)
+  - Option: flag (value: undefined)
+  - Option: impactStatus (value: undefined)
+  - Option: owner (value: undefined)
+  - Option: resolutionStatus (value: undefined)
+  - Option: severity (value: undefined)
+  - Option: startDate (value: undefined)
+  - Option: status (value: undefined)
+  - Option: summary (value: undefined)
+  - Option: tags (value: undefined)
+  - Option: title (value: undefined)
+  - Option: tlp (value: undefined)
+- **operation** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **id** (string): ID of the taks
+- **caseId** (string): Case ID
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **title** (string): Task details
+- **status** (options): Status of the task. Default=Waiting.
+  - Option: Cancel (value: Cancel)
+  - Option: Completed (value: Completed)
+  - Option: InProgress (value: InProgress)
+  - Option: Waiting (value: Waiting)
+- **flag** (boolean): Whether to flag the task. Default=false.
+- **responder** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **options** (collection): Options
+  - Option: description (value: undefined)
+  - Option: endDate (value: undefined)
+  - Option: owner (value: undefined)
+  - Option: startDate (value: undefined)
+- **updateFields** (collection): Update Fields
+  - Option: description (value: undefined)
+  - Option: endDate (value: undefined)
+  - Option: flag (value: undefined)
+  - Option: owner (value: undefined)
+  - Option: startDate (value: undefined)
+  - Option: status (value: undefined)
+  - Option: title (value: undefined)
+- **options** (collection): Options
+  - Option: sort (value: undefined)
+- **filters** (collection): Filters
+  - Option: description (value: undefined)
+  - Option: endDate (value: undefined)
+  - Option: flag (value: undefined)
+  - Option: owner (value: undefined)
+  - Option: startDate (value: undefined)
+  - Option: status (value: undefined)
+  - Option: title (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Execute Responder (value: executeResponder)
+  - Option: Get Many (value: getAll)
+  - Option: Get (value: get)
+- **taskId** (string): ID of the task
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **id** (string): Log ID
+- **message** (string): Content of the Log
+- **startDate** (dateTime): Date of the log submission default=now
+- **status** (options): Status of the log (Ok or Deleted) default=Ok
+  - Option: Ok (value: Ok)
+  - Option: Deleted (value: Deleted)
+- **responder** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **options** (collection): Options
+  - Option: attachmentValues (value: undefined)

@@ -1,0 +1,490 @@
+# Node: Freshservice
+
+**Name**: freshservice
+**Category**: transform
+**Description**: Consume the Freshservice API
+**Version**: 1
+
+## Common Usecase
+This node is an action node. It is used to perform tasks, integrate with APIs, or manipulate data within the workflow.
+
+## Inputs
+["main"]
+
+## Outputs
+["main"]
+
+## Properties & Settings
+These are the settings you can configure for this node:
+
+- **resource** (options): Resource
+  - Option: Agent (value: agent)
+  - Option: Agent Group (value: agentGroup)
+  - Option: Agent Role (value: agentRole)
+  - Option: Announcement (value: announcement)
+  - Option: Asset Type (value: assetType)
+  - Option: Change (value: change)
+  - Option: Department (value: department)
+  - Option: Location (value: location)
+  - Option: Problem (value: problem)
+  - Option: Product (value: product)
+  - Option: Release (value: release)
+  - Option: Requester (value: requester)
+  - Option: Requester Group (value: requesterGroup)
+  - Option: Software (value: software)
+  - Option: Ticket (value: ticket)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **email** (string): Email
+- **firstName** (string): First Name
+- **roles** (fixedCollection): Role to assign to the agent
+  - Option: roleProperties (value: undefined)
+- **additionalFields** (collection): Additional Fields
+  - Option: address (value: undefined)
+  - Option: background_information (value: undefined)
+  - Option: department_ids (value: undefined)
+  - Option: job_title (value: undefined)
+  - Option: language (value: undefined)
+  - Option: last_name (value: undefined)
+  - Option: location_id (value: undefined)
+  - Option: member_of (value: undefined)
+  - Option: mobile_phone_number (value: undefined)
+  - Option: observer_of (value: undefined)
+  - Option: scoreboard_level_id (value: undefined)
+  - Option: time_format (value: undefined)
+  - Option: work_phone_number (value: undefined)
+- **agentId** (string): ID of the agent to delete
+- **agentId** (string): ID of the agent to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: department_id (value: undefined)
+  - Option: email (value: undefined)
+  - Option: first_name (value: undefined)
+  - Option: job_title (value: undefined)
+  - Option: language (value: undefined)
+  - Option: last_name (value: undefined)
+  - Option: location_id (value: undefined)
+  - Option: mobile_phone_number (value: undefined)
+  - Option: work_phone_number (value: undefined)
+- **agentId** (string): ID of the agent to update
+- **updateFields** (collection): Update Fields
+  - Option: address (value: undefined)
+  - Option: background_information (value: undefined)
+  - Option: department_ids (value: undefined)
+  - Option: email (value: undefined)
+  - Option: first_name (value: undefined)
+  - Option: job_title (value: undefined)
+  - Option: language (value: undefined)
+  - Option: last_name (value: undefined)
+  - Option: location_id (value: undefined)
+  - Option: member_of (value: undefined)
+  - Option: mobile_phone_number (value: undefined)
+  - Option: observer_of (value: undefined)
+  - Option: scoreboard_level_id (value: undefined)
+  - Option: time_format (value: undefined)
+  - Option: work_phone_number (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **name** (string): Name
+- **additionalFields** (collection): Additional Fields
+  - Option: description (value: undefined)
+  - Option: escalate_to (value: undefined)
+  - Option: members (value: undefined)
+  - Option: observers (value: undefined)
+  - Option: unassigned_for (value: undefined)
+- **agentGroupId** (string): ID of the agent group to delete
+- **agentGroupId** (string): ID of the agent group to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **agentGroupId** (string): ID of the agent group to update
+- **updateFields** (collection): Update Fields
+  - Option: description (value: undefined)
+  - Option: escalate_to (value: undefined)
+  - Option: members (value: undefined)
+  - Option: name (value: undefined)
+  - Option: observers (value: undefined)
+  - Option: unassigned_for (value: undefined)
+- **operation** (options): Operation
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+- **agentRoleId** (string): ID of the agent role to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **title** (string): Title
+- **bodyHtml** (string): HTML supported
+- **visibility** (options): Visibility
+  - Option: Agents Only (value: agents_only)
+  - Option: Agents and Groups (value: grouped_visibility)
+  - Option: Everyone (value: everyone)
+- **visibleFrom** (dateTime): Timestamp at which announcement becomes active
+- **additionalFields** (collection): Additional Fields
+  - Option: additional_emails (value: undefined)
+  - Option: departments (value: undefined)
+  - Option: visible_from (value: undefined)
+  - Option: visible_till (value: undefined)
+- **announcementId** (string): ID of the announcement to delete
+- **announcementId** (string): ID of the announcement to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **announcementId** (string): ID of the announcement to update
+- **updateFields** (collection): Update Fields
+  - Option: additional_emails (value: undefined)
+  - Option: body_html (value: undefined)
+  - Option: departments (value: undefined)
+  - Option: title (value: undefined)
+  - Option: visibility (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **name** (string): Name
+- **additionalFields** (collection): Additional Fields
+  - Option: description (value: undefined)
+  - Option: parent_asset_type_id (value: undefined)
+- **assetTypeId** (string): ID of the asset type to delete
+- **assetTypeId** (string): ID of the asset type to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **assetTypeId** (string): ID of the asset type to update
+- **updateFields** (collection): Update Fields
+  - Option: description (value: undefined)
+  - Option: name (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **requesterId** (options): ID of the requester of the change. Choose from the list or specify an ID. You can also specify the ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **subject** (string): Subject
+- **plannedStartDate** (dateTime): Planned Start Date
+- **plannedEndDate** (dateTime): Planned End Date
+- **additionalFields** (collection): Additional Fields
+  - Option: agent_id (value: undefined)
+  - Option: change_type (value: undefined)
+  - Option: department_id (value: undefined)
+  - Option: description (value: undefined)
+  - Option: group_id (value: undefined)
+  - Option: impact (value: undefined)
+  - Option: priority (value: undefined)
+  - Option: risk (value: undefined)
+  - Option: status (value: undefined)
+  - Option: subject (value: undefined)
+- **changeId** (string): ID of the change to delete
+- **changeId** (string): ID of the change to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: filter (value: undefined)
+  - Option: sort_by (value: undefined)
+  - Option: updated_since (value: undefined)
+- **changeId** (string): ID of the change to update
+- **updateFields** (collection): Update Fields
+  - Option: agent_id (value: undefined)
+  - Option: change_type (value: undefined)
+  - Option: department_id (value: undefined)
+  - Option: description (value: undefined)
+  - Option: group_id (value: undefined)
+  - Option: impact (value: undefined)
+  - Option: priority (value: undefined)
+  - Option: requester_id (value: undefined)
+  - Option: risk (value: undefined)
+  - Option: status (value: undefined)
+  - Option: subject (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **name** (string): Name
+- **additionalFields** (collection): Additional Fields
+  - Option: description (value: undefined)
+  - Option: domains (value: undefined)
+- **departmentId** (string): ID of the department to delete
+- **departmentId** (string): ID of the department to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: name (value: undefined)
+- **departmentId** (string): ID of the department to update
+- **updateFields** (collection): Update Fields
+  - Option: description (value: undefined)
+  - Option: domains (value: undefined)
+  - Option: name (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **name** (string): Name of the location
+- **additionalFields** (collection): Additional Fields
+  - Option: address (value: undefined)
+- **locationId** (string): ID of the location to delete
+- **locationId** (string): ID of the location to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **locationId** (string): ID of the location to update
+- **updateFields** (collection): Update Fields
+  - Option: name (value: undefined)
+  - Option: address (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **subject** (string): Subject
+- **requesterId** (options): ID of the initiator of the problem. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **dueBy** (dateTime): Date when the problem is due to be solved
+- **additionalFields** (collection): Additional Fields
+  - Option: agent_id (value: undefined)
+  - Option: department_id (value: undefined)
+  - Option: description (value: undefined)
+  - Option: group_id (value: undefined)
+  - Option: impact (value: undefined)
+  - Option: priority (value: undefined)
+  - Option: status (value: undefined)
+- **problemId** (string): ID of the problem to delete
+- **problemId** (string): ID of the problem to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **problemId** (string): ID of the problem to update
+- **updateFields** (collection): Update Fields
+  - Option: agent_id (value: undefined)
+  - Option: department_id (value: undefined)
+  - Option: description (value: undefined)
+  - Option: due_by (value: undefined)
+  - Option: group_id (value: undefined)
+  - Option: impact (value: undefined)
+  - Option: priority (value: undefined)
+  - Option: requester_id (value: undefined)
+  - Option: status (value: undefined)
+  - Option: subject (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **assetTypeId** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **name** (string): Name
+- **additionalFields** (collection): Additional Fields
+  - Option: description (value: undefined)
+  - Option: manufacturer (value: undefined)
+  - Option: mode_of_procurement (value: undefined)
+  - Option: status (value: undefined)
+- **productId** (string): ID of the product to delete
+- **productId** (string): ID of the product to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **productId** (string): ID of the product to update
+- **updateFields** (collection): Update Fields
+  - Option: asset_type_id (value: undefined)
+  - Option: description (value: undefined)
+  - Option: manufacturer (value: undefined)
+  - Option: mode_of_procurement (value: undefined)
+  - Option: name (value: undefined)
+  - Option: status (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **subject** (string): Subject
+- **releaseType** (options): Release Type
+  - Option: Minor (value: 1)
+  - Option: Standard (value: 2)
+  - Option: Major (value: 3)
+  - Option: Emergency (value: 4)
+- **priority** (options): Priority
+  - Option: Low (value: 1)
+  - Option: Medium (value: 2)
+  - Option: High (value: 3)
+  - Option: Urgent (value: 4)
+- **status** (options): Status
+  - Option: Open (value: 1)
+  - Option: On Hold (value: 2)
+  - Option: In Progress (value: 3)
+  - Option: Incomplete (value: 4)
+  - Option: Completed (value: 5)
+- **plannedStartDate** (dateTime): Planned Start Date
+- **plannedEndDate** (dateTime): Planned End Date
+- **additionalFields** (collection): Additional Fields
+  - Option: department_id (value: undefined)
+  - Option: description (value: undefined)
+  - Option: group_id (value: undefined)
+- **releaseId** (string): ID of the release to delete
+- **releaseId** (string): ID of the release to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **releaseId** (string): ID of the release to update
+- **updateFields** (collection): Update Fields
+  - Option: department_id (value: undefined)
+  - Option: description (value: undefined)
+  - Option: group_id (value: undefined)
+  - Option: priority (value: undefined)
+  - Option: release_type (value: undefined)
+  - Option: status (value: undefined)
+  - Option: subject (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **firstName** (string): First Name
+- **primaryEmail** (string): Primary Email
+- **additionalFields** (collection): Additional Fields
+  - Option: address (value: undefined)
+  - Option: background_information (value: undefined)
+  - Option: department_ids (value: undefined)
+  - Option: job_title (value: undefined)
+  - Option: language (value: undefined)
+  - Option: last_name (value: undefined)
+  - Option: location_id (value: undefined)
+  - Option: mobile_phone_number (value: undefined)
+  - Option: secondary_emails (value: undefined)
+  - Option: time_format (value: undefined)
+  - Option: work_phone_number (value: undefined)
+- **requesterId** (string): ID of the requester to delete
+- **requesterId** (string): ID of the requester to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: department_id (value: undefined)
+  - Option: first_name (value: undefined)
+  - Option: job_title (value: undefined)
+  - Option: language (value: undefined)
+  - Option: last_name (value: undefined)
+  - Option: location_id (value: undefined)
+  - Option: mobile_phone_number (value: undefined)
+  - Option: primary_email (value: undefined)
+  - Option: work_phone_number (value: undefined)
+- **requesterId** (string): ID of the requester to update
+- **updateFields** (collection): Update Fields
+  - Option: address (value: undefined)
+  - Option: background_information (value: undefined)
+  - Option: department_ids (value: undefined)
+  - Option: first_name (value: undefined)
+  - Option: job_title (value: undefined)
+  - Option: language (value: undefined)
+  - Option: last_name (value: undefined)
+  - Option: location_id (value: undefined)
+  - Option: mobile_phone_number (value: undefined)
+  - Option: primary_email (value: undefined)
+  - Option: secondary_emails (value: undefined)
+  - Option: time_format (value: undefined)
+  - Option: work_phone_number (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **name** (string): Name
+- **additionalFields** (collection): Additional Fields
+  - Option: description (value: undefined)
+- **requesterGroupId** (string): ID of the requester group to delete
+- **requesterGroupId** (string): ID of the requester group to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **requesterGroupId** (string): ID of the requester group to update
+- **updateFields** (collection): Update Fields
+  - Option: description (value: undefined)
+  - Option: name (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **applicationType** (options): Application Type
+  - Option: Desktop (value: desktop)
+  - Option: Mobile (value: mobile)
+  - Option: SaaS (value: saas)
+- **name** (string): Name
+- **additionalFields** (collection): Additional Fields
+  - Option: description (value: undefined)
+  - Option: notes (value: undefined)
+  - Option: status (value: undefined)
+- **softwareId** (string): ID of the software application to delete
+- **softwareId** (string): ID of the software application to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **softwareId** (string): ID of the software application to update
+- **updateFields** (collection): Update Fields
+  - Option: application_type (value: undefined)
+  - Option: description (value: undefined)
+  - Option: name (value: undefined)
+  - Option: notes (value: undefined)
+  - Option: status (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **email** (string): Email address of the ticket author
+- **subject** (string): Subject
+- **description** (string): HTML supported
+- **priority** (options): Priority
+  - Option: Low (value: 1)
+  - Option: Medium (value: 2)
+  - Option: High (value: 3)
+  - Option: Urgent (value: 4)
+- **status** (options): Status
+  - Option: Open (value: 2)
+  - Option: Pending (value: 3)
+  - Option: Resolved (value: 4)
+  - Option: Closed (value: 5)
+- **additionalFields** (collection): Additional Fields
+  - Option: cc_emails (value: undefined)
+  - Option: department_id (value: undefined)
+  - Option: group_id (value: undefined)
+  - Option: impact (value: undefined)
+  - Option: name (value: undefined)
+  - Option: requester_id (value: undefined)
+- **ticketId** (string): ID of the ticket to delete
+- **ticketId** (string): ID of the ticket to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: agent_id (value: undefined)
+  - Option: group_id (value: undefined)
+  - Option: impact (value: undefined)
+  - Option: priority (value: undefined)
+  - Option: status (value: undefined)
+  - Option: created_at (value: undefined)
+  - Option: due_by (value: undefined)
+- **ticketId** (string): ID of the ticket to update
+- **updateFields** (collection): Update Fields
+  - Option: department_id (value: undefined)
+  - Option: description (value: undefined)
+  - Option: email (value: undefined)
+  - Option: group_id (value: undefined)
+  - Option: impact (value: undefined)
+  - Option: name (value: undefined)
+  - Option: phone (value: undefined)
+  - Option: priority (value: undefined)
+  - Option: status (value: undefined)
+  - Option: subject (value: undefined)

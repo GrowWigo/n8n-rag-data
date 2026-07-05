@@ -1,0 +1,415 @@
+# Node: ClickUp
+
+**Name**: clickUp
+**Category**: output
+**Description**: Consume ClickUp API (Beta)
+**Version**: 1
+
+## Common Usecase
+This node is an action node. It is used to perform tasks, integrate with APIs, or manipulate data within the workflow.
+
+## Inputs
+["main"]
+
+## Outputs
+["main"]
+
+## Properties & Settings
+These are the settings you can configure for this node:
+
+- **authentication** (options): Authentication
+  - Option: Access Token (value: accessToken)
+  - Option: OAuth2 (value: oAuth2)
+- **resource** (options): Resource
+  - Option: Checklist (value: checklist)
+  - Option: Checklist Item (value: checklistItem)
+  - Option: Comment (value: comment)
+  - Option: Folder (value: folder)
+  - Option: Goal (value: goal)
+  - Option: Goal Key Result (value: goalKeyResult)
+  - Option: List (value: list)
+  - Option: Space Tag (value: spaceTag)
+  - Option: Task (value: task)
+  - Option: Task Dependency (value: taskDependency)
+  - Option: Task List (value: taskList)
+  - Option: Task Tag (value: taskTag)
+  - Option: Time Entry (value: timeEntry)
+  - Option: Time Entry Tag (value: timeEntryTag)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Update (value: update)
+- **task** (string): Task ID
+- **name** (string): Name
+- **checklist** (string): Checklist ID
+- **checklist** (string): Checklist ID
+- **updateFields** (collection): Update Fields
+  - Option: name (value: undefined)
+  - Option: position (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Update (value: update)
+- **checklist** (string): Checklist ID
+- **name** (string): Name
+- **additionalFields** (collection): Additional Fields
+  - Option: assignee (value: undefined)
+- **checklist** (string): Checklist ID
+- **checklistItem** (string): Checklist Item ID
+- **checklist** (string): Checklist ID
+- **checklistItem** (string): Checklist Item ID
+- **updateFields** (collection): Update Fields
+  - Option: assignee (value: undefined)
+  - Option: name (value: undefined)
+  - Option: parent (value: undefined)
+  - Option: resolved (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **commentOn** (options): Comment On
+  - Option: List (value: list)
+  - Option: Task (value: task)
+  - Option: View (value: view)
+- **id** (string): ID
+- **commentText** (string): Comment Text
+- **additionalFields** (collection): Additional Fields
+  - Option: assignee (value: undefined)
+  - Option: notifyAll (value: undefined)
+- **comment** (string): Comment ID
+- **commentsOn** (options): Comments On
+  - Option: List (value: list)
+  - Option: Task (value: task)
+  - Option: View (value: view)
+- **id** (string): ID
+- **limit** (number): Max number of results to return
+- **comment** (string): Comment ID
+- **updateFields** (collection): Update Fields
+  - Option: assignee (value: undefined)
+  - Option: commentText (value: undefined)
+  - Option: resolved (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **space** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **name** (string): Name
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **space** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **folder** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **space** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **folder** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **space** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: archived (value: undefined)
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **space** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **folder** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **updateFields** (collection): Update Fields
+  - Option: name (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **name** (string): Name
+- **additionalFields** (collection): Additional Fields
+  - Option: color (value: undefined)
+  - Option: description (value: undefined)
+  - Option: dueDate (value: undefined)
+  - Option: multipleOwners (value: undefined)
+  - Option: owners (value: undefined)
+- **goal** (string): Goal ID
+- **goal** (string): Goal ID
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **limit** (number): Max number of results to return
+- **goal** (string): Goal ID
+- **updateFields** (collection): Update Fields
+  - Option: addOwners (value: undefined)
+  - Option: color (value: undefined)
+  - Option: description (value: undefined)
+  - Option: dueDate (value: undefined)
+  - Option: name (value: undefined)
+  - Option: removeOwners (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Update (value: update)
+- **goal** (string): Goal ID
+- **name** (string): Name
+- **type** (options): Type
+  - Option: Automatic (value: automatic)
+  - Option: Boolean (value: boolean)
+  - Option: Currency (value: currency)
+  - Option: Number (value: number)
+  - Option: Percentage (value: percentage)
+- **additionalFields** (collection): Additional Fields
+  - Option: listIds (value: undefined)
+  - Option: owners (value: undefined)
+  - Option: stepsStart (value: undefined)
+  - Option: stepsEnd (value: undefined)
+  - Option: taskIds (value: undefined)
+  - Option: unit (value: undefined)
+- **keyResult** (string): Key Result ID
+- **keyResult** (string): Key Result ID
+- **updateFields** (collection): Update Fields
+  - Option: name (value: undefined)
+  - Option: note (value: undefined)
+  - Option: stepsCurrent (value: undefined)
+  - Option: stepsEnd (value: undefined)
+  - Option: stepsStart (value: undefined)
+  - Option: unit (value: undefined)
+- **operation** (options): Operation
+  - Option: Add (value: add)
+  - Option: Remove (value: remove)
+- **taskId** (string): Task ID
+- **tagName** (string): Tag Name
+- **additionalFields** (collection): Additional Fields
+  - Option: custom_task_ids (value: undefined)
+  - Option: team_id (value: undefined)
+- **operation** (options): Operation
+  - Option: Add (value: add)
+  - Option: Remove (value: remove)
+- **taskId** (string): Task ID
+- **listId** (string): List ID
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **space** (string): Space ID
+- **name** (string): Name
+- **name** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **newName** (string): New name to set for the tag
+- **foregroundColor** (color): Foreground Color
+- **backgroundColor** (color): Background Color
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Member (value: member)
+  - Option: Set Custom Field (value: setCustomField)
+  - Option: Update (value: update)
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **space** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **folderless** (boolean): Folderless List
+- **folder** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **list** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **list** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **name** (string): The first name on the task
+- **additionalFields** (collection): Additional Fields
+  - Option: assignees (value: undefined)
+  - Option: customFieldsJson (value: undefined)
+  - Option: content (value: undefined)
+  - Option: dueDate (value: undefined)
+  - Option: dueDateTime (value: undefined)
+  - Option: markdownContent (value: undefined)
+  - Option: notifyAll (value: undefined)
+  - Option: parentId (value: undefined)
+  - Option: priority (value: undefined)
+  - Option: startDate (value: undefined)
+  - Option: startDateTime (value: undefined)
+  - Option: status (value: undefined)
+  - Option: tags (value: undefined)
+  - Option: timeEstimate (value: undefined)
+- **id** (string): Task ID
+- **updateFields** (collection): Update Fields
+  - Option: addAssignees (value: undefined)
+  - Option: content (value: undefined)
+  - Option: dueDate (value: undefined)
+  - Option: dueDateTime (value: undefined)
+  - Option: markdownContent (value: undefined)
+  - Option: name (value: undefined)
+  - Option: notifyAll (value: undefined)
+  - Option: parentId (value: undefined)
+  - Option: priority (value: undefined)
+  - Option: removeAssignees (value: undefined)
+  - Option: status (value: undefined)
+  - Option: startDate (value: undefined)
+  - Option: startDateTime (value: undefined)
+  - Option: timeEstimate (value: undefined)
+- **id** (string): Task ID
+- **includeSubtasks** (boolean): Whether to also fetch and include subtasks for this task
+- **includeMarkdownDescription** (boolean): Whether to include the markdown_description field in the response. This is important for preserving links in the description.
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **space** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **folderless** (boolean): Folderless List
+- **folder** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **list** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **list** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: archived (value: undefined)
+  - Option: assignees (value: undefined)
+  - Option: customFieldsUi (value: undefined)
+  - Option: dateCreatedGt (value: undefined)
+  - Option: dateCreatedLt (value: undefined)
+  - Option: dateUpdatedGt (value: undefined)
+  - Option: dateUpdatedLt (value: undefined)
+  - Option: dueDateGt (value: undefined)
+  - Option: dueDateLt (value: undefined)
+  - Option: includeClosed (value: undefined)
+  - Option: orderBy (value: undefined)
+  - Option: statuses (value: undefined)
+  - Option: subtasks (value: undefined)
+  - Option: tags (value: undefined)
+- **id** (string): Task ID
+- **id** (string): Task ID
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **task** (string): The ID of the task to add custom field to
+- **field** (string): The ID of the field to add custom field to
+- **jsonParse** (boolean): The value is JSON and will be parsed as such. Is needed if for example needed for labels which expects the value to be an array.
+- **value** (string): The value to set on custom field
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+- **task** (string): Task ID
+- **dependsOnTask** (string): Depends On Task ID
+- **task** (string): Task ID
+- **dependsOnTask** (string): Depends On Task ID
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Start (value: start)
+  - Option: Stop (value: stop)
+  - Option: Update (value: update)
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: end_date (value: undefined)
+  - Option: start_date (value: undefined)
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **running** (boolean): Whether to return just the current running time entry
+- **timeEntry** (string): Time Entry ID
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **space** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **folderless** (boolean): Folderless List
+- **folder** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **list** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **list** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **start** (dateTime): Start
+- **duration** (number): Duration in minutes
+- **task** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **additionalFields** (collection): Additional Fields
+  - Option: assignee (value: undefined)
+  - Option: billable (value: undefined)
+  - Option: description (value: undefined)
+  - Option: tags (value: undefined)
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **task** (string): Task ID
+- **additionalFields** (collection): Additional Fields
+  - Option: billable (value: undefined)
+  - Option: description (value: undefined)
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **timeEntry** (string): Time Entry ID
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **space** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **folderless** (boolean): Folderless List
+- **folder** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **list** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **list** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **archived** (boolean): Archived
+- **timeEntry** (string): Time Entry ID
+- **updateFields** (collection): Update Fields
+  - Option: assignee (value: undefined)
+  - Option: billable (value: undefined)
+  - Option: description (value: undefined)
+  - Option: duration (value: undefined)
+  - Option: start (value: undefined)
+  - Option: tags (value: undefined)
+  - Option: task (value: undefined)
+- **task** (string): Task ID
+- **dependsOnTask** (string): Depends On Task ID
+- **task** (string): Task ID
+- **dependsOnTask** (string): Depends On Task ID
+- **operation** (options): Operation
+  - Option: Add (value: add)
+  - Option: Get Many (value: getAll)
+  - Option: Remove (value: remove)
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **timeEntryIds** (string): Time Entry IDs
+- **tagsUi** (fixedCollection): Tags
+  - Option: tagsValues (value: undefined)
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **timeEntryIds** (string): Time Entry IDs
+- **tagNames** (multiOptions): Choose from the list, or specify IDs using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Custom Fields (value: customFields)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Member (value: member)
+  - Option: Update (value: update)
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **space** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **folderless** (boolean): Folderless List
+- **folder** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **name** (string): Name
+- **additionalFields** (collection): Additional Fields
+  - Option: assignee (value: undefined)
+  - Option: content (value: undefined)
+  - Option: dueDate (value: undefined)
+  - Option: dueDateTime (value: undefined)
+  - Option: priority (value: undefined)
+  - Option: status (value: undefined)
+- **id** (string): Task ID
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **space** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **folderless** (boolean): Folderless List
+- **folder** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **list** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **list** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **space** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **folderless** (boolean): Folderless List
+- **folder** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **list** (string): List ID
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **space** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **folderless** (boolean): Folderless List
+- **folder** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **list** (string): List ID
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **space** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **folderless** (boolean): Folderless List
+- **folder** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: archived (value: undefined)
+- **team** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **space** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **folderless** (boolean): Folderless List
+- **folder** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **list** (string): List ID
+- **updateFields** (collection): Update Fields
+  - Option: assignee (value: undefined)
+  - Option: content (value: undefined)
+  - Option: dueDate (value: undefined)
+  - Option: dueDateTime (value: undefined)
+  - Option: name (value: undefined)
+  - Option: priority (value: undefined)
+  - Option: unsetStatus (value: undefined)

@@ -1,0 +1,251 @@
+# Node: Onfleet
+
+**Name**: onfleet
+**Category**: input
+**Description**: Consume Onfleet API
+**Version**: 1
+
+## Common Usecase
+This node is an action node. It is used to perform tasks, integrate with APIs, or manipulate data within the workflow.
+
+## Inputs
+["main"]
+
+## Outputs
+["main"]
+
+## Properties & Settings
+These are the settings you can configure for this node:
+
+- **resource** (options): The resource to perform operations on
+  - Option: Admin (value: admin)
+  - Option: Container (value: container)
+  - Option: Destination (value: destination)
+  - Option: Hub (value: hub)
+  - Option: Organization (value: organization)
+  - Option: Recipient (value: recipient)
+  - Option: Task (value: task)
+  - Option: Team (value: team)
+  - Option: Worker (value: worker)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **id** (string): The ID of the admin object for lookup
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **name** (string): The administrator's name
+- **email** (string): The administrator's email address
+- **additionalFields** (collection): Additional Fields
+  - Option: phone (value: undefined)
+  - Option: isReadOnly (value: undefined)
+- **updateFields** (collection): Update Fields
+  - Option: name (value: undefined)
+  - Option: phone (value: undefined)
+  - Option: isReadOnly (value: undefined)
+- **operation** (options): Operation
+  - Option: Add Tasks (value: addTask)
+  - Option: Get (value: get)
+  - Option: Update Tasks (value: updateTask)
+- **containerType** (options): Container Type
+  - Option: Organizations (value: organizations)
+  - Option: Teams (value: teams)
+  - Option: Workers (value: workers)
+- **containerId** (string): The object ID according to the container chosen
+- **type** (options): Insert Type
+  - Option: Append (value: -1)
+  - Option: Prepend (value: 0)
+  - Option: At Specific Index (value: 1)
+- **index** (number): The index given indicates the position where the tasks are going to be inserted
+- **tasks** (string): Task's ID that are going to be used
+- **options** (collection): Options
+  - Option: considerDependencies (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Get (value: get)
+- **id** (string): The ID of the destination object for lookup
+- **unparsed** (boolean): Whether or not the address is specified in a single unparsed string
+- **address** (string): The destination's street address details
+- **addressNumber** (string): The number component of this address, it may also contain letters
+- **addressStreet** (string): The name of the street
+- **addressCity** (string): The name of the municipality
+- **addressCountry** (string): The name of the country
+- **additionalFields** (collection): Additional Fields
+  - Option: addressApartment (value: undefined)
+  - Option: addressName (value: undefined)
+  - Option: addressNotes (value: undefined)
+- **additionalFields** (collection): Additional Fields
+  - Option: addressApartment (value: undefined)
+  - Option: addressName (value: undefined)
+  - Option: addressNotes (value: undefined)
+  - Option: addressPostalCode (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **id** (string): The ID of the hub object for lookup
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **name** (string): A name to identify the hub
+- **destination** (fixedCollection): Destination
+  - Option: destinationProperties (value: undefined)
+- **additionalFields** (collection): Additional Fields
+  - Option: teams (value: undefined)
+- **updateFields** (collection): Update Fields
+  - Option: destination (value: undefined)
+  - Option: name (value: undefined)
+  - Option: teams (value: undefined)
+- **operation** (options): Operation
+  - Option: Get My Organization (value: get)
+  - Option: Get Delegatee Details (value: getDelegatee)
+- **id** (string): The ID of the delegatees for lookup
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Get (value: get)
+  - Option: Update (value: update)
+- **getBy** (options): The variable that is used for looking up a recipient
+  - Option: ID (value: id)
+  - Option: Phone (value: phone)
+  - Option: Name (value: name)
+- **id** (string): The ID of the recipient object for lookup
+- **id** (string): The ID of the recipient object for lookup
+- **name** (string): The name of the recipient for lookup
+- **phone** (string): The phone of the recipient for lookup
+- **recipientName** (string): The recipient's complete name
+- **recipientPhone** (string): A unique, valid phone number as per the organization's country if there's no leading + sign. If a phone number has a leading + sign, it will disregard the organization's country setting.
+- **additionalFields** (collection): Additional Fields
+  - Option: recipientNotes (value: undefined)
+  - Option: recipientSkipSMSNotifications (value: undefined)
+- **updateFields** (collection): Update Fields
+  - Option: recipientName (value: undefined)
+  - Option: notes (value: undefined)
+  - Option: recipientPhone (value: undefined)
+  - Option: skipSMSNotifications (value: undefined)
+- **options** (collection): Options
+  - Option: recipientSkipPhoneNumberValidation (value: undefined)
+- **operation** (options): Operation
+  - Option: Clone (value: clone)
+  - Option: Complete (value: complete)
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **id** (string): The ID of the task object for lookup
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **destination** (fixedCollection): Destination
+  - Option: destinationProperties (value: undefined)
+- **success** (boolean): Whether the task's completion was successful
+- **filters** (collection): Filters
+  - Option: from (value: undefined)
+  - Option: state (value: undefined)
+  - Option: to (value: undefined)
+- **overrideFields** (collection): Override Fields
+  - Option: completeAfter (value: undefined)
+  - Option: completeBefore (value: undefined)
+  - Option: includeBarcodes (value: undefined)
+  - Option: includeDependencies (value: undefined)
+  - Option: includeMetadata (value: undefined)
+  - Option: notes (value: undefined)
+  - Option: pickupTask (value: undefined)
+  - Option: serviceTime (value: undefined)
+- **updateFields** (collection): Update Fields
+  - Option: completeAfter (value: undefined)
+  - Option: completeBefore (value: undefined)
+  - Option: executor (value: undefined)
+  - Option: merchant (value: undefined)
+  - Option: notes (value: undefined)
+  - Option: pickupTask (value: undefined)
+  - Option: quantity (value: undefined)
+  - Option: serviceTime (value: undefined)
+- **additionalFields** (collection): Additional Fields
+  - Option: notes (value: undefined)
+- **additionalFields** (collection): Additional Fields
+  - Option: completeAfter (value: undefined)
+  - Option: completeBefore (value: undefined)
+  - Option: executor (value: undefined)
+  - Option: merchant (value: undefined)
+  - Option: notes (value: undefined)
+  - Option: pickupTask (value: undefined)
+  - Option: quantity (value: undefined)
+  - Option: recipient (value: undefined)
+  - Option: recipientName (value: undefined)
+  - Option: recipientNotes (value: undefined)
+  - Option: recipientSkipSMSNotifications (value: undefined)
+  - Option: serviceTime (value: undefined)
+  - Option: useMerchantForProxy (value: undefined)
+- **operation** (options): Operation
+  - Option: Auto-Dispatch (value: autoDispatch)
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Get Time Estimates (value: getTimeEstimates)
+  - Option: Update (value: update)
+- **id** (string): The ID of the team object for lookup
+- **name** (string): A unique name for the team
+- **workers** (multiOptions): A list of workers. Choose from the list, or specify IDs using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **managers** (multiOptions): A list of managing administrators. Choose from the list, or specify IDs using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **additionalFields** (collection): Additional Fields
+  - Option: hub (value: undefined)
+  - Option: enableSelfAssignment (value: undefined)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **updateFields** (collection): Update Fields
+  - Option: managers (value: undefined)
+  - Option: hub (value: undefined)
+  - Option: name (value: undefined)
+  - Option: enableSelfAssignment (value: undefined)
+  - Option: workers (value: undefined)
+- **additionalFields** (collection): Additional Fields
+  - Option: endingRoute (value: undefined)
+  - Option: maxAllowedDelay (value: undefined)
+  - Option: maxTasksPerRoute (value: undefined)
+  - Option: scheduleTimeWindow (value: undefined)
+  - Option: serviceTime (value: undefined)
+  - Option: taskTimeWindow (value: undefined)
+- **filters** (collection): Filters
+  - Option: dropOff (value: undefined)
+  - Option: pickUp (value: undefined)
+  - Option: restrictedVehicleTypes (value: undefined)
+  - Option: serviceTime (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Get Schedule (value: getSchedule)
+  - Option: Update (value: update)
+- **byLocation** (boolean): Whether to search for only those workers who are currently within a certain target area
+- **id** (string): The ID of the worker object for lookup
+- **name** (string): The worker's name
+- **phone** (string): A list of worker’s phone numbers
+- **teams** (multiOptions): One or more teams of which the worker is a member. Choose from the list, or specify IDs using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **longitude** (number): The longitude component of the coordinate pair
+- **latitude** (number): The latitude component of the coordinate pair
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **additionalFields** (collection): Additional Fields
+  - Option: capacity (value: undefined)
+  - Option: displayName (value: undefined)
+  - Option: vehicle (value: undefined)
+- **updateFields** (collection): Update Fields
+  - Option: capacity (value: undefined)
+  - Option: displayName (value: undefined)
+  - Option: name (value: undefined)
+  - Option: teams (value: undefined)
+- **filters** (collection): Filters
+  - Option: radius (value: undefined)
+- **filters** (collection): Filters
+  - Option: states (value: undefined)
+  - Option: teams (value: undefined)
+  - Option: phones (value: undefined)
+- **options** (collection): Options
+  - Option: filter (value: undefined)
+- **options** (collection): Options
+  - Option: analytics (value: undefined)
+  - Option: filter (value: undefined)
+- **schedule** (fixedCollection): Schedule
+  - Option: scheduleProperties (value: undefined)

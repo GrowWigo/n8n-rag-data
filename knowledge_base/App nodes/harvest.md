@@ -1,0 +1,403 @@
+# Node: Harvest
+
+**Name**: harvest
+**Category**: input
+**Description**: Access data on Harvest
+**Version**: 1
+
+## Common Usecase
+This node is an action node. It is used to perform tasks, integrate with APIs, or manipulate data within the workflow.
+
+## Inputs
+["main"]
+
+## Outputs
+["main"]
+
+## Properties & Settings
+These are the settings you can configure for this node:
+
+- **authentication** (options): Authentication
+  - Option: Access Token (value: accessToken)
+  - Option: OAuth2 (value: oAuth2)
+- **resource** (options): Resource
+  - Option: Client (value: client)
+  - Option: Company (value: company)
+  - Option: Contact (value: contact)
+  - Option: Estimate (value: estimate)
+  - Option: Expense (value: expense)
+  - Option: Invoice (value: invoice)
+  - Option: Project (value: project)
+  - Option: Task (value: task)
+  - Option: Time Entry (value: timeEntry)
+  - Option: User (value: user)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Get (value: get)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Create via Duration (value: createByDuration)
+  - Option: Create via Start and End Time (value: createByStartEnd)
+  - Option: Delete (value: delete)
+  - Option: Delete External Reference (value: deleteExternal)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Restart (value: restartTime)
+  - Option: Stop (value: stopTime)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Me (value: me)
+  - Option: Update (value: update)
+- **accountId** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: is_active (value: undefined)
+  - Option: updated_since (value: undefined)
+- **id** (string): The ID of the client you are retrieving
+- **id** (string): The ID of the client you want to delete
+- **name** (string): The name of the client
+- **additionalFields** (collection): Additional Fields
+  - Option: address (value: undefined)
+  - Option: currency (value: undefined)
+  - Option: is_active (value: undefined)
+- **id** (string): The ID of the client want to update
+- **updateFields** (collection): Update Fields
+  - Option: address (value: undefined)
+  - Option: currency (value: undefined)
+  - Option: is_active (value: undefined)
+  - Option: name (value: undefined)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: is_active (value: undefined)
+  - Option: updated_since (value: undefined)
+- **id** (string): The ID of the contact you are retrieving
+- **id** (string): The ID of the contact you want to delete
+- **firstName** (string): The first name of the contact
+- **clientId** (string): The ID of the client associated with this contact
+- **additionalFields** (collection): Additional Fields
+  - Option: email (value: undefined)
+  - Option: fax (value: undefined)
+  - Option: last_name (value: undefined)
+  - Option: phone_mobile (value: undefined)
+  - Option: phone_office (value: undefined)
+  - Option: title (value: undefined)
+- **id** (string): The ID of the contact want to update
+- **updateFields** (collection): Update Fields
+  - Option: client_id (value: undefined)
+  - Option: email (value: undefined)
+  - Option: fax (value: undefined)
+  - Option: first_name (value: undefined)
+  - Option: last_name (value: undefined)
+  - Option: phone_mobile (value: undefined)
+  - Option: phone_office (value: undefined)
+  - Option: title (value: undefined)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: client_id (value: undefined)
+  - Option: from (value: undefined)
+  - Option: state (value: undefined)
+  - Option: to (value: undefined)
+  - Option: updated_since (value: undefined)
+  - Option: page (value: undefined)
+- **id** (string): The ID of the estimate you are retrieving
+- **id** (string): The ID of the estimate want to delete
+- **clientId** (string): The ID of the client this estimate belongs to
+- **additionalFields** (collection): Additional Fields
+  - Option: currency (value: undefined)
+  - Option: over_budget_notification_percentage (value: undefined)
+  - Option: issue_date (value: undefined)
+  - Option: notes (value: undefined)
+  - Option: number (value: undefined)
+  - Option: purchase_order (value: undefined)
+  - Option: subject (value: undefined)
+  - Option: tax (value: undefined)
+  - Option: tax2 (value: undefined)
+- **id** (string): The ID of the invoice want to update
+- **updateFields** (collection): Update Fields
+  - Option: client_id (value: undefined)
+  - Option: currency (value: undefined)
+  - Option: over_budget_notification_percentage (value: undefined)
+  - Option: issue_date (value: undefined)
+  - Option: number (value: undefined)
+  - Option: notes (value: undefined)
+  - Option: purchase_order (value: undefined)
+  - Option: subject (value: undefined)
+  - Option: tax (value: undefined)
+  - Option: tax2 (value: undefined)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: client_id (value: undefined)
+  - Option: from (value: undefined)
+  - Option: is_billed (value: undefined)
+  - Option: page (value: undefined)
+  - Option: project_id (value: undefined)
+  - Option: to (value: undefined)
+  - Option: updated_since (value: undefined)
+  - Option: user_id (value: undefined)
+- **id** (string): The ID of the expense you are retrieving
+- **id** (string): The ID of the expense you want to delete
+- **projectId** (string): The ID of the project associated with this expense
+- **expenseCategoryId** (string): The ID of the expense category this expense is being tracked against
+- **spentDate** (dateTime): Date the expense occurred
+- **additionalFields** (collection): Additional Fields
+  - Option: billable (value: undefined)
+  - Option: notes (value: undefined)
+  - Option: total_cost (value: undefined)
+  - Option: units (value: undefined)
+  - Option: user_id (value: undefined)
+- **id** (string): The ID of the invoice want to update
+- **updateFields** (collection): Update Fields
+  - Option: billable (value: undefined)
+  - Option: expense_category_id (value: undefined)
+  - Option: notes (value: undefined)
+  - Option: project_id (value: undefined)
+  - Option: spent_date (value: undefined)
+  - Option: total_cost (value: undefined)
+  - Option: units (value: undefined)
+  - Option: user_id (value: undefined)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: client_id (value: undefined)
+  - Option: from (value: undefined)
+  - Option: page (value: undefined)
+  - Option: project_id (value: undefined)
+  - Option: state (value: undefined)
+  - Option: to (value: undefined)
+  - Option: updated_since (value: undefined)
+- **id** (string): The ID of the invoice you are retrieving
+- **id** (string): The ID of the invoice want to delete
+- **clientId** (string): The ID of the retainer associated with this invoice
+- **additionalFields** (collection): Additional Fields
+  - Option: currency (value: undefined)
+  - Option: over_budget_notification_percentage (value: undefined)
+  - Option: ends_on (value: undefined)
+  - Option: estimate_id (value: undefined)
+  - Option: issue_date (value: undefined)
+  - Option: notes (value: undefined)
+  - Option: number (value: undefined)
+  - Option: payment_term (value: undefined)
+  - Option: purchase_order (value: undefined)
+  - Option: retainer_id (value: undefined)
+  - Option: subject (value: undefined)
+  - Option: tax (value: undefined)
+  - Option: tax2 (value: undefined)
+- **id** (string): The ID of the invoice want to update
+- **updateFields** (collection): Update Fields
+  - Option: client_id (value: undefined)
+  - Option: currency (value: undefined)
+  - Option: over_budget_notification_percentage (value: undefined)
+  - Option: ends_on (value: undefined)
+  - Option: estimate_id (value: undefined)
+  - Option: issue_date (value: undefined)
+  - Option: notes (value: undefined)
+  - Option: number (value: undefined)
+  - Option: payment_term (value: undefined)
+  - Option: purchase_order (value: undefined)
+  - Option: retainer_id (value: undefined)
+  - Option: subject (value: undefined)
+  - Option: tax (value: undefined)
+  - Option: tax2 (value: undefined)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: client_id (value: undefined)
+  - Option: is_active (value: undefined)
+  - Option: page (value: undefined)
+  - Option: updated_since (value: undefined)
+- **id** (string): The ID of the project you are retrieving
+- **id** (string): The ID of the project want to delete
+- **name** (string): The name of the project
+- **clientId** (string): The ID of the client to associate this project with
+- **isBillable** (boolean): Whether the project is billable or not
+- **billBy** (options): The method by which the project is invoiced
+  - Option: None (value: none)
+  - Option: People (value: People)
+  - Option: Project (value: Project)
+  - Option: Tasks (value: Tasks)
+- **budgetBy** (string): The email of the user or "none"
+- **additionalFields** (collection): Additional Fields
+  - Option: budget (value: undefined)
+  - Option: budget_is_monthly (value: undefined)
+  - Option: cost_budget (value: undefined)
+  - Option: cost_budget_include_expenses (value: undefined)
+  - Option: ends_on (value: undefined)
+  - Option: fee (value: undefined)
+  - Option: hourly_rate (value: undefined)
+  - Option: is_active (value: undefined)
+  - Option: is_fixed_fee (value: undefined)
+  - Option: notes (value: undefined)
+  - Option: notify_when_over_budget (value: undefined)
+  - Option: over_budget_notification_percentage (value: undefined)
+  - Option: show_budget_to_all (value: undefined)
+  - Option: starts_on (value: undefined)
+- **id** (string): The ID of the project want to update
+- **updateFields** (collection): Update Fields
+  - Option: bill_by (value: undefined)
+  - Option: budget (value: undefined)
+  - Option: budget_by (value: undefined)
+  - Option: budget_is_monthly (value: undefined)
+  - Option: client_id (value: undefined)
+  - Option: cost_budget (value: undefined)
+  - Option: cost_budget_include_expenses (value: undefined)
+  - Option: ends_on (value: undefined)
+  - Option: fee (value: undefined)
+  - Option: hourly_rate (value: undefined)
+  - Option: is_active (value: undefined)
+  - Option: is_billable (value: undefined)
+  - Option: is_fixed_fee (value: undefined)
+  - Option: name (value: undefined)
+  - Option: notes (value: undefined)
+  - Option: notify_when_over_budget (value: undefined)
+  - Option: over_budget_notification_percentage (value: undefined)
+  - Option: show_budget_to_all (value: undefined)
+  - Option: starts_on (value: undefined)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: is_active (value: undefined)
+  - Option: page (value: undefined)
+  - Option: updated_since (value: undefined)
+- **id** (string): The ID of the task you are retrieving
+- **id** (string): The ID of the task you want to delete
+- **name** (string): The name of the task
+- **additionalFields** (collection): Additional Fields
+  - Option: billable_by_default (value: undefined)
+  - Option: default_hourly_rate (value: undefined)
+  - Option: is_active (value: undefined)
+  - Option: is_default (value: undefined)
+- **id** (string): The ID of the task you want to update
+- **updateFields** (collection): Update Fields
+  - Option: billable_by_default (value: undefined)
+  - Option: default_hourly_rate (value: undefined)
+  - Option: is_active (value: undefined)
+  - Option: is_default (value: undefined)
+  - Option: name (value: undefined)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: client_id (value: undefined)
+  - Option: from (value: undefined)
+  - Option: is_billed (value: undefined)
+  - Option: is_running (value: undefined)
+  - Option: page (value: undefined)
+  - Option: to (value: undefined)
+  - Option: updated_since (value: undefined)
+  - Option: user_id (value: undefined)
+- **id** (string): The ID of the time entry you are retrieving
+- **id** (string): The ID of the time entry you are deleting
+- **id** (string): The ID of the time entry whose external reference you are deleting
+- **id** (string): Stop a running time entry. Stopping a time entry is only possible if it’s currently running.
+- **id** (string): Restart a stopped time entry. Restarting a time entry is only possible if it isn’t currently running.
+- **id** (string): The ID of the time entry to update
+- **updateFields** (collection): Update Fields
+  - Option: ended_time (value: undefined)
+  - Option: hours (value: undefined)
+  - Option: notes (value: undefined)
+  - Option: started_time (value: undefined)
+- **projectId** (string): The ID of the project to associate with the time entry
+- **taskId** (string): The ID of the task to associate with the time entry
+- **spentDate** (dateTime): The ISO 8601 formatted date the time entry was spent
+- **additionalFields** (collection): Additional Fields
+  - Option: hours (value: undefined)
+  - Option: notes (value: undefined)
+  - Option: user_id (value: undefined)
+- **projectId** (string): The ID of the project to associate with the time entry
+- **taskId** (string): The ID of the task to associate with the time entry
+- **spentDate** (dateTime): The ISO 8601 formatted date the time entry was spent
+- **additionalFields** (collection): Additional Fields
+  - Option: ended_time (value: undefined)
+  - Option: notes (value: undefined)
+  - Option: started_time (value: undefined)
+  - Option: user_id (value: undefined)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: is_active (value: undefined)
+  - Option: updated_since (value: undefined)
+  - Option: page (value: undefined)
+- **id** (string): The ID of the user you are retrieving
+- **id** (string): The ID of the user you want to delete
+- **firstName** (string): The first name of the user
+- **lastName** (string): The last name of the user
+- **email** (string): The email of the user
+- **additionalFields** (collection): Additional Fields
+  - Option: can_create_invoices (value: undefined)
+  - Option: can_create_projects (value: undefined)
+  - Option: can_see_rates (value: undefined)
+  - Option: cost_rate (value: undefined)
+  - Option: default_hourly_rate (value: undefined)
+  - Option: has_access_to_all_future_projects (value: undefined)
+  - Option: is_active (value: undefined)
+  - Option: is_admin (value: undefined)
+  - Option: is_contractor (value: undefined)
+  - Option: is_project_manager (value: undefined)
+  - Option: roles (value: undefined)
+  - Option: timezone (value: undefined)
+  - Option: weekly_capacity (value: undefined)
+- **id** (string): The ID of the time entry to update
+- **updateFields** (collection): Update Fields
+  - Option: can_create_invoices (value: undefined)
+  - Option: can_create_projects (value: undefined)
+  - Option: can_see_rates (value: undefined)
+  - Option: cost_rate (value: undefined)
+  - Option: default_hourly_rate (value: undefined)
+  - Option: email (value: undefined)
+  - Option: first_name (value: undefined)
+  - Option: has_access_to_all_future_projects (value: undefined)
+  - Option: is_active (value: undefined)
+  - Option: is_admin (value: undefined)
+  - Option: is_contractor (value: undefined)
+  - Option: is_project_manager (value: undefined)
+  - Option: last_name (value: undefined)
+  - Option: roles (value: undefined)
+  - Option: timezone (value: undefined)
+  - Option: weekly_capacity (value: undefined)

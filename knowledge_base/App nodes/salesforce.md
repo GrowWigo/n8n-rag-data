@@ -1,0 +1,578 @@
+# Node: Salesforce
+
+**Name**: salesforce
+**Category**: output
+**Description**: Consume Salesforce API
+**Version**: 1
+
+## Common Usecase
+This node is an action node. It is used to perform tasks, integrate with APIs, or manipulate data within the workflow.
+
+## Inputs
+["main"]
+
+## Outputs
+["main"]
+
+## Properties & Settings
+These are the settings you can configure for this node:
+
+- **authentication** (options): OAuth Authorization Flow
+  - Option: OAuth2 (value: oAuth2)
+  - Option: OAuth2 JWT (value: jwt)
+- **resource** (options): Resource
+  - Option: Account (value: account)
+  - Option: Attachment (value: attachment)
+  - Option: Case (value: case)
+  - Option: Contact (value: contact)
+  - Option: Custom Object (value: customObject)
+  - Option: Document (value: document)
+  - Option: Flow (value: flow)
+  - Option: Lead (value: lead)
+  - Option: Opportunity (value: opportunity)
+  - Option: Search (value: search)
+  - Option: Task (value: task)
+  - Option: User (value: user)
+- **operation** (options): Operation
+  - Option: Add Lead To Campaign (value: addToCampaign)
+  - Option: Add Note (value: addNote)
+  - Option: Create (value: create)
+  - Option: Create or Update (value: upsert)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Get Summary (value: getSummary)
+  - Option: Update (value: update)
+- **externalId** (options): The field to check to see if the lead already exists. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **externalIdValue** (string): If this value exists in the 'match against' field, update the lead. Otherwise create a new one.
+- **company** (string): Company of the lead. If person account record types have been enabled, and if the value of Company is null, the lead converts to a person account.
+- **lastname** (string): Required. Last name of the lead. Limited to 80 characters.
+- **additionalFields** (collection): Additional Fields
+  - Option: annualRevenue (value: undefined)
+  - Option: city (value: undefined)
+  - Option: country (value: undefined)
+  - Option: customFieldsUi (value: undefined)
+  - Option: description (value: undefined)
+  - Option: email (value: undefined)
+  - Option: fax (value: undefined)
+  - Option: firstname (value: undefined)
+  - Option: hasOptedOutOfEmail (value: undefined)
+  - Option: hasOptedOutOfFax (value: undefined)
+  - Option: industry (value: undefined)
+  - Option: IsUnreadByOwner (value: undefined)
+  - Option: jigsaw (value: undefined)
+  - Option: leadSource (value: undefined)
+  - Option: mobilePhone (value: undefined)
+  - Option: numberOfEmployees (value: undefined)
+  - Option: owner (value: undefined)
+  - Option: phone (value: undefined)
+  - Option: postalCode (value: undefined)
+  - Option: recordTypeId (value: undefined)
+  - Option: rating (value: undefined)
+  - Option: salutation (value: undefined)
+  - Option: state (value: undefined)
+  - Option: status (value: undefined)
+  - Option: street (value: undefined)
+  - Option: title (value: undefined)
+  - Option: website (value: undefined)
+- **leadId** (string): ID of Lead that needs to be fetched
+- **updateFields** (collection): Update Fields
+  - Option: annualRevenue (value: undefined)
+  - Option: city (value: undefined)
+  - Option: company (value: undefined)
+  - Option: country (value: undefined)
+  - Option: customFieldsUi (value: undefined)
+  - Option: description (value: undefined)
+  - Option: email (value: undefined)
+  - Option: fax (value: undefined)
+  - Option: firstname (value: undefined)
+  - Option: hasOptedOutOfEmail (value: undefined)
+  - Option: HasOptedOutOfFax (value: undefined)
+  - Option: industry (value: undefined)
+  - Option: IsUnreadByOwner (value: undefined)
+  - Option: jigsaw (value: undefined)
+  - Option: lastname (value: undefined)
+  - Option: leadSource (value: undefined)
+  - Option: mobilePhone (value: undefined)
+  - Option: numberOfEmployees (value: undefined)
+  - Option: owner (value: undefined)
+  - Option: postalCode (value: undefined)
+  - Option: phone (value: undefined)
+  - Option: recordTypeId (value: undefined)
+  - Option: rating (value: undefined)
+  - Option: salutation (value: undefined)
+  - Option: state (value: undefined)
+  - Option: status (value: undefined)
+  - Option: street (value: undefined)
+  - Option: title (value: undefined)
+  - Option: website (value: undefined)
+- **leadId** (string): ID of Lead that needs to be fetched
+- **leadId** (string): ID of Lead that needs to be fetched
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: conditionsUi (value: undefined)
+  - Option: fields (value: undefined)
+- **leadId** (string): ID of contact that needs to be fetched
+- **campaignId** (options): ID of the campaign that needs to be fetched. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **options** (collection): Options
+  - Option: status (value: undefined)
+- **leadId** (string): ID of lead that needs to be fetched
+- **title** (string): Title of the note
+- **options** (collection): Options
+  - Option: body (value: undefined)
+  - Option: isPrivate (value: undefined)
+  - Option: owner (value: undefined)
+- **operation** (options): Operation
+  - Option: Add Contact To Campaign (value: addToCampaign)
+  - Option: Add Note (value: addNote)
+  - Option: Create (value: create)
+  - Option: Create or Update (value: upsert)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Get Summary (value: getSummary)
+  - Option: Update (value: update)
+- **externalId** (options): The field to check to see if the contact already exists. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **externalIdValue** (string): If this value exists in the 'match against' field, update the contact. Otherwise create a new one.
+- **lastname** (string): Required. Last name of the contact. Limited to 80 characters.
+- **additionalFields** (collection): Additional Fields
+  - Option: acconuntId (value: undefined)
+  - Option: assistantName (value: undefined)
+  - Option: Assistant Phone (value: undefined)
+  - Option: birthdate (value: undefined)
+  - Option: customFieldsUi (value: undefined)
+  - Option: department (value: undefined)
+  - Option: description (value: undefined)
+  - Option: email (value: undefined)
+  - Option: otherPostalCode (value: undefined)
+  - Option: emailBouncedReason (value: undefined)
+  - Option: fax (value: undefined)
+  - Option: firstName (value: undefined)
+  - Option: homePhone (value: undefined)
+  - Option: jigsaw (value: undefined)
+  - Option: leadSource (value: undefined)
+  - Option: mailingCity (value: undefined)
+  - Option: mailingCountry (value: undefined)
+  - Option: mobilePhone (value: undefined)
+  - Option: mailingPostalCode (value: undefined)
+  - Option: mailingState (value: undefined)
+  - Option: mailingStreet (value: undefined)
+  - Option: otherCity (value: undefined)
+  - Option: otherCountry (value: undefined)
+  - Option: otherPhone (value: undefined)
+  - Option: otherPostalCode (value: undefined)
+  - Option: otherState (value: undefined)
+  - Option: otherStreet (value: undefined)
+  - Option: owner (value: undefined)
+  - Option: phone (value: undefined)
+  - Option: recordTypeId (value: undefined)
+  - Option: salutation (value: undefined)
+  - Option: title (value: undefined)
+- **contactId** (string): ID of contact that needs to be fetched
+- **updateFields** (collection): Update Fields
+  - Option: acconuntId (value: undefined)
+  - Option: assistantName (value: undefined)
+  - Option: Assistant Phone (value: undefined)
+  - Option: birthdate (value: undefined)
+  - Option: customFieldsUi (value: undefined)
+  - Option: department (value: undefined)
+  - Option: description (value: undefined)
+  - Option: email (value: undefined)
+  - Option: emailBouncedDate (value: undefined)
+  - Option: emailBouncedReason (value: undefined)
+  - Option: fax (value: undefined)
+  - Option: firstName (value: undefined)
+  - Option: homePhone (value: undefined)
+  - Option: jigsaw (value: undefined)
+  - Option: lastName (value: undefined)
+  - Option: leadSource (value: undefined)
+  - Option: mailingCity (value: undefined)
+  - Option: mailingCountry (value: undefined)
+  - Option: mailingState (value: undefined)
+  - Option: mailingStreet (value: undefined)
+  - Option: mailingPostalCode (value: undefined)
+  - Option: mobilePhone (value: undefined)
+  - Option: otherCity (value: undefined)
+  - Option: otherCountry (value: undefined)
+  - Option: otherPhone (value: undefined)
+  - Option: otherPostalCode (value: undefined)
+  - Option: otherState (value: undefined)
+  - Option: otherStreet (value: undefined)
+  - Option: owner (value: undefined)
+  - Option: phone (value: undefined)
+  - Option: recordTypeId (value: undefined)
+  - Option: salutation (value: undefined)
+  - Option: title (value: undefined)
+- **contactId** (string): ID of contact that needs to be fetched
+- **contactId** (string): ID of contact that needs to be fetched
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: conditionsUi (value: undefined)
+  - Option: fields (value: undefined)
+- **contactId** (string): ID of contact that needs to be fetched
+- **campaignId** (options): ID of the campaign that needs to be fetched. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **options** (collection): Options
+  - Option: status (value: undefined)
+- **contactId** (string): ID of contact that needs to be fetched
+- **title** (string): Title of the note
+- **options** (collection): Options
+  - Option: body (value: undefined)
+  - Option: isPrivate (value: undefined)
+  - Option: owner (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Create or Update (value: upsert)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **customObject** (options): Name of the custom object. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **externalId** (options): The field to check to see if the object already exists. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **externalIdValue** (string): If this value exists in the 'match against' field, update the object. Otherwise create a new one.
+- **customFieldsUi** (fixedCollection): Filter by custom fields
+  - Option: customFieldsValues (value: undefined)
+- **customObject** (options): Name of the custom object. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **recordId** (string): Record ID to be updated
+- **customFieldsUi** (fixedCollection): Filter by custom fields
+  - Option: customFieldsValues (value: undefined)
+- **customObject** (options): Name of the custom object. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **recordId** (string): Record ID to be retrieved
+- **customObject** (options): Name of the custom object. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **recordId** (string): Record ID to be deleted
+- **customObject** (options): Name of the custom object. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: conditionsUi (value: undefined)
+  - Option: fields (value: undefined)
+- **additionalFields** (collection): Additional Fields
+  - Option: recordTypeId (value: undefined)
+- **updateFields** (collection): Update Fields
+  - Option: recordTypeId (value: undefined)
+- **operation** (options): Operation
+  - Option: Upload (value: upload)
+- **title** (string): Name of the file
+- **binaryPropertyName** (string): Input Binary Field
+- **additionalFields** (collection): Additional Fields
+  - Option: fileExtension (value: undefined)
+  - Option: linkToObjectId (value: undefined)
+  - Option: ownerId (value: undefined)
+- **operation** (options): Operation
+  - Option: Add Note (value: addNote)
+  - Option: Create (value: create)
+  - Option: Create or Update (value: upsert)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Get Summary (value: getSummary)
+  - Option: Update (value: update)
+- **externalId** (options): The field to check to see if the opportunity already exists. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **externalIdValue** (string): If this value exists in the 'match against' field, update the opportunity. Otherwise create a new one.
+- **name** (string): Required. Last name of the opportunity. Limited to 80 characters.
+- **closeDate** (dateTime): Required. Date when the opportunity is expected to close.
+- **stageName** (options): Required. Date when the opportunity is expected to close. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **additionalFields** (collection): Additional Fields
+  - Option: accountId (value: undefined)
+  - Option: amount (value: undefined)
+  - Option: campaignId (value: undefined)
+  - Option: customFieldsUi (value: undefined)
+  - Option: description (value: undefined)
+  - Option: forecastCategoryName (value: undefined)
+  - Option: leadSource (value: undefined)
+  - Option: nextStep (value: undefined)
+  - Option: owner (value: undefined)
+  - Option: phone (value: undefined)
+  - Option: pricebook2Id (value: undefined)
+  - Option: probability (value: undefined)
+  - Option: type (value: undefined)
+- **opportunityId** (string): ID of opportunity that needs to be fetched
+- **updateFields** (collection): Update Fields
+  - Option: accountId (value: undefined)
+  - Option: amount (value: undefined)
+  - Option: campaignId (value: undefined)
+  - Option: closeDate (value: undefined)
+  - Option: customFieldsUi (value: undefined)
+  - Option: description (value: undefined)
+  - Option: forecastCategoryName (value: undefined)
+  - Option: leadSource (value: undefined)
+  - Option: name (value: undefined)
+  - Option: nextStep (value: undefined)
+  - Option: owner (value: undefined)
+  - Option: phone (value: undefined)
+  - Option: pricebook2Id (value: undefined)
+  - Option: probability (value: undefined)
+  - Option: stageName (value: undefined)
+  - Option: type (value: undefined)
+- **opportunityId** (string): ID of opportunity that needs to be fetched
+- **opportunityId** (string): ID of opportunity that needs to be fetched
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: conditionsUi (value: undefined)
+  - Option: fields (value: undefined)
+- **opportunityId** (string): ID of opportunity that needs to be fetched
+- **title** (string): Title of the note
+- **options** (collection): Options
+  - Option: body (value: undefined)
+  - Option: isPrivate (value: undefined)
+  - Option: owner (value: undefined)
+- **operation** (options): Operation
+  - Option: Add Note (value: addNote)
+  - Option: Create (value: create)
+  - Option: Create or Update (value: upsert)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Get Summary (value: getSummary)
+  - Option: Update (value: update)
+- **externalId** (options): The field to check to see if the account already exists. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **externalIdValue** (string): If this value exists in the 'match against' field, update the account. Otherwise create a new one.
+- **name** (string): Name of the account. Maximum size is 255 characters.
+- **additionalFields** (collection): Additional Fields
+  - Option: accountNumber (value: undefined)
+  - Option: annualRevenue (value: undefined)
+  - Option: accountSource (value: undefined)
+  - Option: billingCity (value: undefined)
+  - Option: billingCountry (value: undefined)
+  - Option: billingPostalCode (value: undefined)
+  - Option: billingState (value: undefined)
+  - Option: billingStreet (value: undefined)
+  - Option: customFieldsUi (value: undefined)
+  - Option: description (value: undefined)
+  - Option: fax (value: undefined)
+  - Option: jigsaw (value: undefined)
+  - Option: industry (value: undefined)
+  - Option: numberOfEmployees (value: undefined)
+  - Option: owner (value: undefined)
+  - Option: parentId (value: undefined)
+  - Option: phone (value: undefined)
+  - Option: recordTypeId (value: undefined)
+  - Option: sicDesc (value: undefined)
+  - Option: type (value: undefined)
+  - Option: shippingCity (value: undefined)
+  - Option: shippingCountry (value: undefined)
+  - Option: shippingPostalCode (value: undefined)
+  - Option: shippingState (value: undefined)
+  - Option: shippingStreet (value: undefined)
+  - Option: website (value: undefined)
+- **accountId** (string): ID of account that needs to be fetched
+- **updateFields** (collection): Update Fields
+  - Option: accountNumber (value: undefined)
+  - Option: accountSource (value: undefined)
+  - Option: annualRevenue (value: undefined)
+  - Option: billingCity (value: undefined)
+  - Option: billingCountry (value: undefined)
+  - Option: billingPostalCode (value: undefined)
+  - Option: billingState (value: undefined)
+  - Option: billingStreet (value: undefined)
+  - Option: customFieldsUi (value: undefined)
+  - Option: description (value: undefined)
+  - Option: fax (value: undefined)
+  - Option: industry (value: undefined)
+  - Option: jigsaw (value: undefined)
+  - Option: name (value: undefined)
+  - Option: numberOfEmployees (value: undefined)
+  - Option: ownerId (value: undefined)
+  - Option: parentId (value: undefined)
+  - Option: phone (value: undefined)
+  - Option: recordTypeId (value: undefined)
+  - Option: sicDesc (value: undefined)
+  - Option: shippingCity (value: undefined)
+  - Option: shippingCountry (value: undefined)
+  - Option: shippingPostalCode (value: undefined)
+  - Option: shippingState (value: undefined)
+  - Option: shippingStreet (value: undefined)
+  - Option: type (value: undefined)
+  - Option: website (value: undefined)
+- **accountId** (string): ID of account that needs to be fetched
+- **accountId** (string): ID of account that needs to be fetched
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: fields (value: undefined)
+  - Option: conditionsUi (value: undefined)
+- **accountId** (string): ID of account that needs to be fetched
+- **title** (string): Title of the note
+- **options** (collection): Options
+  - Option: body (value: undefined)
+  - Option: isPrivate (value: undefined)
+  - Option: ownerId (value: undefined)
+- **operation** (options): Operation
+  - Option: Query (value: query)
+- **query** (string): A SOQL query. An example query parameter string might look like: “SELECT+Name+FROM+MyObject”. If the SOQL query string is invalid, a MALFORMED_QUERY response is returned.
+- **operation** (options): Operation
+  - Option: Add Comment (value: addComment)
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Get Summary (value: getSummary)
+  - Option: Update (value: update)
+- **type** (options): The type of case. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **additionalFields** (collection): Additional Fields
+  - Option: accountId (value: undefined)
+  - Option: contactId (value: undefined)
+  - Option: customFieldsUi (value: undefined)
+  - Option: description (value: undefined)
+  - Option: isEscalated (value: undefined)
+  - Option: origin (value: undefined)
+  - Option: owner (value: undefined)
+  - Option: ParentId (value: undefined)
+  - Option: priority (value: undefined)
+  - Option: reason (value: undefined)
+  - Option: recordTypeId (value: undefined)
+  - Option: status (value: undefined)
+  - Option: subject (value: undefined)
+  - Option: suppliedCompany (value: undefined)
+  - Option: suppliedEmail (value: undefined)
+  - Option: suppliedName (value: undefined)
+  - Option: suppliedPhone (value: undefined)
+- **caseId** (string): ID of case that needs to be fetched
+- **updateFields** (collection): Update Fields
+  - Option: accountId (value: undefined)
+  - Option: contactId (value: undefined)
+  - Option: customFieldsUi (value: undefined)
+  - Option: description (value: undefined)
+  - Option: isEscalated (value: undefined)
+  - Option: origin (value: undefined)
+  - Option: owner (value: undefined)
+  - Option: ParentId (value: undefined)
+  - Option: priority (value: undefined)
+  - Option: reason (value: undefined)
+  - Option: recordTypeId (value: undefined)
+  - Option: status (value: undefined)
+  - Option: subject (value: undefined)
+  - Option: suppliedCompany (value: undefined)
+  - Option: suppliedEmail (value: undefined)
+  - Option: suppliedName (value: undefined)
+  - Option: suppliedPhone (value: undefined)
+  - Option: type (value: undefined)
+- **caseId** (string): ID of case that needs to be fetched
+- **caseId** (string): ID of case that needs to be fetched
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: conditionsUi (value: undefined)
+  - Option: fields (value: undefined)
+- **caseId** (string): ID of case that needs to be fetched
+- **options** (collection): Options
+  - Option: commentBody (value: undefined)
+  - Option: isPublished (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Get Summary (value: getSummary)
+  - Option: Update (value: update)
+- **status** (options): The current status of the task, such as In Progress or Completed. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **additionalFields** (collection): Additional Fields
+  - Option: activityDate (value: undefined)
+  - Option: callDisposition (value: undefined)
+  - Option: callDurationInSeconds (value: undefined)
+  - Option: callObject (value: undefined)
+  - Option: callType (value: undefined)
+  - Option: customFieldsUi (value: undefined)
+  - Option: description (value: undefined)
+  - Option: isReminderSet (value: undefined)
+  - Option: owner (value: undefined)
+  - Option: priority (value: undefined)
+  - Option: recurrenceType (value: undefined)
+  - Option: recurrenceInstance (value: undefined)
+  - Option: recurrenceInterval (value: undefined)
+  - Option: recurrenceDayOfMonth (value: undefined)
+  - Option: recurrenceDayOfWeekMask (value: undefined)
+  - Option: recurrenceEndDateOnly (value: undefined)
+  - Option: recurrenceMonthOfYear (value: undefined)
+  - Option: recurrenceRegeneratedType (value: undefined)
+  - Option: recurrenceEndDateOnly (value: undefined)
+  - Option: recurrenceTimeZoneSidKey (value: undefined)
+  - Option: reminderDateTime (value: undefined)
+  - Option: subject (value: undefined)
+  - Option: type (value: undefined)
+  - Option: whatId (value: undefined)
+  - Option: whoId (value: undefined)
+- **taskId** (string): ID of task that needs to be fetched
+- **updateFields** (collection): Update Fields
+  - Option: activityDate (value: undefined)
+  - Option: callDisposition (value: undefined)
+  - Option: callDurationInSeconds (value: undefined)
+  - Option: callObject (value: undefined)
+  - Option: callType (value: undefined)
+  - Option: customFieldsUi (value: undefined)
+  - Option: description (value: undefined)
+  - Option: isReminderSet (value: undefined)
+  - Option: owner (value: undefined)
+  - Option: priority (value: undefined)
+  - Option: status (value: undefined)
+  - Option: subject (value: undefined)
+  - Option: recurrenceDayOfMonth (value: undefined)
+  - Option: recurrenceDayOfWeekMask (value: undefined)
+  - Option: recurrenceEndDateOnly (value: undefined)
+  - Option: recurrenceInstance (value: undefined)
+  - Option: recurrenceInterval (value: undefined)
+  - Option: recurrenceMonthOfYear (value: undefined)
+  - Option: recurrenceEndDateOnly (value: undefined)
+  - Option: recurrenceRegeneratedType (value: undefined)
+  - Option: recurrenceType (value: undefined)
+  - Option: recurrenceTimeZoneSidKey (value: undefined)
+  - Option: reminderDateTime (value: undefined)
+  - Option: type (value: undefined)
+  - Option: whatId (value: undefined)
+  - Option: whoId (value: undefined)
+- **taskId** (string): ID of task that needs to be fetched
+- **taskId** (string): ID of task that needs to be fetched
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: conditionsUi (value: undefined)
+  - Option: fields (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Get Summary (value: getSummary)
+  - Option: Update (value: update)
+- **parentId** (string): Parent ID
+- **name** (string): Required. Name of the attached file. Maximum size is 255 characters. Label is File Name.
+- **binaryPropertyName** (string): Input Binary Field
+- **additionalFields** (collection): Additional Fields
+  - Option: description (value: undefined)
+  - Option: isPrivate (value: undefined)
+  - Option: owner (value: undefined)
+- **attachmentId** (string): ID of attachment that needs to be fetched
+- **updateFields** (collection): Update Fields
+  - Option: binaryPropertyName (value: undefined)
+  - Option: description (value: undefined)
+  - Option: isPrivate (value: undefined)
+  - Option: name (value: undefined)
+  - Option: owner (value: undefined)
+- **attachmentId** (string): ID of attachment that needs to be fetched
+- **attachmentId** (string): ID of attachment that needs to be fetched
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: conditionsUi (value: undefined)
+  - Option: fields (value: undefined)
+- **operation** (options): Operation
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+- **userId** (string): ID of user that needs to be fetched
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: conditionsUi (value: undefined)
+  - Option: fields (value: undefined)
+- **operation** (options): Operation
+  - Option: Get Many (value: getAll)
+  - Option: Invoke (value: invoke)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **apiName** (string): Required. API name of the flow.
+- **jsonParameters** (boolean): Whether the input variables should be set via the value-key pair UI or JSON/RAW
+- **variablesJson** (json): Input variables as JSON object
+- **variablesUi** (fixedCollection): The input variable to send
+  - Option: variablesValues (value: undefined)

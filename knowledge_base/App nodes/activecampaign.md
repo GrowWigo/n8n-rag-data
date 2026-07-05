@@ -1,0 +1,646 @@
+# Node: ActiveCampaign
+
+**Name**: activeCampaign
+**Category**: transform
+**Description**: Create and edit data in ActiveCampaign
+**Version**: 1
+
+## Common Usecase
+This node is an action node. It is used to perform tasks, integrate with APIs, or manipulate data within the workflow.
+
+## Inputs
+["main"]
+
+## Outputs
+["main"]
+
+## Properties & Settings
+These are the settings you can configure for this node:
+
+- **resource** (options): Resource
+  - Option: Account (value: account)
+  - Option: Account Contact (value: accountContact)
+  - Option: Connection (value: connection)
+  - Option: Contact (value: contact)
+  - Option: Contact List (value: contactList)
+  - Option: Contact Tag (value: contactTag)
+  - Option: Deal (value: deal)
+  - Option: E-Commerce Customer (value: ecommerceCustomer)
+  - Option: E-Commerce Order (value: ecommerceOrder)
+  - Option: E-Commerce Order Product (value: ecommerceOrderProducts)
+  - Option: List (value: list)
+  - Option: Tag (value: tag)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Add (value: add)
+  - Option: Remove (value: remove)
+- **operation** (options): Operation
+  - Option: Add (value: add)
+  - Option: Remove (value: remove)
+- **operation** (options): Operation
+  - Option: Get Many (value: getAll)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Create Note (value: createNote)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+  - Option: Update Deal Note (value: updateNote)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Get Many (value: getAll)
+  - Option: Get by Product ID (value: getByProductId)
+  - Option: Get by Order ID (value: getByOrderId)
+- **tagType** (options): Tag-type of the new tag
+  - Option: Contact (value: contact)
+  - Option: Template (value: template)
+- **name** (string): Name of the new tag
+- **additionalFields** (collection): Additional Fields
+  - Option: description (value: undefined)
+- **tagId** (number): ID of the tag to update
+- **updateFields** (collection): The fields to update
+  - Option: tag (value: undefined)
+  - Option: description (value: undefined)
+- **tagId** (number): ID of the tag to delete
+- **tagId** (number): ID of the tag to get
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **simple** (boolean): Whether to return a simplified version of the response instead of the raw data
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **simple** (boolean): Whether to return a simplified version of the response instead of the raw data
+- **tagId** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **contactId** (number): Contact ID
+- **contactTagId** (number): ID of the contact tag to delete
+- **listId** (number): List ID
+- **contactId** (number): Contact ID
+- **listId** (number): List ID
+- **contactId** (number): Contact ID
+- **name** (string): Account's name
+- **additionalFields** (collection): Additional Fields
+  - Option: accountUrl (value: undefined)
+  - Option: fields (value: undefined)
+- **accountId** (number): ID of the account to update
+- **updateFields** (collection): The fields to update
+  - Option: name (value: undefined)
+  - Option: accountUrl (value: undefined)
+  - Option: fields (value: undefined)
+- **accountId** (number): ID of the account to delete
+- **accountId** (number): ID of the account to get
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **simple** (boolean): Whether to return a simplified version of the response instead of the raw data
+- **filters** (collection): Filters
+  - Option: search (value: undefined)
+- **account** (number): Account ID
+- **contact** (number): Contact ID
+- **additionalFields** (collection): Additional Fields
+  - Option: jobTitle (value: undefined)
+- **accountContactId** (number): ID of the account contact to delete
+- **accountContactId** (number): Account ID
+- **updateFields** (collection): The fields to update
+  - Option: jobTitle (value: undefined)
+- **email** (string): The email of the contact to create
+- **updateIfExists** (boolean): Whether to update user if it exists already. If not set and user exists it will error instead.
+- **additionalFields** (collection): Additional Fields
+  - Option: fieldValues (value: undefined)
+  - Option: firstName (value: undefined)
+  - Option: lastName (value: undefined)
+  - Option: phone (value: undefined)
+- **contactId** (number): ID of the contact to update
+- **updateFields** (collection): The fields to update
+  - Option: fieldValues (value: undefined)
+  - Option: email (value: undefined)
+  - Option: firstName (value: undefined)
+  - Option: lastName (value: undefined)
+  - Option: phone (value: undefined)
+- **contactId** (number): ID of the contact to delete
+- **contactId** (number): ID of the contact to get
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **simple** (boolean): Whether to return a simplified version of the response instead of the raw data
+- **additionalFields** (collection): Additional Fields
+  - Option: datetime (value: undefined)
+  - Option: email (value: undefined)
+  - Option: email_like (value: undefined)
+  - Option: exclude (value: undefined)
+  - Option: formid (value: undefined)
+  - Option: listid (value: undefined)
+  - Option: search (value: undefined)
+  - Option: segmentid (value: undefined)
+  - Option: seriesid (value: undefined)
+  - Option: status (value: undefined)
+  - Option: tagid (value: undefined)
+  - Option: filters[created_before] (value: undefined)
+  - Option: filters[created_after] (value: undefined)
+  - Option: filters[updated_before] (value: undefined)
+  - Option: filters[updated_after] (value: undefined)
+  - Option: waitid (value: undefined)
+  - Option: orderBy (value: undefined)
+- **title** (string): The title of the deal
+- **contact** (number): The ID of the deal's contact
+- **value** (number): The value of the deal in cents
+- **currency** (options): The currency of the deal in 3-character ISO format
+  - Option: Euro (value: eur)
+  - Option: United States Dollar (value: usd)
+  - Option: British Pound Sterling (value: gbp)
+  - Option: Swiss Franc (value: chf)
+  - Option: Renminbi (value: cny)
+  - Option: -------- (value: )
+  - Option: United Arab Emirates Dirham (value: aed)
+  - Option: Afghan Afghani (value: afn)
+  - Option: Albanian Lek (value: all)
+  - Option: Armenian Dram (value: amd)
+  - Option: Netherlands Antillean Guilder (value: ang)
+  - Option: Angolan Kwanza (value: aoa)
+  - Option: Argentine Peso (value: ars)
+  - Option: Australian Dollar (value: aud)
+  - Option: Aruban Florin (value: awg)
+  - Option: Azerbaijani Manat (value: azn)
+  - Option: Bosnia-Herzegovina Convertible Mark (value: bam)
+  - Option: Barbadian Dollar (value: bbd)
+  - Option: Bangladeshi Taka (value: bdt)
+  - Option: Bulgarian Lev (value: bgn)
+  - Option: Bahraini Dinar (value: bhd)
+  - Option: Burundian Franc (value: bif)
+  - Option: Bermudan Dollar (value: bmd)
+  - Option: Brunei Dollar (value: bnd)
+  - Option: Bolivian Boliviano (value: bob)
+  - Option: Brazilian Real (value: brl)
+  - Option: Bahamian Dollar (value: bsd)
+  - Option: Bitcoin (value: btc)
+  - Option: Bhutanese Ngultrum (value: btn)
+  - Option: Botswanan Pula (value: bwp)
+  - Option: Belarusian Ruble (value: byn)
+  - Option: Belize Dollar (value: bzd)
+  - Option: Canadian Dollar (value: cad)
+  - Option: Congolese Franc (value: cdf)
+  - Option: Chilean Unit of Account (UF) (value: clf)
+  - Option: Chilean Peso (value: clp)
+  - Option: Chinese Yuan (Offshore) (value: cnh)
+  - Option: Colombian Peso (value: cop)
+  - Option: Costa Rican Colón (value: crc)
+  - Option: Cuban Convertible Peso (value: cuc)
+  - Option: Cuban Peso (value: cup)
+  - Option: Cape Verdean Escudo (value: cve)
+  - Option: Czech Republic Koruna (value: czk)
+  - Option: Djiboutian Franc (value: djf)
+  - Option: Danish Krone (value: dkk)
+  - Option: Dominican Peso (value: dop)
+  - Option: Algerian Dinar (value: dzd)
+  - Option: Egyptian Pound (value: egp)
+  - Option: Eritrean Nakfa (value: ern)
+  - Option: Ethiopian Birr (value: etb)
+  - Option: Fijian Dollar (value: fjd)
+  - Option: Falkland Islands Pound (value: fkp)
+  - Option: Georgian Lari (value: gel)
+  - Option: Guernsey Pound (value: ggp)
+  - Option: Ghanaian Cedi (value: ghs)
+  - Option: Gibraltar Pound (value: gip)
+  - Option: Gambian Dalasi (value: gmd)
+  - Option: Guinean Franc (value: gnf)
+  - Option: Guatemalan Quetzal (value: gtq)
+  - Option: Guyanaese Dollar (value: gyd)
+  - Option: Hong Kong Dollar (value: hkd)
+  - Option: Honduran Lempira (value: hnl)
+  - Option: Croatian Kuna (value: hrk)
+  - Option: Haitian Gourde (value: htg)
+  - Option: Hungarian Forint (value: huf)
+  - Option: Indonesian Rupiah (value: idr)
+  - Option: Israeli New Sheqel (value: ils)
+  - Option: Manx Pound (value: imp)
+  - Option: Indian Rupee (value: inr)
+  - Option: Iraqi Dinar (value: iqd)
+  - Option: Iranian Rial (value: irr)
+  - Option: Icelandic Króna (value: isk)
+  - Option: Jersey Pound (value: jep)
+  - Option: Jamaican Dollar (value: jmd)
+  - Option: Jordanian Dinar (value: jod)
+  - Option: Japanese Yen (value: jpy)
+  - Option: Kenyan Shilling (value: kes)
+  - Option: Kyrgystani Som (value: kgs)
+  - Option: Cambodian Riel (value: khr)
+  - Option: Comorian Franc (value: kmf)
+  - Option: North Korean Won (value: kpw)
+  - Option: South Korean Won (value: krw)
+  - Option: Kuwaiti Dinar (value: kwd)
+  - Option: Cayman Islands Dollar (value: kyd)
+  - Option: Kazakhstani Tenge (value: kzt)
+  - Option: Laotian Kip (value: lak)
+  - Option: Lebanese Pound (value: lbp)
+  - Option: Sri Lankan Rupee (value: lkr)
+  - Option: Liberian Dollar (value: lrd)
+  - Option: Lesotho Loti (value: lsl)
+  - Option: Libyan Dinar (value: lyd)
+  - Option: Moroccan Dirham (value: mad)
+  - Option: Moldovan Leu (value: mdl)
+  - Option: Malagasy Ariary (value: mga)
+  - Option: Macedonian Denar (value: mkd)
+  - Option: Myanma Kyat (value: mmk)
+  - Option: Mongolian Tugrik (value: mnt)
+  - Option: Macanese Pataca (value: mop)
+  - Option: Mauritanian Ouguiya (Pre-2018) (value: mro)
+  - Option: Mauritanian Ouguiya (value: mru)
+  - Option: Mauritian Rupee (value: mur)
+  - Option: Maldivian Rufiyaa (value: mvr)
+  - Option: Malawian Kwacha (value: mwk)
+  - Option: Mexican Peso (value: mxn)
+  - Option: Malaysian Ringgit (value: myr)
+  - Option: Mozambican Metical (value: mzn)
+  - Option: Namibian Dollar (value: nad)
+  - Option: Nigerian Naira (value: ngn)
+  - Option: Nicaraguan Córdoba (value: nio)
+  - Option: Norwegian Krone (value: nok)
+  - Option: Nepalese Rupee (value: npr)
+  - Option: New Zealand Dollar (value: nzd)
+  - Option: Omani Rial (value: omr)
+  - Option: Panamanian Balboa (value: pab)
+  - Option: Peruvian Nuevo Sol (value: pen)
+  - Option: Papua New Guinean Kina (value: pgk)
+  - Option: Philippine Peso (value: php)
+  - Option: Pakistani Rupee (value: pkr)
+  - Option: Polish Zloty (value: pln)
+  - Option: Paraguayan Guarani (value: pyg)
+  - Option: Qatari Rial (value: qar)
+  - Option: Romanian Leu (value: ron)
+  - Option: Serbian Dinar (value: rsd)
+  - Option: Russian Ruble (value: rub)
+  - Option: Rwandan Franc (value: rwf)
+  - Option: Saudi Riyal (value: sar)
+  - Option: Solomon Islands Dollar (value: sbd)
+  - Option: Seychellois Rupee (value: scr)
+  - Option: Sudanese Pound (value: sdg)
+  - Option: Swedish Krona (value: sek)
+  - Option: Singapore Dollar (value: sgd)
+  - Option: Saint Helena Pound (value: shp)
+  - Option: Sierra Leonean Leone (value: sll)
+  - Option: Somali Shilling (value: sos)
+  - Option: Surinamese Dollar (value: srd)
+  - Option: South Sudanese Pound (value: ssp)
+  - Option: São Tomé and Príncipe Dobra (Pre-2018) (value: std)
+  - Option: São Tomé and Príncipe Dobra (value: stn)
+  - Option: Salvadoran Colón (value: svc)
+  - Option: Syrian Pound (value: syp)
+  - Option: Swazi Lilangeni (value: szl)
+  - Option: Thai Baht (value: thb)
+  - Option: Tajikistani Somoni (value: tjs)
+  - Option: Turkmenistani Manat (value: tmt)
+  - Option: Tunisian Dinar (value: tnd)
+  - Option: Tongan Pa'anga (value: top)
+  - Option: Turkish Lira (value: try)
+  - Option: Trinidad and Tobago Dollar (value: ttd)
+  - Option: New Taiwan Dollar (value: twd)
+  - Option: Tanzanian Shilling (value: tzs)
+  - Option: Ukrainian Hryvnia (value: uah)
+  - Option: Ugandan Shilling (value: ugx)
+  - Option: Uruguayan Peso (value: uyu)
+  - Option: Uzbekistan Som (value: uzs)
+  - Option: Venezuelan Bolívar Fuerte (value: vef)
+  - Option: Vietnamese Dong (value: vnd)
+  - Option: Vanuatu Vatu (value: vuv)
+  - Option: Samoan Tala (value: wst)
+  - Option: CFA Franc BEAC (value: xaf)
+  - Option: Silver Ounce (value: xag)
+  - Option: Gold Ounce (value: xau)
+  - Option: East Caribbean Dollar (value: xcd)
+  - Option: Special Drawing Rights (value: xdr)
+  - Option: CFA Franc BCEAO (value: xof)
+  - Option: Palladium Ounce (value: xpd)
+  - Option: CFP Franc (value: xpf)
+  - Option: Platinum Ounce (value: xpt)
+  - Option: Yemeni Rial (value: yer)
+  - Option: South African Rand (value: zar)
+  - Option: Zambian Kwacha (value: zmw)
+  - Option: Zimbabwean Dollar (value: zwl)
+- **group** (string): The pipeline ID of the deal
+- **stage** (string): The stage ID of the deal
+- **owner** (string): The owner ID of the deal
+- **additionalFields** (collection): Additional Fields
+  - Option: description (value: undefined)
+  - Option: percent (value: undefined)
+  - Option: status (value: undefined)
+- **dealId** (number): ID of the deal to update
+- **updateFields** (collection): The fields to update
+  - Option: title (value: undefined)
+  - Option: contact (value: undefined)
+  - Option: value (value: undefined)
+  - Option: currency (value: undefined)
+  - Option: description (value: undefined)
+  - Option: group (value: undefined)
+  - Option: stage (value: undefined)
+  - Option: owner (value: undefined)
+  - Option: percent (value: undefined)
+  - Option: status (value: undefined)
+- **dealId** (number): The ID of the deal to delete
+- **dealId** (number): The ID of the deal to get
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **simple** (boolean): Whether to return a simplified version of the response instead of the raw data
+- **dealId** (number): The ID of the deal note
+- **dealNote** (string): The content of the deal note
+- **dealId** (number): The ID of the deal note
+- **dealNoteId** (number): The ID of the deal note
+- **dealNote** (string): The content of the deal note
+- **service** (string): The name of the service
+- **externalid** (string): The ID of the account in the external service
+- **name** (string): The name associated with the account in the external service. Often this will be a company name (e.g., "My Toystore, Inc.").
+- **logoUrl** (string): The URL to a logo image for the external service
+- **linkUrl** (string): The URL to a page where the integration with the external service can be managed in the third-party's website
+- **connectionId** (number): ID of the connection to update
+- **updateFields** (collection): The fields to update
+  - Option: service (value: undefined)
+  - Option: externalid (value: undefined)
+  - Option: name (value: undefined)
+  - Option: logoUrl (value: undefined)
+  - Option: linkUrl (value: undefined)
+  - Option: status (value: undefined)
+  - Option: syncStatus (value: undefined)
+- **connectionId** (number): ID of the connection to delete
+- **connectionId** (number): ID of the connection to get
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **simple** (boolean): Whether to return a simplified version of the response instead of the raw data
+- **externalid** (string): The ID of the order in the external service. ONLY REQUIRED IF EXTERNALCHECKOUTID NOT INCLUDED.
+- **externalcheckoutid** (string): The ID of the cart in the external service. ONLY REQUIRED IF EXTERNALID IS NOT INCLUDED.
+- **source** (number): The order source code (0 - will not trigger automations, 1 - will trigger automations)
+- **email** (string): The email address of the customer who placed the order
+- **totalPrice** (number): The total price of the order in cents, including tax and shipping charges. (i.e. $456.78 => 45678). Must be greater than or equal to zero.
+- **currency** (options): The currency of the order (3-digit ISO code, e.g., "USD")
+  - Option: Euro (value: eur)
+  - Option: United States Dollar (value: usd)
+  - Option: British Pound Sterling (value: gbp)
+  - Option: Swiss Franc (value: chf)
+  - Option: Renminbi (value: cny)
+  - Option: -------- (value: )
+  - Option: United Arab Emirates Dirham (value: aed)
+  - Option: Afghan Afghani (value: afn)
+  - Option: Albanian Lek (value: all)
+  - Option: Armenian Dram (value: amd)
+  - Option: Netherlands Antillean Guilder (value: ang)
+  - Option: Angolan Kwanza (value: aoa)
+  - Option: Argentine Peso (value: ars)
+  - Option: Australian Dollar (value: aud)
+  - Option: Aruban Florin (value: awg)
+  - Option: Azerbaijani Manat (value: azn)
+  - Option: Bosnia-Herzegovina Convertible Mark (value: bam)
+  - Option: Barbadian Dollar (value: bbd)
+  - Option: Bangladeshi Taka (value: bdt)
+  - Option: Bulgarian Lev (value: bgn)
+  - Option: Bahraini Dinar (value: bhd)
+  - Option: Burundian Franc (value: bif)
+  - Option: Bermudan Dollar (value: bmd)
+  - Option: Brunei Dollar (value: bnd)
+  - Option: Bolivian Boliviano (value: bob)
+  - Option: Brazilian Real (value: brl)
+  - Option: Bahamian Dollar (value: bsd)
+  - Option: Bitcoin (value: btc)
+  - Option: Bhutanese Ngultrum (value: btn)
+  - Option: Botswanan Pula (value: bwp)
+  - Option: Belarusian Ruble (value: byn)
+  - Option: Belize Dollar (value: bzd)
+  - Option: Canadian Dollar (value: cad)
+  - Option: Congolese Franc (value: cdf)
+  - Option: Chilean Unit of Account (UF) (value: clf)
+  - Option: Chilean Peso (value: clp)
+  - Option: Chinese Yuan (Offshore) (value: cnh)
+  - Option: Colombian Peso (value: cop)
+  - Option: Costa Rican Colón (value: crc)
+  - Option: Cuban Convertible Peso (value: cuc)
+  - Option: Cuban Peso (value: cup)
+  - Option: Cape Verdean Escudo (value: cve)
+  - Option: Czech Republic Koruna (value: czk)
+  - Option: Djiboutian Franc (value: djf)
+  - Option: Danish Krone (value: dkk)
+  - Option: Dominican Peso (value: dop)
+  - Option: Algerian Dinar (value: dzd)
+  - Option: Egyptian Pound (value: egp)
+  - Option: Eritrean Nakfa (value: ern)
+  - Option: Ethiopian Birr (value: etb)
+  - Option: Fijian Dollar (value: fjd)
+  - Option: Falkland Islands Pound (value: fkp)
+  - Option: Georgian Lari (value: gel)
+  - Option: Guernsey Pound (value: ggp)
+  - Option: Ghanaian Cedi (value: ghs)
+  - Option: Gibraltar Pound (value: gip)
+  - Option: Gambian Dalasi (value: gmd)
+  - Option: Guinean Franc (value: gnf)
+  - Option: Guatemalan Quetzal (value: gtq)
+  - Option: Guyanaese Dollar (value: gyd)
+  - Option: Hong Kong Dollar (value: hkd)
+  - Option: Honduran Lempira (value: hnl)
+  - Option: Croatian Kuna (value: hrk)
+  - Option: Haitian Gourde (value: htg)
+  - Option: Hungarian Forint (value: huf)
+  - Option: Indonesian Rupiah (value: idr)
+  - Option: Israeli New Sheqel (value: ils)
+  - Option: Manx Pound (value: imp)
+  - Option: Indian Rupee (value: inr)
+  - Option: Iraqi Dinar (value: iqd)
+  - Option: Iranian Rial (value: irr)
+  - Option: Icelandic Króna (value: isk)
+  - Option: Jersey Pound (value: jep)
+  - Option: Jamaican Dollar (value: jmd)
+  - Option: Jordanian Dinar (value: jod)
+  - Option: Japanese Yen (value: jpy)
+  - Option: Kenyan Shilling (value: kes)
+  - Option: Kyrgystani Som (value: kgs)
+  - Option: Cambodian Riel (value: khr)
+  - Option: Comorian Franc (value: kmf)
+  - Option: North Korean Won (value: kpw)
+  - Option: South Korean Won (value: krw)
+  - Option: Kuwaiti Dinar (value: kwd)
+  - Option: Cayman Islands Dollar (value: kyd)
+  - Option: Kazakhstani Tenge (value: kzt)
+  - Option: Laotian Kip (value: lak)
+  - Option: Lebanese Pound (value: lbp)
+  - Option: Sri Lankan Rupee (value: lkr)
+  - Option: Liberian Dollar (value: lrd)
+  - Option: Lesotho Loti (value: lsl)
+  - Option: Libyan Dinar (value: lyd)
+  - Option: Moroccan Dirham (value: mad)
+  - Option: Moldovan Leu (value: mdl)
+  - Option: Malagasy Ariary (value: mga)
+  - Option: Macedonian Denar (value: mkd)
+  - Option: Myanma Kyat (value: mmk)
+  - Option: Mongolian Tugrik (value: mnt)
+  - Option: Macanese Pataca (value: mop)
+  - Option: Mauritanian Ouguiya (Pre-2018) (value: mro)
+  - Option: Mauritanian Ouguiya (value: mru)
+  - Option: Mauritian Rupee (value: mur)
+  - Option: Maldivian Rufiyaa (value: mvr)
+  - Option: Malawian Kwacha (value: mwk)
+  - Option: Mexican Peso (value: mxn)
+  - Option: Malaysian Ringgit (value: myr)
+  - Option: Mozambican Metical (value: mzn)
+  - Option: Namibian Dollar (value: nad)
+  - Option: Nigerian Naira (value: ngn)
+  - Option: Nicaraguan Córdoba (value: nio)
+  - Option: Norwegian Krone (value: nok)
+  - Option: Nepalese Rupee (value: npr)
+  - Option: New Zealand Dollar (value: nzd)
+  - Option: Omani Rial (value: omr)
+  - Option: Panamanian Balboa (value: pab)
+  - Option: Peruvian Nuevo Sol (value: pen)
+  - Option: Papua New Guinean Kina (value: pgk)
+  - Option: Philippine Peso (value: php)
+  - Option: Pakistani Rupee (value: pkr)
+  - Option: Polish Zloty (value: pln)
+  - Option: Paraguayan Guarani (value: pyg)
+  - Option: Qatari Rial (value: qar)
+  - Option: Romanian Leu (value: ron)
+  - Option: Serbian Dinar (value: rsd)
+  - Option: Russian Ruble (value: rub)
+  - Option: Rwandan Franc (value: rwf)
+  - Option: Saudi Riyal (value: sar)
+  - Option: Solomon Islands Dollar (value: sbd)
+  - Option: Seychellois Rupee (value: scr)
+  - Option: Sudanese Pound (value: sdg)
+  - Option: Swedish Krona (value: sek)
+  - Option: Singapore Dollar (value: sgd)
+  - Option: Saint Helena Pound (value: shp)
+  - Option: Sierra Leonean Leone (value: sll)
+  - Option: Somali Shilling (value: sos)
+  - Option: Surinamese Dollar (value: srd)
+  - Option: South Sudanese Pound (value: ssp)
+  - Option: São Tomé and Príncipe Dobra (Pre-2018) (value: std)
+  - Option: São Tomé and Príncipe Dobra (value: stn)
+  - Option: Salvadoran Colón (value: svc)
+  - Option: Syrian Pound (value: syp)
+  - Option: Swazi Lilangeni (value: szl)
+  - Option: Thai Baht (value: thb)
+  - Option: Tajikistani Somoni (value: tjs)
+  - Option: Turkmenistani Manat (value: tmt)
+  - Option: Tunisian Dinar (value: tnd)
+  - Option: Tongan Pa'anga (value: top)
+  - Option: Turkish Lira (value: try)
+  - Option: Trinidad and Tobago Dollar (value: ttd)
+  - Option: New Taiwan Dollar (value: twd)
+  - Option: Tanzanian Shilling (value: tzs)
+  - Option: Ukrainian Hryvnia (value: uah)
+  - Option: Ugandan Shilling (value: ugx)
+  - Option: Uruguayan Peso (value: uyu)
+  - Option: Uzbekistan Som (value: uzs)
+  - Option: Venezuelan Bolívar Fuerte (value: vef)
+  - Option: Vietnamese Dong (value: vnd)
+  - Option: Vanuatu Vatu (value: vuv)
+  - Option: Samoan Tala (value: wst)
+  - Option: CFA Franc BEAC (value: xaf)
+  - Option: Silver Ounce (value: xag)
+  - Option: Gold Ounce (value: xau)
+  - Option: East Caribbean Dollar (value: xcd)
+  - Option: Special Drawing Rights (value: xdr)
+  - Option: CFA Franc BCEAO (value: xof)
+  - Option: Palladium Ounce (value: xpd)
+  - Option: CFP Franc (value: xpf)
+  - Option: Platinum Ounce (value: xpt)
+  - Option: Yemeni Rial (value: yer)
+  - Option: South African Rand (value: zar)
+  - Option: Zambian Kwacha (value: zmw)
+  - Option: Zimbabwean Dollar (value: zwl)
+- **connectionid** (number): The ID of the connection from which this order originated
+- **customerid** (number): The ID of the customer associated with this order
+- **externalCreatedDate** (dateTime): The date the order was placed
+- **abandonedDate** (dateTime): The date the cart was abandoned. REQUIRED ONLY IF INCLUDING EXTERNALCHECKOUTID.
+- **orderProducts** (collection): All ordered products
+  - Option: name (value: undefined)
+  - Option: price (value: undefined)
+  - Option: quantity (value: undefined)
+  - Option: externalid (value: undefined)
+  - Option: category (value: undefined)
+  - Option: sku (value: undefined)
+  - Option: description (value: undefined)
+  - Option: imageUrl (value: undefined)
+  - Option: productUrl (value: undefined)
+- **additionalFields** (collection): Additional Fields
+  - Option: shippingAmount (value: undefined)
+  - Option: taxAmount (value: undefined)
+  - Option: discountAmount (value: undefined)
+  - Option: orderUrl (value: undefined)
+  - Option: externalUpdatedDate (value: undefined)
+  - Option: shippingMethod (value: undefined)
+  - Option: orderNumber (value: undefined)
+- **orderId** (number): The ID of the e-commerce order
+- **updateFields** (collection): Update Fields
+  - Option: externalid (value: undefined)
+  - Option: externalcheckoutid (value: undefined)
+  - Option: source (value: undefined)
+  - Option: email (value: undefined)
+  - Option: totalPrice (value: undefined)
+  - Option: currency (value: undefined)
+  - Option: connectionid (value: undefined)
+  - Option: customerid (value: undefined)
+  - Option: externalupdatedDate (value: undefined)
+  - Option: abandonedDate (value: undefined)
+  - Option: shippingAmount (value: undefined)
+  - Option: taxAmount (value: undefined)
+  - Option: discountAmount (value: undefined)
+  - Option: orderUrl (value: undefined)
+  - Option: externalUpdatedDate (value: undefined)
+  - Option: shippingMethod (value: undefined)
+  - Option: orderNumber (value: undefined)
+  - Option: orderProducts (value: undefined)
+- **orderId** (number): The ID of the e-commerce order
+- **orderId** (number): The ID of the e-commerce order
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **simple** (boolean): Whether to return a simplified version of the response instead of the raw data
+- **connectionid** (string): The ID of the connection object for the service where the customer originates
+- **externalid** (string): The ID of the customer in the external service
+- **email** (string): The email address of the customer
+- **additionalFields** (collection): Additional Fields
+  - Option: acceptsMarketing (value: undefined)
+- **ecommerceCustomerId** (number): ID of the E-commerce customer to update
+- **updateFields** (collection): The fields to update
+  - Option: connectionid (value: undefined)
+  - Option: externalid (value: undefined)
+  - Option: email (value: undefined)
+  - Option: acceptsMarketing (value: undefined)
+- **ecommerceCustomerId** (number): ID of the E-commerce customer to delete
+- **ecommerceCustomerId** (number): ID of the E-commerce customer to get
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **simple** (boolean): Whether to return a simplified version of the response instead of the raw data
+- **orderId** (number): The ID of the order whose products you'd like returned
+- **procuctId** (number): The ID of the product you'd like returned
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **simple** (boolean): Whether to return a simplified version of the response instead of the raw data

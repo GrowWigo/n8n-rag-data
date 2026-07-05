@@ -1,0 +1,344 @@
+# Node: Freshworks CRM
+
+**Name**: freshworksCrm
+**Category**: transform
+**Description**: Consume the Freshworks CRM API
+**Version**: 1
+
+## Common Usecase
+This node is an action node. It is used to perform tasks, integrate with APIs, or manipulate data within the workflow.
+
+## Inputs
+["main"]
+
+## Outputs
+["main"]
+
+## Properties & Settings
+These are the settings you can configure for this node:
+
+- **resource** (options): Resource
+  - Option: Account (value: account)
+  - Option: Appointment (value: appointment)
+  - Option: Contact (value: contact)
+  - Option: Deal (value: deal)
+  - Option: Note (value: note)
+  - Option: Sales Activity (value: salesActivity)
+  - Option: Search (value: search)
+  - Option: Task (value: task)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **name** (string): Name of the account
+- **additionalFields** (collection): Additional Fields
+  - Option: address (value: undefined)
+  - Option: annual_revenue (value: undefined)
+  - Option: business_type_id (value: undefined)
+  - Option: city (value: undefined)
+  - Option: country (value: undefined)
+  - Option: facebook (value: undefined)
+  - Option: industry_type_id (value: undefined)
+  - Option: linkedin (value: undefined)
+  - Option: number_of_employees (value: undefined)
+  - Option: owner_id (value: undefined)
+  - Option: parent_sales_account_id (value: undefined)
+  - Option: phone (value: undefined)
+  - Option: state (value: undefined)
+  - Option: territory_id (value: undefined)
+  - Option: twitter (value: undefined)
+  - Option: website (value: undefined)
+  - Option: zipcode (value: undefined)
+- **accountId** (string): ID of the account to delete
+- **accountId** (string): ID of the account to retrieve
+- **view** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **accountId** (string): ID of the account to update
+- **updateFields** (collection): Update Fields
+  - Option: address (value: undefined)
+  - Option: annual_revenue (value: undefined)
+  - Option: business_type_id (value: undefined)
+  - Option: city (value: undefined)
+  - Option: country (value: undefined)
+  - Option: facebook (value: undefined)
+  - Option: industry_type_id (value: undefined)
+  - Option: linkedin (value: undefined)
+  - Option: name (value: undefined)
+  - Option: number_of_employees (value: undefined)
+  - Option: owner_id (value: undefined)
+  - Option: parent_sales_account_id (value: undefined)
+  - Option: phone (value: undefined)
+  - Option: state (value: undefined)
+  - Option: territory_id (value: undefined)
+  - Option: twitter (value: undefined)
+  - Option: website (value: undefined)
+  - Option: zipcode (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **title** (string): Title of the appointment
+- **fromDate** (dateTime): Timestamp that denotes the start of appointment. Start date if this is an all-day appointment.
+- **endDate** (dateTime): Timestamp that denotes the end of appointment. End date if this is an all-day appointment.
+- **attendees** (fixedCollection): Attendees
+  - Option: attendee (value: undefined)
+- **additionalFields** (collection): Additional Fields
+  - Option: creater_id (value: undefined)
+  - Option: is_allday (value: undefined)
+  - Option: latitude (value: undefined)
+  - Option: location (value: undefined)
+  - Option: longitude (value: undefined)
+  - Option: outcome_id (value: undefined)
+  - Option: targetable_id (value: undefined)
+  - Option: targetable_type (value: undefined)
+  - Option: time_zone (value: undefined)
+- **appointmentId** (string): ID of the appointment to delete
+- **appointmentId** (string): ID of the appointment to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: include (value: undefined)
+  - Option: filter (value: undefined)
+- **appointmentId** (string): ID of the appointment to update
+- **updateFields** (collection): Update Fields
+  - Option: attendees (value: undefined)
+  - Option: creater_id (value: undefined)
+  - Option: endDate (value: undefined)
+  - Option: is_allday (value: undefined)
+  - Option: latitude (value: undefined)
+  - Option: location (value: undefined)
+  - Option: longitude (value: undefined)
+  - Option: outcome_id (value: undefined)
+  - Option: fromDate (value: undefined)
+  - Option: targetable_id (value: undefined)
+  - Option: targetable_type (value: undefined)
+  - Option: time_zone (value: undefined)
+  - Option: title (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **firstName** (string): First name of the contact
+- **lastName** (string): Last name of the contact
+- **emails** (string): Email addresses of the contact
+- **additionalFields** (collection): Additional Fields
+  - Option: address (value: undefined)
+  - Option: campaign_id (value: undefined)
+  - Option: city (value: undefined)
+  - Option: contact_status_id (value: undefined)
+  - Option: country (value: undefined)
+  - Option: external_id (value: undefined)
+  - Option: facebook (value: undefined)
+  - Option: job_title (value: undefined)
+  - Option: keyword (value: undefined)
+  - Option: lead_source_id (value: undefined)
+  - Option: lifecycle_stage_id (value: undefined)
+  - Option: linkedin (value: undefined)
+  - Option: medium (value: undefined)
+  - Option: mobile_number (value: undefined)
+  - Option: owner_id (value: undefined)
+  - Option: sales_accounts (value: undefined)
+  - Option: state (value: undefined)
+  - Option: subscription_status (value: undefined)
+  - Option: subscription_types (value: undefined)
+  - Option: territory_id (value: undefined)
+  - Option: time_zone (value: undefined)
+  - Option: twitter (value: undefined)
+  - Option: work_number (value: undefined)
+  - Option: zipcode (value: undefined)
+- **contactId** (string): ID of the contact to delete
+- **contactId** (string): ID of the contact to retrieve
+- **view** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **contactId** (string): ID of the contact to update
+- **updateFields** (collection): Update Fields
+  - Option: address (value: undefined)
+  - Option: campaign_id (value: undefined)
+  - Option: city (value: undefined)
+  - Option: contact_status_id (value: undefined)
+  - Option: country (value: undefined)
+  - Option: external_id (value: undefined)
+  - Option: facebook (value: undefined)
+  - Option: first_name (value: undefined)
+  - Option: job_title (value: undefined)
+  - Option: keyword (value: undefined)
+  - Option: last_name (value: undefined)
+  - Option: lead_source_id (value: undefined)
+  - Option: lifecycle_stage_id (value: undefined)
+  - Option: linkedin (value: undefined)
+  - Option: medium (value: undefined)
+  - Option: mobile_number (value: undefined)
+  - Option: owner_id (value: undefined)
+  - Option: sales_accounts (value: undefined)
+  - Option: state (value: undefined)
+  - Option: subscription_status (value: undefined)
+  - Option: subscription_types (value: undefined)
+  - Option: territory_id (value: undefined)
+  - Option: time_zone (value: undefined)
+  - Option: twitter (value: undefined)
+  - Option: work_number (value: undefined)
+  - Option: zipcode (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **amount** (number): Value of the deal
+- **name** (string): Name of the deal
+- **additionalFields** (collection): Additional Fields
+  - Option: base_currency_amount (value: undefined)
+  - Option: campaign_id (value: undefined)
+  - Option: currency_id (value: undefined)
+  - Option: deal_payment_status_id (value: undefined)
+  - Option: deal_pipeline_id (value: undefined)
+  - Option: deal_product_id (value: undefined)
+  - Option: deal_reason_id (value: undefined)
+  - Option: deal_stage_id (value: undefined)
+  - Option: deal_type_id (value: undefined)
+  - Option: lead_source_id (value: undefined)
+  - Option: owner_id (value: undefined)
+  - Option: probability (value: undefined)
+  - Option: sales_account_id (value: undefined)
+  - Option: territory_id (value: undefined)
+- **dealId** (string): ID of the deal to delete
+- **dealId** (string): ID of the deal to retrieve
+- **view** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **dealId** (string): ID of the deal to update
+- **updateFields** (collection): Update Fields
+  - Option: amount (value: undefined)
+  - Option: base_currency_amount (value: undefined)
+  - Option: campaign_id (value: undefined)
+  - Option: currency_id (value: undefined)
+  - Option: deal_payment_status_id (value: undefined)
+  - Option: deal_pipeline_id (value: undefined)
+  - Option: deal_product_id (value: undefined)
+  - Option: deal_reason_id (value: undefined)
+  - Option: deal_stage_id (value: undefined)
+  - Option: deal_type_id (value: undefined)
+  - Option: lead_source_id (value: undefined)
+  - Option: name (value: undefined)
+  - Option: owner_id (value: undefined)
+  - Option: probability (value: undefined)
+  - Option: sales_account_id (value: undefined)
+  - Option: territory_id (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Update (value: update)
+- **description** (string): Content of the note
+- **targetableType** (options): Type of the entity for which the note is created
+  - Option: Contact (value: Contact)
+  - Option: Deal (value: Deal)
+  - Option: Sales Account (value: SalesAccount)
+- **targetable_id** (string): ID of the entity for which note is created. The type of entity is selected in "Target Type".
+- **noteId** (string): ID of the note to delete
+- **noteId** (string): ID of the note to update
+- **updateFields** (collection): Update Fields
+  - Option: description (value: undefined)
+  - Option: targetable_id (value: undefined)
+  - Option: targetable_type (value: undefined)
+- **operation** (options): Operation
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+- **sales_activity_type_id** (options): ID of a sales activity type for which the sales activity is created. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **title** (string): Title of the sales activity to create
+- **ownerId** (options): ID of the user who owns the sales activity. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **from_date** (dateTime): Timestamp that denotes the end of sales activity
+- **end_date** (dateTime): Timestamp that denotes the end of sales activity
+- **targetableType** (options): Type of the entity for which the sales activity is created
+  - Option: Contact (value: Contact)
+  - Option: Deal (value: Deal)
+  - Option: Sales Account (value: SalesAccount)
+- **targetable_id** (string): ID of the entity for which the sales activity is created. The type of entity is selected in "Target Type".
+- **additionalFields** (collection): Additional Fields
+  - Option: creater_id (value: undefined)
+  - Option: latitude (value: undefined)
+  - Option: location (value: undefined)
+  - Option: longitude (value: undefined)
+  - Option: notes (value: undefined)
+  - Option: sales_activity_outcome_id (value: undefined)
+- **salesActivityId** (string): ID of the salesActivity to delete
+- **salesActivityId** (string): ID of the salesActivity to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **salesActivityId** (string): ID of the salesActivity to update
+- **updateFields** (collection): Update Fields
+  - Option: creater_id (value: undefined)
+  - Option: end_date (value: undefined)
+  - Option: latitude (value: undefined)
+  - Option: location (value: undefined)
+  - Option: longitude (value: undefined)
+  - Option: notes (value: undefined)
+  - Option: owner_id (value: undefined)
+  - Option: sales_activity_outcome_id (value: undefined)
+  - Option: sales_activity_type_id (value: undefined)
+  - Option: from_date (value: undefined)
+  - Option: targetable_id (value: undefined)
+  - Option: targetable_type (value: undefined)
+  - Option: title (value: undefined)
+- **operation** (options): Operation
+  - Option: Query (value: query)
+  - Option: Lookup (value: lookup)
+- **query** (string): Enter a term that will be used for searching entities
+- **entities** (multiOptions): Enter a term that will be used for searching entities
+  - Option: Contact (value: contact)
+  - Option: Deal (value: deal)
+  - Option: Sales Account (value: sales_account)
+  - Option: User (value: user)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **searchField** (options): Field against which the entities have to be searched
+  - Option: Email (value: email)
+  - Option: Name (value: name)
+  - Option: Custom Field (value: customField)
+- **customFieldName** (string): Custom Field Name
+- **customFieldValue** (string): Custom Field Value
+- **fieldValue** (string): Field Value
+- **options** (collection): Options
+  - Option: entities (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **title** (string): Title of the task
+- **dueDate** (dateTime): Timestamp that denotes when the task is due to be completed
+- **ownerId** (options): ID of the user to whom the task is assigned. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **targetableType** (options): Type of the entity for which the task is updated
+  - Option: Contact (value: Contact)
+  - Option: Deal (value: Deal)
+  - Option: SalesAccount (value: SalesAccount)
+- **targetable_id** (string): ID of the entity for which the task is created. The type of entity is selected in "Target Type".
+- **additionalFields** (collection): Additional Fields
+  - Option: creater_id (value: undefined)
+  - Option: outcome_id (value: undefined)
+  - Option: task_type_id (value: undefined)
+- **taskId** (string): ID of the task to delete
+- **taskId** (string): ID of the task to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: include (value: undefined)
+  - Option: filter (value: undefined)
+- **taskId** (string): ID of the task to update
+- **updateFields** (collection): Update Fields
+  - Option: creater_id (value: undefined)
+  - Option: dueDate (value: undefined)
+  - Option: outcome_id (value: undefined)
+  - Option: owner_id (value: undefined)
+  - Option: targetable_id (value: undefined)
+  - Option: targetable_type (value: undefined)
+  - Option: task_type_id (value: undefined)
+  - Option: title (value: undefined)

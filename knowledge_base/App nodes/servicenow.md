@@ -1,0 +1,269 @@
+# Node: ServiceNow
+
+**Name**: serviceNow
+**Category**: output
+**Description**: Consume ServiceNow API
+**Version**: 1
+
+## Common Usecase
+This node is an action node. It is used to perform tasks, integrate with APIs, or manipulate data within the workflow.
+
+## Inputs
+["main"]
+
+## Outputs
+["main"]
+
+## Properties & Settings
+These are the settings you can configure for this node:
+
+- **authentication** (options): Authentication method to use
+  - Option: Basic Auth (value: basicAuth)
+  - Option: OAuth2 (value: oAuth2)
+- **resource** (options): Resource
+  - Option: Attachment (value: attachment)
+  - Option: Business Service (value: businessService)
+  - Option: Configuration Item (value: configurationItems)
+  - Option: Department (value: department)
+  - Option: Dictionary (value: dictionary)
+  - Option: Incident (value: incident)
+  - Option: Table Record (value: tableRecord)
+  - Option: User (value: user)
+  - Option: User Group (value: userGroup)
+  - Option: User Role (value: userRole)
+- **operation** (options): Operation
+  - Option: Upload (value: upload)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+- **tableName** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **id** (string): Sys_id of the record in the table specified in Table Name that you want to attach the file to
+- **inputDataFieldName** (string): Name of the binary property that contains the data to upload
+- **options** (collection): Options
+  - Option: file_name (value: undefined)
+- **attachmentId** (string): Sys_id value of the attachment to delete
+- **attachmentId** (string): Sys_id value of the attachment to delete
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **download** (boolean): Download Attachments
+- **outputField** (string): Field name where downloaded data will be placed
+- **options** (collection): Options
+  - Option: queryFilter (value: undefined)
+- **operation** (options): Operation
+  - Option: Get Many (value: getAll)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: sysparm_exclude_reference_link (value: undefined)
+  - Option: sysparm_fields (value: undefined)
+  - Option: sysparm_query (value: undefined)
+  - Option: sysparm_display_value (value: undefined)
+- **operation** (options): Operation
+  - Option: Get Many (value: getAll)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: sysparm_exclude_reference_link (value: undefined)
+  - Option: sysparm_fields (value: undefined)
+  - Option: sysparm_query (value: undefined)
+  - Option: sysparm_display_value (value: undefined)
+- **operation** (options): Operation
+  - Option: Get Many (value: getAll)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: sysparm_exclude_reference_link (value: undefined)
+  - Option: sysparm_fields (value: undefined)
+  - Option: sysparm_query (value: undefined)
+  - Option: sysparm_display_value (value: undefined)
+- **operation** (options): Operation
+  - Option: Get Many (value: getAll)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: sysparm_exclude_reference_link (value: undefined)
+  - Option: sysparm_fields (value: undefined)
+  - Option: sysparm_query (value: undefined)
+  - Option: sysparm_display_value (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **short_description** (string): Short description of the incident
+- **additionalFields** (collection): Additional Fields
+  - Option: assigned_to (value: undefined)
+  - Option: assignment_group (value: undefined)
+  - Option: business_service (value: undefined)
+  - Option: caller_id (value: undefined)
+  - Option: category (value: undefined)
+  - Option: close_notes (value: undefined)
+  - Option: cmdb_ci (value: undefined)
+  - Option: contact_type (value: undefined)
+  - Option: description (value: undefined)
+  - Option: impact (value: undefined)
+  - Option: close_code (value: undefined)
+  - Option: state (value: undefined)
+  - Option: subcategory (value: undefined)
+  - Option: urgency (value: undefined)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: sysparm_exclude_reference_link (value: undefined)
+  - Option: sysparm_fields (value: undefined)
+  - Option: sysparm_query (value: undefined)
+  - Option: sysparm_display_value (value: undefined)
+- **id** (string): Unique identifier of the incident
+- **options** (collection): Options
+  - Option: sysparm_exclude_reference_link (value: undefined)
+  - Option: sysparm_fields (value: undefined)
+  - Option: sysparm_display_value (value: undefined)
+- **id** (string): Unique identifier of the incident
+- **updateFields** (collection): Update Fields
+  - Option: assigned_to (value: undefined)
+  - Option: assignment_group (value: undefined)
+  - Option: business_service (value: undefined)
+  - Option: caller_id (value: undefined)
+  - Option: category (value: undefined)
+  - Option: close_notes (value: undefined)
+  - Option: cmdb_ci (value: undefined)
+  - Option: contact_type (value: undefined)
+  - Option: description (value: undefined)
+  - Option: impact (value: undefined)
+  - Option: close_code (value: undefined)
+  - Option: hold_reason (value: undefined)
+  - Option: state (value: undefined)
+  - Option: subcategory (value: undefined)
+  - Option: urgency (value: undefined)
+  - Option: work_notes (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **tableName** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **dataToSend** (options): Data to Send
+  - Option: Auto-Map Input Data to Columns (value: mapInput)
+  - Option: Define Below for Each Column (value: columns)
+  - Option: Nothing (value: nothing)
+- **inputsToIgnore** (string): List of input properties to avoid sending, separated by commas. Leave empty to send all inputs.
+- **fieldsToSend** (fixedCollection): Fields to Send
+  - Option: field (value: undefined)
+- **tableName** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: sysparm_exclude_reference_link (value: undefined)
+  - Option: sysparm_fields (value: undefined)
+  - Option: sysparm_query (value: undefined)
+  - Option: sysparm_display_value (value: undefined)
+- **tableName** (options): Name of the table in which the record exists. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **id** (string): Unique identifier of the record
+- **options** (collection): Options
+  - Option: sysparm_exclude_reference_link (value: undefined)
+  - Option: sysparm_fields (value: undefined)
+  - Option: sysparm_display_value (value: undefined)
+- **tableName** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **id** (string): Unique identifier of the record
+- **dataToSend** (options): Data to Send
+  - Option: Auto-Map Input Data to Columns (value: mapInput)
+  - Option: Define Below for Each Column (value: columns)
+  - Option: Nothing (value: nothing)
+- **inputsToIgnore** (string): List of input properties to avoid sending, separated by commas. Leave empty to send all inputs.
+- **fieldsToSend** (fixedCollection): Fields to Send
+  - Option: field (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **short_description** (string): Short description of the user
+- **additionalFields** (collection): Additional Fields
+  - Option: active (value: undefined)
+  - Option: building (value: undefined)
+  - Option: city (value: undefined)
+  - Option: company (value: undefined)
+  - Option: country (value: undefined)
+  - Option: department (value: undefined)
+  - Option: email (value: undefined)
+  - Option: first_name (value: undefined)
+  - Option: gender (value: undefined)
+  - Option: home_phone (value: undefined)
+  - Option: last_name (value: undefined)
+  - Option: location (value: undefined)
+  - Option: manager (value: undefined)
+  - Option: middle_name (value: undefined)
+  - Option: mobile_phone (value: undefined)
+  - Option: user_password (value: undefined)
+  - Option: password_needs_reset (value: undefined)
+  - Option: phone (value: undefined)
+  - Option: roles (value: undefined)
+  - Option: source (value: undefined)
+  - Option: state (value: undefined)
+  - Option: street (value: undefined)
+  - Option: user_name (value: undefined)
+  - Option: zip (value: undefined)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: sysparm_exclude_reference_link (value: undefined)
+  - Option: sysparm_fields (value: undefined)
+  - Option: sysparm_query (value: undefined)
+  - Option: sysparm_display_value (value: undefined)
+- **getOption** (options): Unique identifier of the user
+  - Option: ID (value: id)
+  - Option: Username (value: user_name)
+- **user_name** (string): Unique identifier of the user
+- **id** (string): Unique identifier of the user
+- **id** (string): Unique identifier of the user
+- **options** (collection): Options
+  - Option: sysparm_exclude_reference_link (value: undefined)
+  - Option: sysparm_fields (value: undefined)
+  - Option: sysparm_display_value (value: undefined)
+- **id** (string): Unique identifier of the user
+- **updateFields** (collection): Update Fields
+  - Option: active (value: undefined)
+  - Option: building (value: undefined)
+  - Option: city (value: undefined)
+  - Option: company (value: undefined)
+  - Option: country (value: undefined)
+  - Option: department (value: undefined)
+  - Option: email (value: undefined)
+  - Option: first_name (value: undefined)
+  - Option: gender (value: undefined)
+  - Option: home_phone (value: undefined)
+  - Option: last_name (value: undefined)
+  - Option: location (value: undefined)
+  - Option: manager (value: undefined)
+  - Option: middle_name (value: undefined)
+  - Option: mobile_phone (value: undefined)
+  - Option: user_password (value: undefined)
+  - Option: password_needs_reset (value: undefined)
+  - Option: phone (value: undefined)
+  - Option: roles (value: undefined)
+  - Option: source (value: undefined)
+  - Option: state (value: undefined)
+  - Option: street (value: undefined)
+  - Option: user_name (value: undefined)
+  - Option: zip (value: undefined)
+- **operation** (options): Operation
+  - Option: Get Many (value: getAll)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: sysparm_exclude_reference_link (value: undefined)
+  - Option: sysparm_fields (value: undefined)
+  - Option: sysparm_query (value: undefined)
+  - Option: sysparm_display_value (value: undefined)
+- **operation** (options): Operation
+  - Option: Get Many (value: getAll)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: sysparm_exclude_reference_link (value: undefined)
+  - Option: sysparm_fields (value: undefined)
+  - Option: sysparm_query (value: undefined)
+  - Option: sysparm_display_value (value: undefined)

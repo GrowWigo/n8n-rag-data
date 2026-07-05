@@ -1,0 +1,698 @@
+# Node: Zoho CRM
+
+**Name**: zohoCrm
+**Category**: transform
+**Description**: Consume Zoho CRM API
+**Version**: 1
+
+## Common Usecase
+This node is an action node. It is used to perform tasks, integrate with APIs, or manipulate data within the workflow.
+
+## Inputs
+["main"]
+
+## Outputs
+["main"]
+
+## Properties & Settings
+These are the settings you can configure for this node:
+
+- **resource** (options): Resource
+  - Option: Account (value: account)
+  - Option: Contact (value: contact)
+  - Option: Deal (value: deal)
+  - Option: Invoice (value: invoice)
+  - Option: Lead (value: lead)
+  - Option: Product (value: product)
+  - Option: Purchase Order (value: purchaseOrder)
+  - Option: Quote (value: quote)
+  - Option: Sales Order (value: salesOrder)
+  - Option: Vendor (value: vendor)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Create or Update (value: upsert)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **accountName** (string): Account Name
+- **accountName** (string): Name of the account. If a record with this account name exists it will be updated, otherwise a new one will be created.
+- **additionalFields** (collection): Additional Fields
+  - Option: Account_Number (value: undefined)
+  - Option: Account_Site (value: undefined)
+  - Option: Account_Type (value: undefined)
+  - Option: Annual_Revenue (value: undefined)
+  - Option: Billing_Address (value: undefined)
+  - Option: Contact_Details (value: undefined)
+  - Option: Currency (value: undefined)
+  - Option: customFields (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: Employees (value: undefined)
+  - Option: Exchange_Rate (value: undefined)
+  - Option: Fax (value: undefined)
+  - Option: Industry (value: undefined)
+  - Option: Phone (value: undefined)
+  - Option: Shipping_Address (value: undefined)
+  - Option: Ticker_Symbol (value: undefined)
+  - Option: Website (value: undefined)
+- **accountId** (string): ID of the account to delete. Can be found at the end of the URL.
+- **accountId** (string): ID of the account to retrieve. Can be found at the end of the URL.
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: approved (value: undefined)
+  - Option: converted (value: undefined)
+  - Option: fields (value: undefined)
+  - Option: include_child (value: undefined)
+  - Option: sort_by (value: undefined)
+  - Option: sort_order (value: undefined)
+  - Option: territory_id (value: undefined)
+- **accountId** (string): ID of the account to update. Can be found at the end of the URL.
+- **updateFields** (collection): Update Fields
+  - Option: Account_Name (value: undefined)
+  - Option: Account_Number (value: undefined)
+  - Option: Account_Site (value: undefined)
+  - Option: Account_Type (value: undefined)
+  - Option: Annual_Revenue (value: undefined)
+  - Option: Billing_Address (value: undefined)
+  - Option: Contact_Details (value: undefined)
+  - Option: Currency (value: undefined)
+  - Option: customFields (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: Employees (value: undefined)
+  - Option: Exchange_Rate (value: undefined)
+  - Option: Fax (value: undefined)
+  - Option: Industry (value: undefined)
+  - Option: Phone (value: undefined)
+  - Option: Shipping_Address (value: undefined)
+  - Option: Ticker_Symbol (value: undefined)
+  - Option: Website (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Create or Update (value: upsert)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **lastName** (string): Last Name
+- **additionalFields** (collection): Additional Fields
+  - Option: Assistant (value: undefined)
+  - Option: customFields (value: undefined)
+  - Option: Date_of_Birth (value: undefined)
+  - Option: Department (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: Email (value: undefined)
+  - Option: Secondary_Email (value: undefined)
+  - Option: Fax (value: undefined)
+  - Option: First_Name (value: undefined)
+  - Option: Full_Name (value: undefined)
+  - Option: Mailing_Address (value: undefined)
+  - Option: Mobile (value: undefined)
+  - Option: Other_Address (value: undefined)
+  - Option: Phone (value: undefined)
+  - Option: Asst_Phone (value: undefined)
+  - Option: Home_Phone (value: undefined)
+  - Option: Other_Phone (value: undefined)
+  - Option: Salutation (value: undefined)
+  - Option: Skype_ID (value: undefined)
+  - Option: Title (value: undefined)
+  - Option: Twitter (value: undefined)
+- **lastName** (string): Last Name
+- **additionalFields** (collection): Additional Fields
+  - Option: Assistant (value: undefined)
+  - Option: customFields (value: undefined)
+  - Option: Date_of_Birth (value: undefined)
+  - Option: Department (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: Email (value: undefined)
+  - Option: Secondary_Email (value: undefined)
+  - Option: Fax (value: undefined)
+  - Option: First_Name (value: undefined)
+  - Option: Full_Name (value: undefined)
+  - Option: Mailing_Address (value: undefined)
+  - Option: Mobile (value: undefined)
+  - Option: Other_Address (value: undefined)
+  - Option: Phone (value: undefined)
+  - Option: Asst_Phone (value: undefined)
+  - Option: Home_Phone (value: undefined)
+  - Option: Other_Phone (value: undefined)
+  - Option: Salutation (value: undefined)
+  - Option: Skype_ID (value: undefined)
+  - Option: Title (value: undefined)
+  - Option: Twitter (value: undefined)
+- **contactId** (string): ID of the contact to delete
+- **contactId** (string): ID of the contact to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: approved (value: undefined)
+  - Option: converted (value: undefined)
+  - Option: fields (value: undefined)
+  - Option: include_child (value: undefined)
+  - Option: sort_by (value: undefined)
+  - Option: sort_order (value: undefined)
+  - Option: territory_id (value: undefined)
+- **contactId** (string): ID of the contact to update
+- **updateFields** (collection): Update Fields
+  - Option: Assistant (value: undefined)
+  - Option: Asst_Phone (value: undefined)
+  - Option: Currency (value: undefined)
+  - Option: customFields (value: undefined)
+  - Option: Date_of_Birth (value: undefined)
+  - Option: Department (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: Email (value: undefined)
+  - Option: Secondary_Email (value: undefined)
+  - Option: Fax (value: undefined)
+  - Option: First_Name (value: undefined)
+  - Option: Full_Name (value: undefined)
+  - Option: Home_Phone (value: undefined)
+  - Option: Last_Name (value: undefined)
+  - Option: Mailing_Address (value: undefined)
+  - Option: Mobile (value: undefined)
+  - Option: Other_Address (value: undefined)
+  - Option: Other_Phone (value: undefined)
+  - Option: Phone (value: undefined)
+  - Option: Salutation (value: undefined)
+  - Option: Skype_ID (value: undefined)
+  - Option: Title (value: undefined)
+  - Option: Twitter (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Create or Update (value: upsert)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **dealName** (string): Deal Name
+- **dealName** (string): Name of the deal. If a record with this deal name exists it will be updated, otherwise a new one will be created.
+- **stage** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **additionalFields** (collection): Additional Fields
+  - Option: Amount (value: undefined)
+  - Option: Closing_Date (value: undefined)
+  - Option: Currency (value: undefined)
+  - Option: customFields (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: Lead_Conversion_Time (value: undefined)
+  - Option: Next_Step (value: undefined)
+  - Option: Overall_Sales_Duration (value: undefined)
+  - Option: Probability (value: undefined)
+  - Option: Sales_Cycle_Duration (value: undefined)
+- **dealId** (string): ID of the deal to delete
+- **dealId** (string): ID of the deal to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: approved (value: undefined)
+  - Option: converted (value: undefined)
+  - Option: fields (value: undefined)
+  - Option: include_child (value: undefined)
+  - Option: sort_by (value: undefined)
+  - Option: sort_order (value: undefined)
+  - Option: territory_id (value: undefined)
+- **dealId** (string): ID of the deal to update
+- **updateFields** (collection): Update Fields
+  - Option: Amount (value: undefined)
+  - Option: Closing_Date (value: undefined)
+  - Option: Currency (value: undefined)
+  - Option: customFields (value: undefined)
+  - Option: Deal_Name (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: Lead_Conversion_Time (value: undefined)
+  - Option: Next_Step (value: undefined)
+  - Option: Overall_Sales_Duration (value: undefined)
+  - Option: Probability (value: undefined)
+  - Option: Sales_Cycle_Duration (value: undefined)
+  - Option: Stage (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Create or Update (value: upsert)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **subject** (string): Subject or title of the invoice
+- **subject** (string): Subject or title of the invoice. If a record with this subject exists it will be updated, otherwise a new one will be created.
+- **Product_Details** (collection): Products
+  - Option: list_price (value: undefined)
+  - Option: id (value: undefined)
+  - Option: product_description (value: undefined)
+  - Option: quantity (value: undefined)
+  - Option: quantity_in_stock (value: undefined)
+  - Option: Tax (value: undefined)
+  - Option: total (value: undefined)
+  - Option: total_after_discount (value: undefined)
+  - Option: net_total (value: undefined)
+  - Option: unit_price (value: undefined)
+- **additionalFields** (collection): Additional Fields
+  - Option: accountId (value: undefined)
+  - Option: Adjustment (value: undefined)
+  - Option: Billing_Address (value: undefined)
+  - Option: Currency (value: undefined)
+  - Option: customFields (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: Due_Date (value: undefined)
+  - Option: Exchange_Rate (value: undefined)
+  - Option: Grand_Total (value: undefined)
+  - Option: Invoice_Date (value: undefined)
+  - Option: Invoice_Number (value: undefined)
+  - Option: Sales_Commission (value: undefined)
+  - Option: Shipping_Address (value: undefined)
+  - Option: Status (value: undefined)
+  - Option: Sub_Total (value: undefined)
+  - Option: Tax (value: undefined)
+  - Option: Terms_and_Conditions (value: undefined)
+- **invoiceId** (string): ID of the invoice to delete
+- **invoiceId** (string): ID of the invoice to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: approved (value: undefined)
+  - Option: converted (value: undefined)
+  - Option: fields (value: undefined)
+  - Option: include_child (value: undefined)
+  - Option: sort_by (value: undefined)
+  - Option: sort_order (value: undefined)
+  - Option: territory_id (value: undefined)
+- **invoiceId** (string): ID of the invoice to update
+- **updateFields** (collection): Update Fields
+  - Option: accountId (value: undefined)
+  - Option: Adjustment (value: undefined)
+  - Option: Billing_Address (value: undefined)
+  - Option: Currency (value: undefined)
+  - Option: customFields (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: Due_Date (value: undefined)
+  - Option: Exchange_Rate (value: undefined)
+  - Option: Grand_Total (value: undefined)
+  - Option: Invoice_Date (value: undefined)
+  - Option: Invoice_Number (value: undefined)
+  - Option: Product_Details (value: undefined)
+  - Option: Sales_Commission (value: undefined)
+  - Option: Shipping_Address (value: undefined)
+  - Option: Status (value: undefined)
+  - Option: Sub_Total (value: undefined)
+  - Option: Subject (value: undefined)
+  - Option: Tax (value: undefined)
+  - Option: Terms_and_Conditions (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Create or Update (value: upsert)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Fields (value: getFields)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **Company** (string): Company at which the lead works
+- **lastName** (string): Last Name
+- **additionalFields** (collection): Additional Fields
+  - Option: Address (value: undefined)
+  - Option: Annual_Revenue (value: undefined)
+  - Option: Currency (value: undefined)
+  - Option: customFields (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: Designation (value: undefined)
+  - Option: Email (value: undefined)
+  - Option: Email_Opt_Out (value: undefined)
+  - Option: Fax (value: undefined)
+  - Option: First_Name (value: undefined)
+  - Option: Full_Name (value: undefined)
+  - Option: Industry (value: undefined)
+  - Option: Industry_Type (value: undefined)
+  - Option: Lead_Source (value: undefined)
+  - Option: Lead_Status (value: undefined)
+  - Option: Mobile (value: undefined)
+  - Option: No_of_Employees (value: undefined)
+  - Option: Phone (value: undefined)
+  - Option: Salutation (value: undefined)
+  - Option: Secondary_Email (value: undefined)
+  - Option: Skype_ID (value: undefined)
+  - Option: Twitter (value: undefined)
+  - Option: Website (value: undefined)
+- **Company** (string): Company at which the lead works
+- **lastName** (string): Last Name
+- **additionalFields** (collection): Additional Fields
+  - Option: Address (value: undefined)
+  - Option: Annual_Revenue (value: undefined)
+  - Option: Currency (value: undefined)
+  - Option: customFields (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: Designation (value: undefined)
+  - Option: Email (value: undefined)
+  - Option: Email_Opt_Out (value: undefined)
+  - Option: Fax (value: undefined)
+  - Option: First_Name (value: undefined)
+  - Option: Full_Name (value: undefined)
+  - Option: Industry (value: undefined)
+  - Option: Industry_Type (value: undefined)
+  - Option: Lead_Source (value: undefined)
+  - Option: Lead_Status (value: undefined)
+  - Option: Mobile (value: undefined)
+  - Option: No_of_Employees (value: undefined)
+  - Option: Phone (value: undefined)
+  - Option: Salutation (value: undefined)
+  - Option: Secondary_Email (value: undefined)
+  - Option: Skype_ID (value: undefined)
+  - Option: Twitter (value: undefined)
+  - Option: Website (value: undefined)
+- **leadId** (string): ID of the lead to delete
+- **leadId** (string): ID of the lead to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: approved (value: undefined)
+  - Option: converted (value: undefined)
+  - Option: fields (value: undefined)
+  - Option: include_child (value: undefined)
+  - Option: sort_by (value: undefined)
+  - Option: sort_order (value: undefined)
+  - Option: territory_id (value: undefined)
+- **leadId** (string): ID of the lead to update
+- **updateFields** (collection): Update Fields
+  - Option: Address (value: undefined)
+  - Option: Annual_Revenue (value: undefined)
+  - Option: Company (value: undefined)
+  - Option: Currency (value: undefined)
+  - Option: customFields (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: Designation (value: undefined)
+  - Option: Email (value: undefined)
+  - Option: Email_Opt_Out (value: undefined)
+  - Option: Fax (value: undefined)
+  - Option: First_Name (value: undefined)
+  - Option: Full_Name (value: undefined)
+  - Option: Industry (value: undefined)
+  - Option: Industry_Type (value: undefined)
+  - Option: Last_Name (value: undefined)
+  - Option: Lead_Source (value: undefined)
+  - Option: Lead_Status (value: undefined)
+  - Option: Mobile (value: undefined)
+  - Option: No_of_Employees (value: undefined)
+  - Option: Phone (value: undefined)
+  - Option: Salutation (value: undefined)
+  - Option: Secondary_Email (value: undefined)
+  - Option: Skype_ID (value: undefined)
+  - Option: Twitter (value: undefined)
+  - Option: Website (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Create or Update (value: upsert)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **productName** (string): Product Name
+- **productName** (string): Name of the product. If a record with this product name exists it will be updated, otherwise a new one will be created.
+- **additionalFields** (collection): Additional Fields
+  - Option: Commission_Rate (value: undefined)
+  - Option: customFields (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: Manufacturer (value: undefined)
+  - Option: Product_Active (value: undefined)
+  - Option: Product_Category (value: undefined)
+  - Option: Qty_in_Demand (value: undefined)
+  - Option: Qty_in_Stock (value: undefined)
+  - Option: Taxable (value: undefined)
+  - Option: Unit_Price (value: undefined)
+- **productId** (string): ID of the product to delete
+- **productId** (string): ID of the product to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: approved (value: undefined)
+  - Option: converted (value: undefined)
+  - Option: fields (value: undefined)
+  - Option: include_child (value: undefined)
+  - Option: sort_by (value: undefined)
+  - Option: sort_order (value: undefined)
+  - Option: territory_id (value: undefined)
+- **productId** (string): ID of the product to update
+- **updateFields** (collection): Update Fields
+  - Option: Commission_Rate (value: undefined)
+  - Option: customFields (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: Manufacturer (value: undefined)
+  - Option: Product_Active (value: undefined)
+  - Option: Product_Category (value: undefined)
+  - Option: Qty_in_Demand (value: undefined)
+  - Option: Qty_in_Stock (value: undefined)
+  - Option: Taxable (value: undefined)
+  - Option: Unit_Price (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Create or Update (value: upsert)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **subject** (string): Subject or title of the purchase order
+- **subject** (string): Subject or title of the purchase order. If a record with this subject exists it will be updated, otherwise a new one will be created.
+- **vendorId** (options): ID of the vendor associated with the purchase order. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **Product_Details** (collection): Products
+  - Option: list_price (value: undefined)
+  - Option: id (value: undefined)
+  - Option: product_description (value: undefined)
+  - Option: quantity (value: undefined)
+  - Option: quantity_in_stock (value: undefined)
+  - Option: Tax (value: undefined)
+  - Option: total (value: undefined)
+  - Option: total_after_discount (value: undefined)
+  - Option: net_total (value: undefined)
+  - Option: unit_price (value: undefined)
+- **additionalFields** (collection): Additional Fields
+  - Option: Adjustment (value: undefined)
+  - Option: Billing_Address (value: undefined)
+  - Option: Carrier (value: undefined)
+  - Option: Currency (value: undefined)
+  - Option: customFields (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: Discount (value: undefined)
+  - Option: Due_Date (value: undefined)
+  - Option: Exchange_Rate (value: undefined)
+  - Option: Grand_Total (value: undefined)
+  - Option: PO_Date (value: undefined)
+  - Option: PO_Number (value: undefined)
+  - Option: Sales_Commission (value: undefined)
+  - Option: Shipping_Address (value: undefined)
+  - Option: Status (value: undefined)
+  - Option: Sub_Total (value: undefined)
+  - Option: Tax (value: undefined)
+  - Option: Terms_and_Conditions (value: undefined)
+  - Option: Tracking_Number (value: undefined)
+- **purchaseOrderId** (string): ID of the purchase order to delete
+- **purchaseOrderId** (string): ID of the purchase order to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: approved (value: undefined)
+  - Option: converted (value: undefined)
+  - Option: fields (value: undefined)
+  - Option: include_child (value: undefined)
+  - Option: sort_by (value: undefined)
+  - Option: sort_order (value: undefined)
+  - Option: territory_id (value: undefined)
+- **purchaseOrderId** (string): ID of the purchase order to update
+- **updateFields** (collection): Update Fields
+  - Option: Adjustment (value: undefined)
+  - Option: Billing_Address (value: undefined)
+  - Option: Carrier (value: undefined)
+  - Option: Currency (value: undefined)
+  - Option: customFields (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: Discount (value: undefined)
+  - Option: Due_Date (value: undefined)
+  - Option: Exchange_Rate (value: undefined)
+  - Option: Grand_Total (value: undefined)
+  - Option: PO_Date (value: undefined)
+  - Option: PO_Number (value: undefined)
+  - Option: Sales_Commission (value: undefined)
+  - Option: Shipping_Address (value: undefined)
+  - Option: Status (value: undefined)
+  - Option: Sub_Total (value: undefined)
+  - Option: Subject (value: undefined)
+  - Option: Tax (value: undefined)
+  - Option: Terms_and_Conditions (value: undefined)
+  - Option: Tracking_Number (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Create or Update (value: upsert)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **subject** (string): Subject or title of the quote
+- **subject** (string): Subject or title of the quote. If a record with this subject exists it will be updated, otherwise a new one will be created.
+- **Product_Details** (collection): Products
+  - Option: list_price (value: undefined)
+  - Option: id (value: undefined)
+  - Option: product_description (value: undefined)
+  - Option: quantity (value: undefined)
+  - Option: quantity_in_stock (value: undefined)
+  - Option: Tax (value: undefined)
+  - Option: total (value: undefined)
+  - Option: total_after_discount (value: undefined)
+  - Option: net_total (value: undefined)
+  - Option: unit_price (value: undefined)
+- **additionalFields** (collection): Additional Fields
+  - Option: Adjustment (value: undefined)
+  - Option: Billing_Address (value: undefined)
+  - Option: Carrier (value: undefined)
+  - Option: Currency (value: undefined)
+  - Option: customFields (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: Exchange_Rate (value: undefined)
+  - Option: Grand_Total (value: undefined)
+  - Option: Quote_Stage (value: undefined)
+  - Option: Shipping_Address (value: undefined)
+  - Option: Sub_Total (value: undefined)
+  - Option: Tax (value: undefined)
+  - Option: Team (value: undefined)
+  - Option: Terms_and_Conditions (value: undefined)
+  - Option: Valid_Till (value: undefined)
+- **quoteId** (string): ID of the quote to delete
+- **quoteId** (string): ID of the quote to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: approved (value: undefined)
+  - Option: converted (value: undefined)
+  - Option: fields (value: undefined)
+  - Option: include_child (value: undefined)
+  - Option: sort_by (value: undefined)
+  - Option: sort_order (value: undefined)
+  - Option: territory_id (value: undefined)
+- **quoteId** (string): ID of the quote to update
+- **updateFields** (collection): Update Fields
+  - Option: Adjustment (value: undefined)
+  - Option: Billing_Address (value: undefined)
+  - Option: Carrier (value: undefined)
+  - Option: Currency (value: undefined)
+  - Option: customFields (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: Exchange_Rate (value: undefined)
+  - Option: Grand_Total (value: undefined)
+  - Option: Quote_Stage (value: undefined)
+  - Option: Shipping_Address (value: undefined)
+  - Option: Sub_Total (value: undefined)
+  - Option: Subject (value: undefined)
+  - Option: Tax (value: undefined)
+  - Option: Team (value: undefined)
+  - Option: Terms_and_Conditions (value: undefined)
+  - Option: Valid_Till (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Create or Update (value: upsert)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **accountId** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **subject** (string): Subject or title of the sales order
+- **subject** (string): Subject or title of the sales order. If a record with this subject exists it will be updated, otherwise a new one will be created.
+- **Product_Details** (collection): Products
+  - Option: list_price (value: undefined)
+  - Option: id (value: undefined)
+  - Option: product_description (value: undefined)
+  - Option: quantity (value: undefined)
+  - Option: quantity_in_stock (value: undefined)
+  - Option: Tax (value: undefined)
+  - Option: total (value: undefined)
+  - Option: total_after_discount (value: undefined)
+  - Option: net_total (value: undefined)
+  - Option: unit_price (value: undefined)
+- **additionalFields** (collection): Additional Fields
+  - Option: Adjustment (value: undefined)
+  - Option: Billing_Address (value: undefined)
+  - Option: Carrier (value: undefined)
+  - Option: contactId (value: undefined)
+  - Option: Currency (value: undefined)
+  - Option: customFields (value: undefined)
+  - Option: dealId (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: Discount (value: undefined)
+  - Option: Due_Date (value: undefined)
+  - Option: Exchange_Rate (value: undefined)
+  - Option: Grand_Total (value: undefined)
+  - Option: SO_Number (value: undefined)
+  - Option: Sales_Commission (value: undefined)
+  - Option: Shipping_Address (value: undefined)
+  - Option: Status (value: undefined)
+  - Option: Sub_Total (value: undefined)
+  - Option: Tax (value: undefined)
+  - Option: Terms_and_Conditions (value: undefined)
+- **salesOrderId** (string): ID of the sales order to delete
+- **salesOrderId** (string): ID of the sales order to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: approved (value: undefined)
+  - Option: converted (value: undefined)
+  - Option: fields (value: undefined)
+  - Option: include_child (value: undefined)
+  - Option: sort_by (value: undefined)
+  - Option: sort_order (value: undefined)
+  - Option: territory_id (value: undefined)
+- **salesOrderId** (string): ID of the sales order to update
+- **updateFields** (collection): Update Fields
+  - Option: accountId (value: undefined)
+  - Option: Adjustment (value: undefined)
+  - Option: Billing_Address (value: undefined)
+  - Option: Carrier (value: undefined)
+  - Option: contactId (value: undefined)
+  - Option: Currency (value: undefined)
+  - Option: customFields (value: undefined)
+  - Option: dealId (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: Discount (value: undefined)
+  - Option: Due_Date (value: undefined)
+  - Option: Exchange_Rate (value: undefined)
+  - Option: Grand_Total (value: undefined)
+  - Option: SO_Number (value: undefined)
+  - Option: Sales_Commission (value: undefined)
+  - Option: Shipping_Address (value: undefined)
+  - Option: Status (value: undefined)
+  - Option: Sub_Total (value: undefined)
+  - Option: Subject (value: undefined)
+  - Option: Tax (value: undefined)
+  - Option: Terms_and_Conditions (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Create or Update (value: upsert)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **vendorName** (string): Vendor Name
+- **vendorName** (string): Name of the vendor. If a record with this vendor name exists it will be updated, otherwise a new one will be created.
+- **additionalFields** (collection): Additional Fields
+  - Option: Address (value: undefined)
+  - Option: Category (value: undefined)
+  - Option: Currency (value: undefined)
+  - Option: customFields (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: Email (value: undefined)
+  - Option: Phone (value: undefined)
+  - Option: Website (value: undefined)
+- **vendorId** (string): ID of the vendor to delete
+- **vendorId** (string): ID of the vendor to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: approved (value: undefined)
+  - Option: converted (value: undefined)
+  - Option: fields (value: undefined)
+  - Option: include_child (value: undefined)
+  - Option: sort_by (value: undefined)
+  - Option: sort_order (value: undefined)
+  - Option: territory_id (value: undefined)
+- **vendorId** (string): ID of the vendor to update
+- **updateFields** (collection): Update Fields
+  - Option: Address (value: undefined)
+  - Option: Category (value: undefined)
+  - Option: Currency (value: undefined)
+  - Option: customFields (value: undefined)
+  - Option: Description (value: undefined)
+  - Option: Email (value: undefined)
+  - Option: Phone (value: undefined)
+  - Option: Vendor_Name (value: undefined)
+  - Option: Website (value: undefined)

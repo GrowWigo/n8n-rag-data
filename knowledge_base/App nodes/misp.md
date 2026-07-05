@@ -1,0 +1,230 @@
+# Node: MISP
+
+**Name**: misp
+**Category**: transform
+**Description**: Consume the MISP API
+**Version**: 1
+
+## Common Usecase
+This node is an action node. It is used to perform tasks, integrate with APIs, or manipulate data within the workflow.
+
+## Inputs
+["main"]
+
+## Outputs
+["main"]
+
+## Properties & Settings
+These are the settings you can configure for this node:
+
+- **resource** (options): Resource
+  - Option: Attribute (value: attribute)
+  - Option: Event (value: event)
+  - Option: Event Tag (value: eventTag)
+  - Option: Feed (value: feed)
+  - Option: Galaxy (value: galaxy)
+  - Option: Noticelist (value: noticelist)
+  - Option: Object (value: object)
+  - Option: Organisation (value: organisation)
+  - Option: Tag (value: tag)
+  - Option: User (value: user)
+  - Option: Warninglist (value: warninglist)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Search (value: search)
+  - Option: Update (value: update)
+- **eventId** (string): UUID of the event to attach the attribute to
+- **type** (options): Type
+  - Option: Text (value: text)
+  - Option: URL (value: url)
+  - Option: Comment (value: comment)
+- **value** (string): Value
+- **additionalFields** (collection): Additional Fields
+  - Option: distribution (value: undefined)
+  - Option: sharing_group_id (value: undefined)
+- **attributeId** (string): UUID or numeric ID of the attribute
+- **attributeId** (string): UUID or numeric ID of the attribute
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **useJson** (boolean): Whether to use JSON to specify the fields for the search request
+- **jsonOutput** (json): Get more info at {YOUR_BASE_URL_SPECIFIED_IN_CREDENTIALS}/api/openapi#operation/restSearchAttributes
+- **value** (string): Value
+- **additionalFields** (collection): Additional Fields
+  - Option: category (value: undefined)
+  - Option: deleted (value: undefined)
+  - Option: searchall (value: undefined)
+  - Option: tags (value: undefined)
+  - Option: type (value: undefined)
+  - Option: published (value: undefined)
+- **attributeId** (string): ID of the attribute to update
+- **updateFields** (collection): Update Fields
+  - Option: distribution (value: undefined)
+  - Option: sharing_group_id (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Publish (value: publish)
+  - Option: Search (value: search)
+  - Option: Unpublish (value: unpublish)
+  - Option: Update (value: update)
+- **org_id** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **information** (string): Information on the event - max 65535 characters
+- **additionalFields** (collection): Additional Fields
+  - Option: analysis (value: undefined)
+  - Option: distribution (value: undefined)
+  - Option: sharing_group_id (value: undefined)
+  - Option: threat_level_id (value: undefined)
+- **eventId** (string): UUID or numeric ID of the event
+- **eventId** (string): UUID or numeric ID of the event
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **eventId** (string): UUID or numeric ID of the event
+- **eventId** (string): UUID or numeric ID of the event
+- **useJson** (boolean): Whether to use JSON to specify the fields for the search request
+- **jsonOutput** (json): Get more info at {YOUR_BASE_URL_SPECIFIED_IN_CREDENTIALS}/api/openapi#operation/restSearchAttributes
+- **value** (string): Value
+- **additionalFields** (collection): Additional Fields
+  - Option: category (value: undefined)
+  - Option: deleted (value: undefined)
+  - Option: searchall (value: undefined)
+  - Option: tags (value: undefined)
+  - Option: type (value: undefined)
+  - Option: published (value: undefined)
+- **eventId** (string): UUID or numeric ID of the event
+- **updateFields** (collection): Update Fields
+  - Option: analysis (value: undefined)
+  - Option: distribution (value: undefined)
+  - Option: information (value: undefined)
+  - Option: sharing_group_id (value: undefined)
+  - Option: threat_level_id (value: undefined)
+- **operation** (options): Operation
+  - Option: Add (value: add)
+  - Option: Remove (value: remove)
+- **eventId** (string): UUID or numeric ID of the event
+- **tagId** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **eventId** (string): UUID or numeric ID of the event
+- **tagId** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Disable (value: disable)
+  - Option: Enable (value: enable)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **name** (string): Name
+- **provider** (string): Provider
+- **url** (string): URL
+- **additionalFields** (collection): Additional Fields
+  - Option: distribution (value: undefined)
+  - Option: json (value: undefined)
+- **feedId** (string): UUID or numeric ID of the feed
+- **feedId** (string): UUID or numeric ID of the feed
+- **feedId** (string): UUID or numeric ID of the feed
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **feedId** (string): ID of the feed to update
+- **updateFields** (collection): Update Fields
+  - Option: distribution (value: undefined)
+  - Option: name (value: undefined)
+  - Option: provider (value: undefined)
+  - Option: rules (value: undefined)
+  - Option: url (value: undefined)
+- **operation** (options): Operation
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+- **galaxyId** (string): UUID or numeric ID of the galaxy
+- **galaxyId** (string): UUID or numeric ID of the galaxy
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **operation** (options): Operation
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+- **noticelistId** (string): Numeric ID of the noticelist
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **operation** (options): Operation
+  - Option: Search (value: search)
+- **useJson** (boolean): Whether to use JSON to specify the fields for the search request
+- **jsonOutput** (json): Get more info at {YOUR_BASE_URL_SPECIFIED_IN_CREDENTIALS}/api/openapi#operation/restSearchAttributes
+- **value** (string): Value
+- **additionalFields** (collection): Additional Fields
+  - Option: category (value: undefined)
+  - Option: deleted (value: undefined)
+  - Option: searchall (value: undefined)
+  - Option: tags (value: undefined)
+  - Option: type (value: undefined)
+  - Option: published (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **name** (string): Name
+- **additionalFields** (collection): Additional Fields
+  - Option: created_by_email (value: undefined)
+  - Option: description (value: undefined)
+  - Option: nationality (value: undefined)
+  - Option: sector (value: undefined)
+  - Option: type (value: undefined)
+  - Option: usercount (value: undefined)
+- **organisationId** (string): UUID or numeric ID of the organisation
+- **organisationId** (string): UUID or numeric ID of the organisation
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **organisationId** (string): ID of the organisation to update
+- **updateFields** (collection): Update Fields
+  - Option: description (value: undefined)
+  - Option: name (value: undefined)
+  - Option: nationality (value: undefined)
+  - Option: sector (value: undefined)
+  - Option: type (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **name** (string): Name
+- **additionalFields** (collection): Additional Fields
+  - Option: colour (value: undefined)
+- **tagId** (string): Numeric ID of the attribute
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **tagId** (string): ID of the tag to update
+- **updateFields** (collection): Update Fields
+  - Option: colour (value: undefined)
+  - Option: name (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **email** (string): Email
+- **role_id** (string): Role IDs are available in the MISP dashboard at /roles/index
+- **additionalFields** (collection): Additional Fields
+  - Option: gpgkey (value: undefined)
+  - Option: invited_by (value: undefined)
+  - Option: org_id (value: undefined)
+- **userId** (string): Numeric ID of the user
+- **userId** (string): Numeric ID of the user
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **userId** (string): ID of the user to update
+- **updateFields** (collection): Update Fields
+  - Option: email (value: undefined)
+  - Option: gpgkey (value: undefined)
+  - Option: invited_by (value: undefined)
+  - Option: org_id (value: undefined)
+- **operation** (options): Operation
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+- **warninglistId** (string): Numeric ID of the warninglist
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return

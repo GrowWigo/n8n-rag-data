@@ -1,0 +1,223 @@
+# Node: BambooHR
+
+**Name**: bambooHr
+**Category**: transform
+**Description**: Consume BambooHR API
+**Version**: 1
+
+## Common Usecase
+This node is an action node. It is used to perform tasks, integrate with APIs, or manipulate data within the workflow.
+
+## Inputs
+["main"]
+
+## Outputs
+["main"]
+
+## Properties & Settings
+These are the settings you can configure for this node:
+
+- **resource** (options): Resource
+  - Option: Company Report (value: companyReport)
+  - Option: Employee (value: employee)
+  - Option: Employee Document (value: employeeDocument)
+  - Option: File (value: file)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **synced** (boolean): Whether the employee to create was added to a pay schedule synced with Trax Payroll
+- **firstName** (string): First Name
+- **lastName** (string): Last Name
+- **address** (fixedCollection): Address
+  - Option: value (value: undefined)
+- **dateOfBirth** (dateTime): Date of Birth
+- **department** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **division** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **employeeNumber** (string): Employee Number
+- **exempt** (options): FLSA Overtime Status
+  - Option: Exempt (value: exempt)
+  - Option: Non-Exempt (value: non-exempt)
+- **gender** (options): Gender
+  - Option: Female (value: female)
+  - Option: Male (value: male)
+- **hireDate** (dateTime): Hire Date
+- **location** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **maritalStatus** (options): Marital Status
+  - Option: Single (value: single)
+  - Option: Married (value: married)
+  - Option: Domestic Partnership (value: domesticPartnership)
+- **mobilePhone** (string): Mobile Phone
+- **paidPer** (options): Pay Per
+  - Option: Hour (value: hour)
+  - Option: Day (value: day)
+  - Option: Week (value: week)
+  - Option: Month (value: month)
+  - Option: Quater (value: quater)
+  - Option: Year (value: year)
+- **payRate** (fixedCollection): Pay Rate
+  - Option: value (value: undefined)
+- **payType** (options): Pay Type
+  - Option: Commission (value: commission)
+  - Option: Contract (value: contract)
+  - Option: Daily (value: daily)
+  - Option: Exception Hourly (value: exceptionHourly)
+  - Option: Hourly (value: hourly)
+  - Option: Monthly (value: monthly)
+  - Option: Piece Rate (value: pieceRate)
+  - Option: Pro Rata (value: proRata)
+  - Option: Salary (value: salary)
+  - Option: Weekly (value: weekly)
+- **preferredName** (string): Preferred Name
+- **ssn** (string): A standard United States Social Security number, with dashes
+- **additionalFields** (collection): Additional Fields
+  - Option: address (value: undefined)
+  - Option: dateOfBirth (value: undefined)
+  - Option: department (value: undefined)
+  - Option: division (value: undefined)
+  - Option: employeeNumber (value: undefined)
+  - Option: exempt (value: undefined)
+  - Option: gender (value: undefined)
+  - Option: hireDate (value: undefined)
+  - Option: location (value: undefined)
+  - Option: maritalStatus (value: undefined)
+  - Option: mobilePhone (value: undefined)
+  - Option: paidPer (value: undefined)
+  - Option: payRate (value: undefined)
+  - Option: payType (value: undefined)
+  - Option: preferredName (value: undefined)
+  - Option: ssn (value: undefined)
+  - Option: workEmail (value: undefined)
+  - Option: workPhone (value: undefined)
+- **employeeId** (string): Employee ID
+- **options** (collection): Options
+  - Option: fields (value: undefined)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **employeeId** (string): Employee ID
+- **synced** (boolean): Whether the employee to create was added to a pay schedule synced with Trax Payroll
+- **addasasress** (fixedCollection): Address
+  - Option: value (value: undefined)
+- **dateOfBirth** (dateTime): Date of Birth
+- **department** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **division** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **employeeNumber** (string): Employee Number
+- **firstName** (string): First Name
+- **lastName** (string): Last Name
+- **exempt** (options): FLSA Overtime Status
+  - Option: Exempt (value: exempt)
+  - Option: Non-Exempt (value: non-exempt)
+- **gender** (options): Gender
+  - Option: Female (value: female)
+  - Option: Male (value: male)
+- **hireDate** (dateTime): Hire Date
+- **location** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **maritalStatus** (options): Marital Status
+  - Option: Single (value: single)
+  - Option: Married (value: married)
+  - Option: Domestic Partnership (value: domesticPartnership)
+- **mobilePhone** (string): Mobile Phone
+- **paidPer** (options): Pay Per
+  - Option: Hour (value: hour)
+  - Option: Day (value: day)
+  - Option: Week (value: week)
+  - Option: Month (value: month)
+  - Option: Quater (value: quater)
+  - Option: Year (value: year)
+- **payRate** (fixedCollection): Pay Rate
+  - Option: value (value: undefined)
+- **payType** (options): Pay Type
+  - Option: Commission (value: commission)
+  - Option: Contract (value: contract)
+  - Option: Daily (value: daily)
+  - Option: Exception Hourly (value: exceptionHourly)
+  - Option: Hourly (value: hourly)
+  - Option: Monthly (value: monthly)
+  - Option: Piece Rate (value: pieceRate)
+  - Option: Pro Rata (value: proRata)
+  - Option: Salary (value: salary)
+  - Option: Weekly (value: weekly)
+- **preferredName** (string): Preferred Name
+- **ssn** (string): A standard United States Social Security number, with dashes
+- **updateFields** (collection): Update Fields
+  - Option: addasasress (value: undefined)
+  - Option: dateOfBirth (value: undefined)
+  - Option: department (value: undefined)
+  - Option: division (value: undefined)
+  - Option: employeeNumber (value: undefined)
+  - Option: firstName (value: undefined)
+  - Option: lastName (value: undefined)
+  - Option: exempt (value: undefined)
+  - Option: gender (value: undefined)
+  - Option: hireDate (value: undefined)
+  - Option: location (value: undefined)
+  - Option: maritalStatus (value: undefined)
+  - Option: mobilePhone (value: undefined)
+  - Option: paidPer (value: undefined)
+  - Option: payRate (value: undefined)
+  - Option: payType (value: undefined)
+  - Option: preferredName (value: undefined)
+  - Option: ssn (value: undefined)
+  - Option: workEmail (value: undefined)
+  - Option: workPhone (value: undefined)
+- **operation** (options): Operation
+  - Option: Delete (value: delete)
+  - Option: Download (value: download)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+  - Option: Upload (value: upload)
+- **employeeId** (string): ID of the employee
+- **fileId** (string): ID of the employee file
+- **employeeId** (string): ID of the employee
+- **fileId** (string): ID of the employee file
+- **output** (string): The name of the output field to put the binary file data in
+- **employeeId** (string): Employee ID
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **simplifyOutput** (boolean): Whether to return a simplified version of the response instead of the raw data
+- **employeeId** (string): Employee ID
+- **fileId** (string): File ID
+- **updateFields** (collection): Update Fields
+  - Option: categoryId (value: undefined)
+  - Option: name (value: undefined)
+  - Option: shareWithEmployee (value: undefined)
+- **employeeId** (string): ID of the employee
+- **categoryId** (string): Employee Document Category ID
+- **binaryPropertyName** (string): The name of the input field containing the binary file data to be uploaded. Supported file types: PNG, JPEG.
+- **options** (collection): Options
+  - Option: share (value: undefined)
+- **operation** (options): Operation
+  - Option: Delete (value: delete)
+  - Option: Download (value: download)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+  - Option: Upload (value: upload)
+- **fileId** (string): ID of the file
+- **fileId** (string): ID of the file
+- **output** (string): The name of the output field to put the binary file data in
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **simplifyOutput** (boolean): Whether to return a simplified version of the response instead of the raw data
+- **fileId** (string): ID of the file
+- **updateFields** (collection): Update Fields
+  - Option: categoryId (value: undefined)
+  - Option: name (value: undefined)
+  - Option: shareWithEmployee (value: undefined)
+- **binaryPropertyName** (string): The name of the input field containing the binary file data to be uploaded. Supported file types: PNG, JPEG.
+- **categoryId** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **options** (collection): Options
+  - Option: share (value: undefined)
+- **operation** (options): Operation
+  - Option: Get (value: get)
+- **reportId** (string): ID of the report. You can get the report number by hovering over the report name on the reports page and grabbing the ID.
+- **format** (options): The output format for the report
+  - Option: CSV (value: CSV)
+  - Option: JSON (value: JSON)
+  - Option: PDF (value: PDF)
+  - Option: XLS (value: XLS)
+  - Option: XML (value: XML)
+- **output** (string): The name of the output field to put the binary file data in
+- **options** (collection): Options
+  - Option: fd (value: undefined)
+  - Option: onlyCurrent (value: undefined)

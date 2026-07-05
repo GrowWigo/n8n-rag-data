@@ -1,0 +1,267 @@
+# Node: Invoice Ninja
+
+**Name**: invoiceNinja
+**Category**: output
+**Description**: Consume Invoice Ninja API
+**Version**: 1, 2
+
+## Common Usecase
+This node is an action node. It is used to perform tasks, integrate with APIs, or manipulate data within the workflow.
+
+## Inputs
+["main"]
+
+## Outputs
+["main"]
+
+## Properties & Settings
+These are the settings you can configure for this node:
+
+- **apiVersion** (options): API Version
+  - Option: Version 4 (value: v4)
+  - Option: Version 5 (value: v5)
+- **apiVersion** (options): API Version
+  - Option: Version 4 (value: v4)
+  - Option: Version 5 (value: v5)
+- **resource** (options): Resource
+  - Option: Bank Transaction (value: bank_transaction)
+  - Option: Client (value: client)
+  - Option: Expense (value: expense)
+  - Option: Invoice (value: invoice)
+  - Option: Payment (value: payment)
+  - Option: Quote (value: quote)
+  - Option: Task (value: task)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+- **additionalFields** (collection): Additional Fields
+  - Option: clientName (value: undefined)
+  - Option: idNumber (value: undefined)
+  - Option: privateNotes (value: undefined)
+  - Option: vatNumber (value: undefined)
+  - Option: workPhone (value: undefined)
+  - Option: website (value: undefined)
+- **billingAddressUi** (fixedCollection): Billing Address
+  - Option: billingAddressValue (value: undefined)
+- **contactsUi** (fixedCollection): Contacts
+  - Option: contacstValues (value: undefined)
+- **shippingAddressUi** (fixedCollection): Shipping Address
+  - Option: shippingAddressValue (value: undefined)
+- **clientId** (string): Client ID
+- **clientId** (string): Client ID
+- **options** (collection): Options
+  - Option: include (value: undefined)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: include (value: undefined)
+  - Option: status (value: undefined)
+  - Option: createdAt (value: undefined)
+  - Option: updatedAt (value: undefined)
+  - Option: isDeleted (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Email (value: email)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+- **additionalFields** (collection): Additional Fields
+  - Option: client (value: undefined)
+  - Option: autoBill (value: undefined)
+  - Option: customValue1 (value: undefined)
+  - Option: customValue2 (value: undefined)
+  - Option: discount (value: undefined)
+  - Option: dueDate (value: undefined)
+  - Option: email (value: undefined)
+  - Option: emailInvoice (value: undefined)
+  - Option: invoiceDate (value: undefined)
+  - Option: invoiceNumber (value: undefined)
+  - Option: invoiceStatus (value: undefined)
+  - Option: isAmountDiscount (value: undefined)
+  - Option: markSent (value: undefined)
+  - Option: paid (value: undefined)
+  - Option: partial (value: undefined)
+  - Option: partialDueDate (value: undefined)
+  - Option: poNumber (value: undefined)
+  - Option: privateNotes (value: undefined)
+  - Option: publicNotes (value: undefined)
+  - Option: taxName1 (value: undefined)
+  - Option: taxName2 (value: undefined)
+  - Option: taxRate1 (value: undefined)
+  - Option: taxRate2 (value: undefined)
+- **invoiceItemsUi** (fixedCollection): Invoice Items
+  - Option: invoiceItemsValues (value: undefined)
+- **invoiceId** (string): Invoice ID
+- **invoiceId** (string): Invoice ID
+- **invoiceId** (string): Invoice ID
+- **options** (collection): Options
+  - Option: include (value: undefined)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: invoiceNumber (value: undefined)
+  - Option: include (value: undefined)
+  - Option: status (value: undefined)
+  - Option: createdAt (value: undefined)
+  - Option: updatedAt (value: undefined)
+  - Option: isDeleted (value: undefined)
+  - Option: clientStatus (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+- **additionalFields** (collection): Additional Fields
+  - Option: client (value: undefined)
+  - Option: customValue1 (value: undefined)
+  - Option: customValue2 (value: undefined)
+  - Option: description (value: undefined)
+  - Option: project (value: undefined)
+- **timeLogsUi** (fixedCollection): Time Logs
+  - Option: timeLogsValues (value: undefined)
+- **taskId** (string): Task ID
+- **taskId** (string): Task ID
+- **options** (collection): Options
+  - Option: include (value: undefined)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: include (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+- **invoice** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **amount** (number): Amount
+- **additionalFields** (collection): Additional Fields
+  - Option: paymentType (value: undefined)
+  - Option: transferReference (value: undefined)
+  - Option: privateNotes (value: undefined)
+- **additionalFields** (collection): Additional Fields
+  - Option: paymentType (value: undefined)
+  - Option: transferReference (value: undefined)
+  - Option: privateNotes (value: undefined)
+- **paymentId** (string): Payment ID
+- **paymentId** (string): Payment ID
+- **options** (collection): Options
+  - Option: include (value: undefined)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: include (value: undefined)
+  - Option: status (value: undefined)
+  - Option: createdAt (value: undefined)
+  - Option: updatedAt (value: undefined)
+  - Option: isDeleted (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+- **additionalFields** (collection): Additional Fields
+  - Option: amount (value: undefined)
+  - Option: billable (value: undefined)
+  - Option: client (value: undefined)
+  - Option: customValue1 (value: undefined)
+  - Option: customValue2 (value: undefined)
+  - Option: category (value: undefined)
+  - Option: expenseDate (value: undefined)
+  - Option: paymentDate (value: undefined)
+  - Option: paymentType (value: undefined)
+  - Option: privateNotes (value: undefined)
+  - Option: publicNotes (value: undefined)
+  - Option: taxName1 (value: undefined)
+  - Option: taxName2 (value: undefined)
+  - Option: taxRate1 (value: undefined)
+  - Option: taxRate2 (value: undefined)
+  - Option: transactionReference (value: undefined)
+  - Option: vendor (value: undefined)
+- **additionalFields** (collection): Additional Fields
+  - Option: amount (value: undefined)
+  - Option: billable (value: undefined)
+  - Option: client (value: undefined)
+  - Option: customValue1 (value: undefined)
+  - Option: customValue2 (value: undefined)
+  - Option: category (value: undefined)
+  - Option: expenseDate (value: undefined)
+  - Option: paymentDate (value: undefined)
+  - Option: paymentType (value: undefined)
+  - Option: privateNotes (value: undefined)
+  - Option: publicNotes (value: undefined)
+  - Option: taxName1 (value: undefined)
+  - Option: taxName2 (value: undefined)
+  - Option: taxRate1 (value: undefined)
+  - Option: taxRate2 (value: undefined)
+  - Option: transactionReference (value: undefined)
+  - Option: vendor (value: undefined)
+- **expenseId** (string): Expense ID
+- **expenseId** (string): Expense ID
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Email (value: email)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+- **additionalFields** (collection): Additional Fields
+  - Option: client (value: undefined)
+  - Option: autoBill (value: undefined)
+  - Option: customValue1 (value: undefined)
+  - Option: customValue2 (value: undefined)
+  - Option: discount (value: undefined)
+  - Option: dueDate (value: undefined)
+  - Option: email (value: undefined)
+  - Option: emailQuote (value: undefined)
+  - Option: quoteDate (value: undefined)
+  - Option: quoteNumber (value: undefined)
+  - Option: quoteStatus (value: undefined)
+  - Option: isAmountDiscount (value: undefined)
+  - Option: paid (value: undefined)
+  - Option: partial (value: undefined)
+  - Option: partialDueDate (value: undefined)
+  - Option: poNumber (value: undefined)
+  - Option: privateNotes (value: undefined)
+  - Option: publicNotes (value: undefined)
+  - Option: taxName1 (value: undefined)
+  - Option: taxName2 (value: undefined)
+  - Option: taxRate1 (value: undefined)
+  - Option: taxRate2 (value: undefined)
+- **invoiceItemsUi** (fixedCollection): Invoice Items
+  - Option: invoiceItemsValues (value: undefined)
+- **quoteId** (string): Quote ID
+- **quoteId** (string): Quote ID
+- **quoteId** (string): Quote ID
+- **options** (collection): Options
+  - Option: include (value: undefined)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: quoteNumber (value: undefined)
+  - Option: include (value: undefined)
+  - Option: status (value: undefined)
+  - Option: createdAt (value: undefined)
+  - Option: updatedAt (value: undefined)
+  - Option: isDeleted (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Match Payment (value: matchPayment)
+- **additionalFields** (collection): Additional Fields
+  - Option: amount (value: undefined)
+  - Option: bankIntegrationId (value: undefined)
+  - Option: baseType (value: undefined)
+  - Option: currencyId (value: undefined)
+  - Option: date (value: undefined)
+  - Option: description (value: undefined)
+- **bankTransactionId** (string): Bank Transaction ID
+- **bankTransactionId** (string): Bank Transaction ID
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **bankTransactionId** (string): Bank Transaction ID
+- **paymentId** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>

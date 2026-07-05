@@ -1,0 +1,314 @@
+# Node: Pipedrive
+
+**Name**: pipedrive
+**Category**: transform
+**Description**: Create and edit data in Pipedrive
+**Version**: 1
+
+## Common Usecase
+This node is an action node. It is used to perform tasks, integrate with APIs, or manipulate data within the workflow.
+
+## Inputs
+["main"]
+
+## Outputs
+["main"]
+
+## Properties & Settings
+These are the settings you can configure for this node:
+
+- **authentication** (options): Authentication
+  - Option: API Token (value: apiToken)
+  - Option: OAuth2 (value: oAuth2)
+- **resource** (options): Resource
+  - Option: Activity (value: activity)
+  - Option: Deal (value: deal)
+  - Option: Deal Activity (value: dealActivity)
+  - Option: Deal Product (value: dealProduct)
+  - Option: File (value: file)
+  - Option: Lead (value: lead)
+  - Option: Note (value: note)
+  - Option: Organization (value: organization)
+  - Option: Person (value: person)
+  - Option: Product (value: product)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Duplicate (value: duplicate)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Search (value: search)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Get Many (value: getAll)
+- **operation** (options): Operation
+  - Option: Add (value: add)
+  - Option: Get Many (value: getAll)
+  - Option: Remove (value: remove)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Download (value: download)
+  - Option: Get (value: get)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Search (value: search)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Search (value: search)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Get Many (value: getAll)
+- **subject** (string): The subject of the activity to create
+- **done** (options): Whether the activity is done or not
+  - Option: Not Done (value: 0)
+  - Option: Done (value: 1)
+- **type** (string): Type of the activity like "call", "meeting", etc
+- **additionalFields** (collection): Additional Fields
+  - Option: deal_id (value: undefined)
+  - Option: due_date (value: undefined)
+  - Option: note (value: undefined)
+  - Option: org_id (value: undefined)
+  - Option: person_id (value: undefined)
+  - Option: user_id (value: undefined)
+  - Option: customProperties (value: undefined)
+- **activityId** (number): ID of the activity to delete
+- **activityId** (number): ID of the activity to get
+- **activityId** (number): ID of the activity to update
+- **updateFields** (collection): Update Fields
+  - Option: busy_flag (value: undefined)
+  - Option: deal_id (value: undefined)
+  - Option: due_date (value: undefined)
+  - Option: done (value: undefined)
+  - Option: note (value: undefined)
+  - Option: org_id (value: undefined)
+  - Option: person_id (value: undefined)
+  - Option: public_description (value: undefined)
+  - Option: subject (value: undefined)
+  - Option: type (value: undefined)
+  - Option: user_id (value: undefined)
+  - Option: customProperties (value: undefined)
+- **title** (string): The title of the deal to create
+- **associateWith** (options): Type of entity to link to this deal
+  - Option: Organization (value: organization)
+  - Option: Person (value: person)
+- **org_id** (number): ID of the organization this deal will be associated with
+- **person_id** (number): ID of the person this deal will be associated with
+- **additionalFields** (collection): Additional Fields
+  - Option: currency (value: undefined)
+  - Option: customProperties (value: undefined)
+  - Option: label (value: undefined)
+  - Option: lost_reason (value: undefined)
+  - Option: org_id (value: undefined)
+  - Option: person_id (value: undefined)
+  - Option: probability (value: undefined)
+  - Option: stage_id (value: undefined)
+  - Option: status (value: undefined)
+  - Option: user_id (value: undefined)
+  - Option: value (value: undefined)
+  - Option: visible_to (value: undefined)
+- **dealId** (number): ID of the deal to delete
+- **dealId** (number): ID of the deal to duplicate
+- **dealId** (number): ID of the deal to get
+- **dealId** (number): ID of the deal to update
+- **updateFields** (collection): Update Fields
+  - Option: currency (value: undefined)
+  - Option: customProperties (value: undefined)
+  - Option: user_id (value: undefined)
+  - Option: label (value: undefined)
+  - Option: lost_reason (value: undefined)
+  - Option: org_id (value: undefined)
+  - Option: person_id (value: undefined)
+  - Option: probability (value: undefined)
+  - Option: stage_id (value: undefined)
+  - Option: status (value: undefined)
+  - Option: title (value: undefined)
+  - Option: value (value: undefined)
+  - Option: visible_to (value: undefined)
+- **dealId** (options): The ID of the deal to add a product to. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **productId** (options): The ID of the product to add to a deal. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **item_price** (number): Price at which to add or update this product in a deal
+- **quantity** (number): How many items of this product to add/update in a deal
+- **additionalFields** (collection): Additional Fields
+  - Option: comments (value: undefined)
+  - Option: discount_percentage (value: undefined)
+  - Option: product_variation_id (value: undefined)
+- **dealId** (options): The ID of the deal whose product to update. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **productAttachmentId** (options): ID of the deal-product (the ID of the product attached to the deal). Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **updateFields** (collection): Update Fields
+  - Option: comments (value: undefined)
+  - Option: discount_percentage (value: undefined)
+  - Option: item_price (value: undefined)
+  - Option: quantity (value: undefined)
+  - Option: product_variation_id (value: undefined)
+- **dealId** (options): The ID of the deal whose product to remove. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **productAttachmentId** (options): ID of the deal-product (the ID of the product attached to the deal). Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **dealId** (options): The ID of the deal whose products to retrieve. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **term** (string): The search term to look for. Minimum 2 characters (or 1 if using exact_match).
+- **exactMatch** (boolean): Whether only full exact matches against the given term are returned. It is not case sensitive.
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **additionalFields** (collection): Additional Fields
+  - Option: includeFields (value: undefined)
+  - Option: organizationId (value: undefined)
+  - Option: personId (value: undefined)
+  - Option: fields (value: undefined)
+  - Option: status (value: undefined)
+- **binaryPropertyName** (string): Input Binary Field
+- **additionalFields** (collection): Additional Fields
+  - Option: activity_id (value: undefined)
+  - Option: deal_id (value: undefined)
+  - Option: org_id (value: undefined)
+  - Option: person_id (value: undefined)
+  - Option: product_id (value: undefined)
+- **fileId** (number): ID of the file to delete
+- **fileId** (number): ID of the file to download
+- **binaryPropertyName** (string): Put Output File in Field
+- **fileId** (number): ID of the file to get
+- **fileId** (number): ID of the file to update
+- **updateFields** (collection): Update Fields
+  - Option: name (value: undefined)
+  - Option: description (value: undefined)
+- **title** (string): Name of the lead to create
+- **associateWith** (options): Type of entity to link to this lead
+  - Option: Organization (value: organization)
+  - Option: Person (value: person)
+- **organization_id** (number): ID of the organization to link to this lead
+- **person_id** (number): ID of the person to link to this lead
+- **additionalFields** (collection): Additional Fields
+  - Option: expected_close_date (value: undefined)
+  - Option: label_ids (value: undefined)
+  - Option: organization_id (value: undefined)
+  - Option: owner_id (value: undefined)
+  - Option: person_id (value: undefined)
+  - Option: value (value: undefined)
+- **leadId** (string): ID of the lead to delete
+- **leadId** (string): ID of the lead to retrieve
+- **leadId** (string): ID of the lead to update
+- **updateFields** (collection): Update Fields
+  - Option: title (value: undefined)
+  - Option: owner_id (value: undefined)
+  - Option: label_ids (value: undefined)
+  - Option: person_id (value: undefined)
+  - Option: value (value: undefined)
+  - Option: expected_close_date (value: undefined)
+- **content** (string): The content of the note to create
+- **noteId** (number): ID of the note to delete
+- **noteId** (number): ID of the note to get
+- **noteId** (number): ID of the note to update
+- **updateFields** (collection): Update Fields
+  - Option: content (value: undefined)
+  - Option: deal_id (value: undefined)
+  - Option: lead_id (value: undefined)
+  - Option: org_id (value: undefined)
+  - Option: person_id (value: undefined)
+- **name** (string): The name of the organization to create
+- **additionalFields** (collection): Additional Fields
+  - Option: customProperties (value: undefined)
+  - Option: label (value: undefined)
+  - Option: visible_to (value: undefined)
+- **organizationId** (number): ID of the organization to delete
+- **organizationId** (number): ID of the organization to get
+- **term** (string): The search term to look for. Minimum 2 characters (or 1 if using exact_match).
+- **additionalFields** (collection): Additional Fields
+  - Option: exactMatch (value: undefined)
+  - Option: fields (value: undefined)
+  - Option: rawData (value: undefined)
+- **organizationId** (number): The ID of the organization to create
+- **updateFields** (collection): Update Fields
+  - Option: customProperties (value: undefined)
+  - Option: label (value: undefined)
+  - Option: name (value: undefined)
+  - Option: owner_id (value: undefined)
+  - Option: visible_to (value: undefined)
+- **name** (string): The name of the person to create
+- **additionalFields** (collection): Additional Fields
+  - Option: customProperties (value: undefined)
+  - Option: email (value: undefined)
+  - Option: label (value: undefined)
+  - Option: marketing_status (value: undefined)
+  - Option: org_id (value: undefined)
+  - Option: phone (value: undefined)
+  - Option: visible_to (value: undefined)
+  - Option: owner_id (value: undefined)
+- **personId** (number): ID of the person to delete
+- **personId** (number): ID of the person to get
+- **personId** (number): ID of the person to update
+- **updateFields** (collection): The fields to update
+  - Option: customProperties (value: undefined)
+  - Option: email (value: undefined)
+  - Option: label (value: undefined)
+  - Option: marketing_status (value: undefined)
+  - Option: name (value: undefined)
+  - Option: org_id (value: undefined)
+  - Option: phone (value: undefined)
+  - Option: owner_id (value: undefined)
+  - Option: visible_to (value: undefined)
+- **resolveProperties** (boolean): By default do custom properties get returned only as ID instead of their actual name. Also option fields contain only the ID instead of their actual value. If this option gets set they get automatically resolved.
+- **encodeProperties** (boolean): By default do custom properties have to be set as ID instead of their actual name. Also option fields have to be set as ID instead of their actual value. If this option gets set they get automatically encoded.
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **dealId** (options): The ID of the deal whose activity to retrieve. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **additionalFields** (collection): Additional Fields
+  - Option: done (value: undefined)
+  - Option: exclude (value: undefined)
+- **filters** (collection): Filters
+  - Option: archived_status (value: undefined)
+- **filters** (collection): Filters
+  - Option: firstChar (value: undefined)
+  - Option: filterId (value: undefined)
+- **additionalFields** (collection): Additional Fields
+  - Option: filterId (value: undefined)
+  - Option: firstChar (value: undefined)
+  - Option: sort (value: undefined)
+- **term** (string): The search term to look for. Minimum 2 characters (or 1 if using exact_match).
+- **additionalFields** (collection): Additional Fields
+  - Option: exactMatch (value: undefined)
+  - Option: fields (value: undefined)
+  - Option: includeFields (value: undefined)
+  - Option: organizationId (value: undefined)
+  - Option: rawData (value: undefined)
+- **additionalFields** (collection): Additional Fields
+  - Option: deal_id (value: undefined)
+  - Option: lead_id (value: undefined)
+  - Option: org_id (value: undefined)
+  - Option: person_id (value: undefined)
+- **additionalFields** (collection): Additional Fields
+  - Option: done (value: undefined)
+  - Option: end_date (value: undefined)
+  - Option: filterId (value: undefined)
+  - Option: start_date (value: undefined)
+  - Option: type (value: undefined)
+  - Option: user_id (value: undefined)
+- **filters** (collection): Filters
+  - Option: filter_id (value: undefined)
+  - Option: stage_id (value: undefined)
+  - Option: status (value: undefined)
+  - Option: user_id (value: undefined)

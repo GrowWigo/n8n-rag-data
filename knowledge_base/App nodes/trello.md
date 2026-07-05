@@ -1,0 +1,256 @@
+# Node: Trello
+
+**Name**: trello
+**Category**: transform
+**Description**: Create, change and delete boards and cards
+**Version**: 1
+
+## Common Usecase
+This node is an action node. It is used to perform tasks, integrate with APIs, or manipulate data within the workflow.
+
+## Inputs
+["main"]
+
+## Outputs
+["main"]
+
+## Properties & Settings
+These are the settings you can configure for this node:
+
+- **resource** (options): Resource
+  - Option: Attachment (value: attachment)
+  - Option: Board (value: board)
+  - Option: Board Member (value: boardMember)
+  - Option: Card (value: card)
+  - Option: Card Comment (value: cardComment)
+  - Option: Checklist (value: checklist)
+  - Option: Label (value: label)
+  - Option: List (value: list)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Add (value: add)
+  - Option: Get Many (value: getAll)
+  - Option: Invite (value: invite)
+  - Option: Remove (value: remove)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Create Checklist Item (value: createCheckItem)
+  - Option: Delete (value: delete)
+  - Option: Delete Checklist Item (value: deleteCheckItem)
+  - Option: Get (value: get)
+  - Option: Get Checklist Items (value: getCheckItem)
+  - Option: Get Completed Checklist Items (value: completedCheckItems)
+  - Option: Get Many (value: getAll)
+  - Option: Update Checklist Item (value: updateCheckItem)
+- **operation** (options): Operation
+  - Option: Add to Card (value: addLabel)
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Remove From Card (value: removeLabel)
+  - Option: Update (value: update)
+- **operation** (options): Operation
+  - Option: Archive (value: archive)
+  - Option: Create (value: create)
+  - Option: Get (value: get)
+  - Option: Get Cards (value: getCards)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **cardId** (resourceLocator): The ID of the card
+- **url** (string): The URL of the attachment to add
+- **additionalFields** (collection): Additional Fields
+  - Option: mimeType (value: undefined)
+  - Option: name (value: undefined)
+- **id** (string): The ID of the attachment to delete
+- **additionalFields** (collection): Additional Fields
+  - Option: fields (value: undefined)
+- **id** (string): The ID of the attachment to get
+- **additionalFields** (collection): Additional Fields
+  - Option: fields (value: undefined)
+- **name** (string): The name of the board
+- **description** (string): The description of the board
+- **additionalFields** (collection): Additional Fields
+  - Option: prefs_cardAging (value: undefined)
+  - Option: prefs_background (value: undefined)
+  - Option: prefs_comments (value: undefined)
+  - Option: prefs_cardCovers (value: undefined)
+  - Option: prefs_invitations (value: undefined)
+  - Option: keepFromSource (value: undefined)
+  - Option: defaultLabels (value: undefined)
+  - Option: defaultLists (value: undefined)
+  - Option: idOrganization (value: undefined)
+  - Option: prefs_permissionLevel (value: undefined)
+  - Option: powerUps (value: undefined)
+  - Option: prefs_selfJoin (value: undefined)
+  - Option: idBoardSource (value: undefined)
+  - Option: prefs_voting (value: undefined)
+- **id** (resourceLocator): The ID of the board
+- **additionalFields** (collection): Additional Fields
+  - Option: fields (value: undefined)
+  - Option: pluginData (value: undefined)
+- **updateFields** (collection): Update Fields
+  - Option: closed (value: undefined)
+  - Option: desc (value: undefined)
+  - Option: name (value: undefined)
+  - Option: idOrganization (value: undefined)
+  - Option: subscribed (value: undefined)
+- **id** (string): The ID of the board to get members from
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **id** (string): The ID of the board to add member to
+- **idMember** (string): The ID of the member to add to the board
+- **type** (options): Determines the type of membership the user being added should have
+  - Option: Normal (value: normal)
+  - Option: Admin (value: admin)
+  - Option: Observer (value: observer)
+- **additionalFields** (collection): Additional Fields
+  - Option: allowBillableGuest (value: undefined)
+- **id** (string): The ID of the board to invite member to
+- **email** (string): The ID of the board to update
+- **additionalFields** (collection): Additional Fields
+  - Option: type (value: undefined)
+  - Option: fullName (value: undefined)
+- **id** (string): The ID of the board to remove member from
+- **idMember** (string): The ID of the member to remove from the board
+- **listId** (string): The ID of the list to create card in
+- **name** (string): The name of the card
+- **description** (string): The description of the card
+- **additionalFields** (collection): Additional Fields
+  - Option: due (value: undefined)
+  - Option: dueComplete (value: undefined)
+  - Option: pos (value: undefined)
+  - Option: idMembers (value: undefined)
+  - Option: idLabels (value: undefined)
+  - Option: urlSource (value: undefined)
+  - Option: idCardSource (value: undefined)
+  - Option: keepFromSource (value: undefined)
+- **id** (resourceLocator): The ID of the card
+- **additionalFields** (collection): Additional Fields
+  - Option: fields (value: undefined)
+  - Option: board (value: undefined)
+  - Option: board_fields (value: undefined)
+  - Option: customFieldItems (value: undefined)
+  - Option: members (value: undefined)
+  - Option: member_fields (value: undefined)
+  - Option: pluginData (value: undefined)
+  - Option: stickers (value: undefined)
+  - Option: sticker_fields (value: undefined)
+- **updateFields** (collection): Update Fields
+  - Option: idAttachmentCover (value: undefined)
+  - Option: idBoard (value: undefined)
+  - Option: closed (value: undefined)
+  - Option: desc (value: undefined)
+  - Option: due (value: undefined)
+  - Option: dueComplete (value: undefined)
+  - Option: idLabels (value: undefined)
+  - Option: idList (value: undefined)
+  - Option: idMembers (value: undefined)
+  - Option: name (value: undefined)
+  - Option: pos (value: undefined)
+  - Option: subscribed (value: undefined)
+- **cardId** (resourceLocator): The ID of the card
+- **text** (string): Text of the comment
+- **commentId** (string): The ID of the comment to delete
+- **commentId** (string): The ID of the comment to delete
+- **text** (string): Text of the comment
+- **cardId** (resourceLocator): The ID of the card
+- **name** (string): The URL of the checklist to add
+- **additionalFields** (collection): Additional Fields
+  - Option: idChecklistSource (value: undefined)
+  - Option: pos (value: undefined)
+- **id** (string): The ID of the checklist to delete
+- **additionalFields** (collection): Additional Fields
+  - Option: fields (value: undefined)
+- **id** (string): The ID of the checklist to get
+- **additionalFields** (collection): Additional Fields
+  - Option: fields (value: undefined)
+- **checklistId** (string): The ID of the checklist to update
+- **name** (string): The name of the new check item on the checklist
+- **additionalFields** (collection): Additional Fields
+  - Option: checked (value: undefined)
+  - Option: pos (value: undefined)
+- **checkItemId** (string): The ID of the checklist item to delete
+- **checkItemId** (string): The ID of the checklist item to get
+- **additionalFields** (collection): Additional Fields
+  - Option: fields (value: undefined)
+- **checkItemId** (string): The ID of the checklist item to update
+- **additionalFields** (collection): Additional Fields
+  - Option: name (value: undefined)
+  - Option: state (value: undefined)
+  - Option: checklistId (value: undefined)
+  - Option: pos (value: undefined)
+- **additionalFields** (collection): Additional Fields
+  - Option: fields (value: undefined)
+- **boardId** (resourceLocator): The ID of the board
+- **name** (string): Name for the label
+- **color** (options): The color for the label
+  - Option: Black (value: black)
+  - Option: Blue (value: blue)
+  - Option: Green (value: green)
+  - Option: Lime (value: lime)
+  - Option: Null (value: null)
+  - Option: Orange (value: orange)
+  - Option: Pink (value: pink)
+  - Option: Purple (value: purple)
+  - Option: Red (value: red)
+  - Option: Sky (value: sky)
+  - Option: Yellow (value: yellow)
+- **id** (string): The ID of the label to delete
+- **additionalFields** (collection): Additional Fields
+  - Option: fields (value: undefined)
+- **id** (string): Get information about a label by ID
+- **additionalFields** (collection): Additional Fields
+  - Option: fields (value: undefined)
+- **cardId** (resourceLocator): The ID of the card
+- **id** (string): The ID of the label to add
+- **id** (string): The ID of the label to remove
+- **id** (string): The ID of the label to update
+- **updateFields** (collection): Update Fields
+  - Option: name (value: undefined)
+  - Option: color (value: undefined)
+- **id** (string): The ID of the list to archive or unarchive
+- **archive** (boolean): Whether the list should be archived or unarchived
+- **idBoard** (string): The ID of the board the list should be created in
+- **name** (string): The name of the list
+- **additionalFields** (collection): Additional Fields
+  - Option: idListSource (value: undefined)
+  - Option: pos (value: undefined)
+- **id** (string): The ID of the list to get cards
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **additionalFields** (collection): Additional Fields
+  - Option: fields (value: undefined)
+- **id** (string): The ID of the list to get
+- **additionalFields** (collection): Additional Fields
+  - Option: fields (value: undefined)
+- **id** (string): The ID of the board
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **additionalFields** (collection): Additional Fields
+  - Option: fields (value: undefined)
+- **id** (string): The ID of the list to update
+- **updateFields** (collection): Update Fields
+  - Option: idBoard (value: undefined)
+  - Option: closed (value: undefined)
+  - Option: name (value: undefined)
+  - Option: pos (value: undefined)
+  - Option: subscribed (value: undefined)

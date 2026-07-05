@@ -1,0 +1,314 @@
+# Node: TheHive 5
+
+**Name**: theHiveProject
+**Category**: transform
+**Description**: Consume TheHive 5 API
+**Version**: 1
+
+## Common Usecase
+This node is an action node. It is used to perform tasks, integrate with APIs, or manipulate data within the workflow.
+
+## Inputs
+["main"]
+
+## Outputs
+["main"]
+
+## Properties & Settings
+These are the settings you can configure for this node:
+
+- **resource** (options): Resource
+  - Option: Alert (value: alert)
+  - Option: Case (value: case)
+  - Option: Comment (value: comment)
+  - Option: Observable (value: observable)
+  - Option: Page (value: page)
+  - Option: Query (value: query)
+  - Option: Task (value: task)
+  - Option: Task Log (value: log)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: deleteAlert)
+  - Option: Execute Responder (value: executeResponder)
+  - Option: Get (value: get)
+  - Option: Merge Into Case (value: merge)
+  - Option: Promote to Case (value: promote)
+  - Option: Search (value: search)
+  - Option: Update (value: update)
+  - Option: Update Status (value: status)
+- **alertFields** (resourceMapper): Fields
+- **observableUi** (fixedCollection): Observables
+  - Option: values (value: undefined)
+- **alertId** (resourceLocator): Alert
+- **id** (resourceLocator): Alert
+- **responder** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **alertId** (resourceLocator): Alert
+- **options** (collection): Options
+  - Option: includeSimilarAlerts (value: undefined)
+  - Option: includeSimilarCases (value: undefined)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (fixedCollection): Filters
+  - Option: values (value: undefined)
+- **sort** (fixedCollection): Sort
+  - Option: fields (value: undefined)
+- **options** (collection): Options
+  - Option: returnCount (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+- **alertId** (resourceLocator): Alert
+- **status** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **alertId** (resourceLocator): Alert
+- **caseId** (resourceLocator): Case
+- **alertId** (resourceLocator): Alert
+- **options** (collection): Options
+  - Option: caseTemplate (value: undefined)
+- **alertUpdateFields** (resourceMapper): Fields
+- **operation** (options): Operation
+  - Option: Add Attachment (value: addAttachment)
+  - Option: Create (value: create)
+  - Option: Delete Attachment (value: deleteAttachment)
+  - Option: Delete Case (value: deleteCase)
+  - Option: Execute Responder (value: executeResponder)
+  - Option: Get (value: get)
+  - Option: Get Attachment (value: getAttachment)
+  - Option: Get Timeline (value: getTimeline)
+  - Option: Search (value: search)
+  - Option: Update (value: update)
+- **caseId** (resourceLocator): Case
+- **attachmentsUi** (fixedCollection): Array of supported attachments to add to the message
+  - Option: values (value: undefined)
+- **options** (collection): Options
+  - Option: canRename (value: undefined)
+- **caseFields** (resourceMapper): Fields
+- **caseId** (resourceLocator): Case
+- **attachmentId** (options): ID of the attachment. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **caseId** (resourceLocator): Case
+- **id** (resourceLocator): Case
+- **responder** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **caseId** (resourceLocator): Case
+- **caseId** (resourceLocator): Case
+- **attachmentId** (options): ID of the attachment. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **options** (collection): Options
+  - Option: fileName (value: undefined)
+  - Option: dataPropertyName (value: undefined)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (fixedCollection): Filters
+  - Option: values (value: undefined)
+- **sort** (fixedCollection): Sort
+  - Option: fields (value: undefined)
+- **options** (collection): Options
+  - Option: returnCount (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+- **caseId** (resourceLocator): Case
+- **caseUpdateFields** (resourceMapper): Fields
+- **operation** (options): Operation
+  - Option: Create (value: add)
+  - Option: Delete (value: deleteComment)
+  - Option: Search (value: search)
+  - Option: Update (value: update)
+- **addTo** (options): Add to
+  - Option: Alert (value: alert)
+  - Option: Case (value: case)
+- **id** (resourceLocator): Case
+- **id** (resourceLocator): Alert
+- **message** (string): Message
+- **commentId** (resourceLocator): Comment
+- **searchIn** (options): Whether to search for comments in all alerts and cases or in a specific case or alert
+  - Option: Alerts and Cases (value: all)
+  - Option: Alert (value: alert)
+  - Option: Case (value: case)
+- **caseId** (resourceLocator): Case
+- **alertId** (resourceLocator): Alert
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (fixedCollection): Filters
+  - Option: values (value: undefined)
+- **sort** (fixedCollection): Sort
+  - Option: fields (value: undefined)
+- **options** (collection): Options
+  - Option: returnCount (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+- **commentId** (resourceLocator): Comment
+- **message** (string): Message
+- **operation** (options): Operation
+  - Option: Add Attachment (value: addAttachment)
+  - Option: Create (value: create)
+  - Option: Delete (value: deleteLog)
+  - Option: Delete Attachment (value: deleteAttachment)
+  - Option: Execute Responder (value: executeResponder)
+  - Option: Get (value: get)
+  - Option: Search (value: search)
+- **logId** (resourceLocator): Task Log
+- **attachmentsUi** (fixedCollection): Array of supported attachments to add to the message
+  - Option: values (value: undefined)
+- **taskId** (resourceLocator): Task
+- **logFields** (resourceMapper): Fields
+- **attachmentsUi** (fixedCollection): Array of supported attachments to add to the message
+  - Option: values (value: undefined)
+- **logId** (resourceLocator): Task Log
+- **attachmentId** (options): ID of the attachment. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **logId** (resourceLocator): Task Log
+- **id** (resourceLocator): Task Log
+- **responder** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **logId** (resourceLocator): Task Log
+- **allTasks** (boolean): Whether to search in all tasks or only in selected task
+- **taskId** (resourceLocator): Task
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (fixedCollection): Filters
+  - Option: values (value: undefined)
+- **sort** (fixedCollection): Sort
+  - Option: fields (value: undefined)
+- **options** (collection): Options
+  - Option: returnCount (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: deleteObservable)
+  - Option: Execute Analyzer (value: executeAnalyzer)
+  - Option: Execute Responder (value: executeResponder)
+  - Option: Get (value: get)
+  - Option: Search (value: search)
+  - Option: Update (value: update)
+- **createIn** (options): Create in
+  - Option: Case (value: case)
+  - Option: Alert (value: alert)
+- **id** (resourceLocator): Case
+- **id** (resourceLocator): Alert
+- **dataType** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **data** (string): Data
+- **attachmentsUi** (fixedCollection): Array of supported attachments to add to the message
+  - Option: values (value: undefined)
+- **observableFields** (resourceMapper): Fields
+- **observableId** (resourceLocator): Observable
+- **observableId** (resourceLocator): Observable
+- **dataType** (options): Type of the observable. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **analyzers** (multiOptions): Choose from the list, or specify IDs using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **id** (resourceLocator): Observable
+- **responder** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **observableId** (resourceLocator): Observable
+- **searchIn** (options): Whether to search for observables in all alerts and cases or in a specific case or alert
+  - Option: Alerts and Cases (value: all)
+  - Option: Alert (value: alert)
+  - Option: Case (value: case)
+- **caseId** (resourceLocator): Case
+- **alertId** (resourceLocator): Alert
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (fixedCollection): Filters
+  - Option: values (value: undefined)
+- **sort** (fixedCollection): Sort
+  - Option: fields (value: undefined)
+- **options** (collection): Options
+  - Option: returnCount (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+- **observableUpdateFields** (resourceMapper): Fields
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: deletePage)
+  - Option: Search (value: search)
+  - Option: Update (value: update)
+- **location** (options): Create in
+  - Option: Case (value: case)
+  - Option: Knowledge Base (value: knowledgeBase)
+- **caseId** (resourceLocator): Case
+- **title** (string): Title
+- **category** (string): Category
+- **content** (string): Content
+- **location** (options): Delete From ...
+  - Option: Case (value: case)
+  - Option: Knowledge Base (value: knowledgeBase)
+- **caseId** (resourceLocator): Case
+- **pageId** (resourceLocator): Page
+- **searchInKnowledgeBase** (boolean): Whether to search in knowledge base or only in the selected case
+- **caseId** (resourceLocator): Case
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (fixedCollection): Filters
+  - Option: values (value: undefined)
+- **sort** (fixedCollection): Sort
+  - Option: fields (value: undefined)
+- **options** (collection): Options
+  - Option: returnCount (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+- **location** (options): Update in
+  - Option: Case (value: case)
+  - Option: Knowledge Base (value: knowledgeBase)
+- **caseId** (resourceLocator): Case
+- **pageId** (resourceLocator): Page
+- **content** (string): Content
+- **options** (collection): Options
+  - Option: category (value: undefined)
+  - Option: title (value: undefined)
+  - Option: order (value: undefined)
+- **operation** (options): Operation
+  - Option: Execute Query (value: executeQuery)
+- **queryJson** (json): Search for objects with filtering and sorting capabilities
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: deleteTask)
+  - Option: Execute Responder (value: executeResponder)
+  - Option: Get (value: get)
+  - Option: Search (value: search)
+  - Option: Update (value: update)
+- **caseId** (resourceLocator): Case
+- **taskFields** (resourceMapper): Fields
+- **taskId** (resourceLocator): Task
+- **id** (resourceLocator): Task
+- **responder** (options): Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **taskId** (resourceLocator): Task
+- **allCases** (boolean): Whether to search in all cases or only in a selected case
+- **caseId** (resourceLocator): Case
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (fixedCollection): Filters
+  - Option: values (value: undefined)
+- **sort** (fixedCollection): Sort
+  - Option: fields (value: undefined)
+- **options** (collection): Options
+  - Option: returnCount (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+  - Option: extraData (value: undefined)
+- **taskUpdateFields** (resourceMapper): Fields

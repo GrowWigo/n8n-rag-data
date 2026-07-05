@@ -1,0 +1,233 @@
+# Node: WooCommerce
+
+**Name**: wooCommerce
+**Category**: output
+**Description**: Consume WooCommerce API
+**Version**: 1
+
+## Common Usecase
+This node is an action node. It is used to perform tasks, integrate with APIs, or manipulate data within the workflow.
+
+## Inputs
+["main"]
+
+## Outputs
+["main"]
+
+## Properties & Settings
+These are the settings you can configure for this node:
+
+- **resource** (options): Resource
+  - Option: Customer (value: customer)
+  - Option: Order (value: order)
+  - Option: Product (value: product)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **email** (string): Email
+- **additionalFields** (collection): Additional Fields
+  - Option: billing (value: undefined)
+  - Option: first_name (value: undefined)
+  - Option: last_name (value: undefined)
+  - Option: meta_data (value: undefined)
+  - Option: password (value: undefined)
+  - Option: shipping (value: undefined)
+  - Option: username (value: undefined)
+- **customerId** (string): ID of the customer to delete
+- **customerId** (string): ID of the customer to retrieve
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: email (value: undefined)
+  - Option: order (value: undefined)
+  - Option: orderby (value: undefined)
+- **customerId** (string): ID of the customer to update
+- **updateFields** (collection): Update Fields
+  - Option: billing (value: undefined)
+  - Option: first_name (value: undefined)
+  - Option: last_name (value: undefined)
+  - Option: meta_data (value: undefined)
+  - Option: password (value: undefined)
+  - Option: shipping (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **name** (string): Product name
+- **additionalFields** (collection): Additional Fields
+  - Option: backorders (value: undefined)
+  - Option: buttonText (value: undefined)
+  - Option: catalogVisibility (value: undefined)
+  - Option: categories (value: undefined)
+  - Option: crossSellIds (value: undefined)
+  - Option: dateOnSaleFrom (value: undefined)
+  - Option: dateOnSaleTo (value: undefined)
+  - Option: description (value: undefined)
+  - Option: downloadable (value: undefined)
+  - Option: externalUrl (value: undefined)
+  - Option: featured (value: undefined)
+  - Option: manageStock (value: undefined)
+  - Option: menuOrder (value: undefined)
+  - Option: parentId (value: undefined)
+  - Option: purchaseNote (value: undefined)
+  - Option: regularPrice (value: undefined)
+  - Option: reviewsAllowed (value: undefined)
+  - Option: salePrice (value: undefined)
+  - Option: shippingClass (value: undefined)
+  - Option: shortDescription (value: undefined)
+  - Option: sku (value: undefined)
+  - Option: slug (value: undefined)
+  - Option: soldIndividually (value: undefined)
+  - Option: status (value: undefined)
+  - Option: stockQuantity (value: undefined)
+  - Option: stockStatus (value: undefined)
+  - Option: tags (value: undefined)
+  - Option: taxClass (value: undefined)
+  - Option: taxStatus (value: undefined)
+  - Option: type (value: undefined)
+  - Option: upsellIds (value: undefined)
+  - Option: virtual (value: undefined)
+  - Option: weight (value: undefined)
+- **dimensionsUi** (fixedCollection): Product dimensions
+  - Option: dimensionsValues (value: undefined)
+- **imagesUi** (fixedCollection): Product Image
+  - Option: imagesValues (value: undefined)
+- **metadataUi** (fixedCollection): Meta data
+  - Option: metadataValues (value: undefined)
+- **productId** (string): Product ID
+- **updateFields** (collection): Update Fields
+  - Option: backorders (value: undefined)
+  - Option: buttonText (value: undefined)
+  - Option: catalogVisibility (value: undefined)
+  - Option: categories (value: undefined)
+  - Option: crossSellIds (value: undefined)
+  - Option: dateOnSaleFrom (value: undefined)
+  - Option: dateOnSaleTo (value: undefined)
+  - Option: description (value: undefined)
+  - Option: downloadable (value: undefined)
+  - Option: externalUrl (value: undefined)
+  - Option: featured (value: undefined)
+  - Option: manageStock (value: undefined)
+  - Option: menuOrder (value: undefined)
+  - Option: name (value: undefined)
+  - Option: parentId (value: undefined)
+  - Option: purchaseNote (value: undefined)
+  - Option: regularPrice (value: undefined)
+  - Option: reviewsAllowed (value: undefined)
+  - Option: salePrice (value: undefined)
+  - Option: shippingClass (value: undefined)
+  - Option: shortDescription (value: undefined)
+  - Option: sku (value: undefined)
+  - Option: slug (value: undefined)
+  - Option: soldIndividually (value: undefined)
+  - Option: status (value: undefined)
+  - Option: stockQuantity (value: undefined)
+  - Option: stockStatus (value: undefined)
+  - Option: tags (value: undefined)
+  - Option: taxClass (value: undefined)
+  - Option: taxStatus (value: undefined)
+  - Option: type (value: undefined)
+  - Option: upsellIds (value: undefined)
+  - Option: virtual (value: undefined)
+  - Option: weight (value: undefined)
+- **dimensionsUi** (fixedCollection): Product dimensions
+  - Option: dimensionsValues (value: undefined)
+- **imagesUi** (fixedCollection): Product Image
+  - Option: imagesValues (value: undefined)
+- **metadataUi** (fixedCollection): Meta data
+  - Option: metadataValues (value: undefined)
+- **productId** (string): Product ID
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: after (value: undefined)
+  - Option: before (value: undefined)
+  - Option: category (value: undefined)
+  - Option: context (value: undefined)
+  - Option: featured (value: undefined)
+  - Option: maxPrice (value: undefined)
+  - Option: minPrice (value: undefined)
+  - Option: order (value: undefined)
+  - Option: orderBy (value: undefined)
+  - Option: search (value: undefined)
+  - Option: sku (value: undefined)
+  - Option: slug (value: undefined)
+  - Option: status (value: undefined)
+  - Option: stockStatus (value: undefined)
+  - Option: tag (value: undefined)
+  - Option: taxClass (value: undefined)
+  - Option: type (value: undefined)
+- **productId** (string): Product ID
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **additionalFields** (collection): Additional Fields
+  - Option: currency (value: undefined)
+  - Option: customerId (value: undefined)
+  - Option: customerNote (value: undefined)
+  - Option: parentId (value: undefined)
+  - Option: paymentMethodId (value: undefined)
+  - Option: paymentMethodTitle (value: undefined)
+  - Option: setPaid (value: undefined)
+  - Option: status (value: undefined)
+  - Option: transactionID (value: undefined)
+- **billingUi** (fixedCollection): Billing address
+  - Option: billingValues (value: undefined)
+- **couponLinesUi** (fixedCollection): Coupons line data
+  - Option: couponLinesValues (value: undefined)
+- **feeLinesUi** (fixedCollection): Fee line data
+  - Option: feeLinesValues (value: undefined)
+- **lineItemsUi** (fixedCollection): Line item data
+  - Option: lineItemsValues (value: undefined)
+- **metadataUi** (fixedCollection): Meta data
+  - Option: metadataValues (value: undefined)
+- **shippingUi** (fixedCollection): Shipping address
+  - Option: shippingValues (value: undefined)
+- **shippingLinesUi** (fixedCollection): Shipping line data
+  - Option: shippingLinesValues (value: undefined)
+- **orderId** (string): Order ID
+- **updateFields** (collection): Update Fields
+  - Option: currency (value: undefined)
+  - Option: customerId (value: undefined)
+  - Option: customerNote (value: undefined)
+  - Option: parentId (value: undefined)
+  - Option: paymentMethodId (value: undefined)
+  - Option: paymentMethodTitle (value: undefined)
+  - Option: status (value: undefined)
+  - Option: transactionID (value: undefined)
+- **billingUi** (fixedCollection): Billing address
+  - Option: billingValues (value: undefined)
+- **couponLinesUi** (fixedCollection): Coupons line data
+  - Option: couponLinesValues (value: undefined)
+- **feeLinesUi** (fixedCollection): Fee line data
+  - Option: feeLinesValues (value: undefined)
+- **lineItemsUi** (fixedCollection): Line item data
+  - Option: lineItemsValues (value: undefined)
+- **metadataUi** (fixedCollection): Meta data
+  - Option: metadataValues (value: undefined)
+- **shippingUi** (fixedCollection): Shipping address
+  - Option: shippingValues (value: undefined)
+- **shippingLinesUi** (fixedCollection): Shipping line data
+  - Option: shippingLinesValues (value: undefined)
+- **orderId** (string): Order ID
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: after (value: undefined)
+  - Option: before (value: undefined)
+  - Option: customer (value: undefined)
+  - Option: decimalPoints (value: undefined)
+  - Option: order (value: undefined)
+  - Option: product (value: undefined)
+  - Option: orderBy (value: undefined)
+  - Option: search (value: undefined)
+  - Option: status (value: undefined)
+- **orderId** (string): Order ID

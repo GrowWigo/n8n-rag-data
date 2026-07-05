@@ -1,0 +1,248 @@
+# Node: Keap
+
+**Name**: keap
+**Category**: input
+**Description**: Consume Keap API
+**Version**: 1
+
+## Common Usecase
+This node is an action node. It is used to perform tasks, integrate with APIs, or manipulate data within the workflow.
+
+## Inputs
+["main"]
+
+## Outputs
+["main"]
+
+## Properties & Settings
+These are the settings you can configure for this node:
+
+- **resource** (options): Resource
+  - Option: Company (value: company)
+  - Option: Contact (value: contact)
+  - Option: Contact Note (value: contactNote)
+  - Option: Contact Tag (value: contactTag)
+  - Option: Ecommerce Order (value: ecommerceOrder)
+  - Option: Ecommerce Product (value: ecommerceProduct)
+  - Option: Email (value: email)
+  - Option: File (value: file)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Get Many (value: getAll)
+- **companyName** (string): Company Name
+- **additionalFields** (collection): Additional Fields
+  - Option: emailAddress (value: undefined)
+  - Option: notes (value: undefined)
+  - Option: optInReason (value: undefined)
+  - Option: website (value: undefined)
+- **addressesUi** (fixedCollection): Addresses
+  - Option: addressesValues (value: undefined)
+- **faxesUi** (fixedCollection): Faxes
+  - Option: faxesValues (value: undefined)
+- **phonesUi** (fixedCollection): Phones
+  - Option: phonesValues (value: undefined)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: companyName (value: undefined)
+  - Option: order (value: undefined)
+  - Option: orderDirection (value: undefined)
+  - Option: fields (value: undefined)
+- **operation** (options): Operation
+  - Option: Create or Update (value: upsert)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+- **duplicateOption** (options): Performs duplicate checking by one of the following options: Email, EmailAndName. If a match is found using the option provided, the existing contact will be updated.
+  - Option: Email (value: email)
+  - Option: Email And Name (value: emailAndName)
+- **additionalFields** (collection): Additional Fields
+  - Option: anniversary (value: undefined)
+  - Option: companyId (value: undefined)
+  - Option: contactType (value: undefined)
+  - Option: familyName (value: undefined)
+  - Option: givenName (value: undefined)
+  - Option: ipAddress (value: undefined)
+  - Option: jobTitle (value: undefined)
+  - Option: leadSourceId (value: undefined)
+  - Option: middleName (value: undefined)
+  - Option: optInReason (value: undefined)
+  - Option: ownerId (value: undefined)
+  - Option: preferredLocale (value: undefined)
+  - Option: preferredName (value: undefined)
+  - Option: sourceType (value: undefined)
+  - Option: spouseName (value: undefined)
+  - Option: timezone (value: undefined)
+  - Option: website (value: undefined)
+- **addressesUi** (fixedCollection): Addresses
+  - Option: addressesValues (value: undefined)
+- **emailsUi** (fixedCollection): Emails
+  - Option: emailsValues (value: undefined)
+- **faxesUi** (fixedCollection): Faxes
+  - Option: faxesValues (value: undefined)
+- **phonesUi** (fixedCollection): Phones
+  - Option: phonesValues (value: undefined)
+- **socialAccountsUi** (fixedCollection): Social Accounts
+  - Option: socialAccountsValues (value: undefined)
+- **contactId** (string): Contact ID
+- **contactId** (string): Contact ID
+- **options** (collection): Options
+  - Option: fields (value: undefined)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: email (value: undefined)
+  - Option: givenName (value: undefined)
+  - Option: familyName (value: undefined)
+  - Option: order (value: undefined)
+  - Option: orderDirection (value: undefined)
+  - Option: since (value: undefined)
+  - Option: until (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **userId** (options): The infusionsoft user to create the note on behalf of. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **contactId** (string): Contact ID
+- **additionalFields** (collection): Additional Fields
+  - Option: body (value: undefined)
+  - Option: title (value: undefined)
+  - Option: type (value: undefined)
+- **noteId** (string): Note ID
+- **noteId** (string): Note ID
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: contactId (value: undefined)
+  - Option: userId (value: undefined)
+- **noteId** (string): Note ID
+- **additionalFields** (collection): Additional Fields
+  - Option: body (value: undefined)
+  - Option: contactId (value: undefined)
+  - Option: title (value: undefined)
+  - Option: type (value: undefined)
+  - Option: userId (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get Many (value: getAll)
+- **contactId** (string): Contact ID
+- **tagIds** (multiOptions): Choose from the list, or specify IDs using an <a href="https://docs.n8n.io/code/expressions/">expression</a>
+- **contactId** (string): Contact ID
+- **tagIds** (string): Tag IDs
+- **contactId** (string): Contact ID
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Get (value: get)
+  - Option: Delete (value: delete)
+  - Option: Get Many (value: getAll)
+- **contactId** (string): Contact ID
+- **orderDate** (dateTime): Order Date
+- **orderTitle** (string): Order Title
+- **orderType** (options): Order Type
+  - Option: Offline (value: offline)
+  - Option: Online (value: online)
+- **additionalFields** (collection): Additional Fields
+  - Option: leadAffiliateId (value: undefined)
+  - Option: promoCodes (value: undefined)
+  - Option: salesAffiliateId (value: undefined)
+- **addressUi** (fixedCollection): Shipping Address
+  - Option: addressValues (value: undefined)
+- **orderItemsUi** (fixedCollection): Order Items
+  - Option: orderItemsValues (value: undefined)
+- **orderId** (string): Order ID
+- **orderId** (string): Order ID
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **options** (collection): Options
+  - Option: since (value: undefined)
+  - Option: until (value: undefined)
+  - Option: paid (value: undefined)
+  - Option: order (value: undefined)
+  - Option: contactId (value: undefined)
+  - Option: productId (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+- **productName** (string): Product Name
+- **additionalFields** (collection): Additional Fields
+  - Option: active (value: undefined)
+  - Option: productDesc (value: undefined)
+  - Option: productPrice (value: undefined)
+  - Option: productShortDesc (value: undefined)
+  - Option: sku (value: undefined)
+  - Option: subscriptionOnly (value: undefined)
+- **productId** (string): Product ID
+- **productId** (string): Product ID
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: active (value: undefined)
+- **operation** (options): Operation
+  - Option: Create Record (value: createRecord)
+  - Option: Get Many (value: getAll)
+  - Option: Send (value: send)
+- **sentToAddress** (string): Sent To Address
+- **sentFromAddress** (string): Sent From Address
+- **additionalFields** (collection): Additional Fields
+  - Option: clickedDate (value: undefined)
+  - Option: contactId (value: undefined)
+  - Option: headers (value: undefined)
+  - Option: htmlContent (value: undefined)
+  - Option: openedDate (value: undefined)
+  - Option: originalProvider (value: undefined)
+  - Option: originalProviderId (value: undefined)
+  - Option: plainContent (value: undefined)
+  - Option: providerSourceId (value: undefined)
+  - Option: receivedDate (value: undefined)
+  - Option: sentDate (value: undefined)
+  - Option: sentFromReplyAddress (value: undefined)
+  - Option: sentToBccAddresses (value: undefined)
+  - Option: sentToCCAddresses (value: undefined)
+  - Option: subject (value: undefined)
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: contactId (value: undefined)
+  - Option: email (value: undefined)
+  - Option: sinceSentDate (value: undefined)
+  - Option: untilSentDate (value: undefined)
+- **userId** (options): The infusionsoft user to send the email on behalf of. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **contactIds** (string): Contact IDs to receive the email. Multiple can be added seperated by comma.
+- **subject** (string): The subject line of the email
+- **additionalFields** (collection): Additional Fields
+  - Option: addressField (value: undefined)
+  - Option: htmlContent (value: undefined)
+  - Option: plainContent (value: undefined)
+- **attachmentsUi** (fixedCollection): Attachments to be sent with each copy of the email, maximum of 10 with size of 1MB each
+  - Option: attachmentsValues (value: undefined)
+  - Option: attachmentsBinary (value: undefined)
+- **operation** (options): Operation
+  - Option: Delete (value: delete)
+  - Option: Get Many (value: getAll)
+  - Option: Upload (value: upload)
+- **binaryData** (boolean): Whether the data to upload should be taken from binary field
+- **binaryPropertyName** (string): Input Binary Field
+- **fileAssociation** (options): File Association
+  - Option: Company (value: company)
+  - Option: Contact (value: contact)
+  - Option: User (value: user)
+- **contactId** (string): Contact ID
+- **fileName** (string): The filename of the attached file, including extension
+- **fileData** (string): The content of the attachment, encoded in Base64
+- **isPublic** (boolean): Is Public
+- **fileId** (string): File ID
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: contactId (value: undefined)
+  - Option: name (value: undefined)
+  - Option: permission (value: undefined)
+  - Option: type (value: undefined)
+  - Option: viewable (value: undefined)

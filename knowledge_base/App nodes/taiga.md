@@ -1,0 +1,201 @@
+# Node: Taiga
+
+**Name**: taiga
+**Category**: transform
+**Description**: Consume Taiga API
+**Version**: 1
+
+## Common Usecase
+This node is an action node. It is used to perform tasks, integrate with APIs, or manipulate data within the workflow.
+
+## Inputs
+["main"]
+
+## Outputs
+["main"]
+
+## Properties & Settings
+These are the settings you can configure for this node:
+
+- **resource** (options): Resource
+  - Option: Epic (value: epic)
+  - Option: Issue (value: issue)
+  - Option: Task (value: task)
+  - Option: User Story (value: userStory)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **projectId** (options): ID of the project to which the epic belongs. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **subject** (string): Subject
+- **additionalFields** (collection): Additional Fields
+  - Option: assigned_to (value: undefined)
+  - Option: blocked_note (value: undefined)
+  - Option: color (value: undefined)
+  - Option: description (value: undefined)
+  - Option: is_blocked (value: undefined)
+  - Option: tags (value: undefined)
+- **epicId** (string): ID of the epic to delete
+- **epicId** (string): ID of the epic to retrieve
+- **projectId** (options): ID of the project to which the epic belongs. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: assigned_to (value: undefined)
+  - Option: statusIsClosed (value: undefined)
+- **projectId** (options): ID of the project to set the epic to. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **epicId** (string): ID of the epic to update
+- **updateFields** (collection): Update Fields
+  - Option: assigned_to (value: undefined)
+  - Option: blocked_note (value: undefined)
+  - Option: color (value: undefined)
+  - Option: description (value: undefined)
+  - Option: is_blocked (value: undefined)
+  - Option: subject (value: undefined)
+  - Option: tags (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **projectId** (options): ID of the project to which the issue belongs. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **subject** (string): Subject
+- **additionalFields** (collection): Additional Fields
+  - Option: assigned_to (value: undefined)
+  - Option: blocked_note (value: undefined)
+  - Option: description (value: undefined)
+  - Option: is_blocked (value: undefined)
+  - Option: milestone (value: undefined)
+  - Option: priority (value: undefined)
+  - Option: severity (value: undefined)
+  - Option: status (value: undefined)
+  - Option: tags (value: undefined)
+  - Option: type (value: undefined)
+- **issueId** (string): ID of the issue to delete
+- **issueId** (string): ID of the issue to retrieve
+- **projectId** (options): ID of the project to which the issue belongs. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: assigned_to (value: undefined)
+  - Option: orderBy (value: undefined)
+  - Option: owner (value: undefined)
+  - Option: priority (value: undefined)
+  - Option: role (value: undefined)
+  - Option: severity (value: undefined)
+  - Option: status (value: undefined)
+  - Option: tags (value: undefined)
+  - Option: type (value: undefined)
+- **projectId** (options): ID of the project to set the issue to. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **issueId** (string): ID of the issue to update
+- **updateFields** (collection): Update Fields
+  - Option: assigned_to (value: undefined)
+  - Option: blocked_note (value: undefined)
+  - Option: description (value: undefined)
+  - Option: is_blocked (value: undefined)
+  - Option: milestone (value: undefined)
+  - Option: priority (value: undefined)
+  - Option: severity (value: undefined)
+  - Option: status (value: undefined)
+  - Option: subject (value: undefined)
+  - Option: tags (value: undefined)
+  - Option: type (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **projectId** (options): ID of the project to which the task belongs. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **subject** (string): Subject
+- **additionalFields** (collection): Additional Fields
+  - Option: assigned_to (value: undefined)
+  - Option: blocked_note (value: undefined)
+  - Option: description (value: undefined)
+  - Option: is_blocked (value: undefined)
+  - Option: milestone (value: undefined)
+  - Option: status (value: undefined)
+  - Option: tags (value: undefined)
+  - Option: taskboard_order (value: undefined)
+  - Option: user_story (value: undefined)
+  - Option: us_order (value: undefined)
+- **taskId** (string): ID of the task to delete
+- **taskId** (string): ID of the task to retrieve
+- **projectId** (options): ID of the project to which the task belongs. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: assigned_to (value: undefined)
+  - Option: statusIsClosed (value: undefined)
+  - Option: milestone (value: undefined)
+  - Option: owner (value: undefined)
+  - Option: role (value: undefined)
+  - Option: status (value: undefined)
+  - Option: tags (value: undefined)
+  - Option: userStory (value: undefined)
+- **projectId** (options): ID of the project to set the task to. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **taskId** (string): ID of the task to update
+- **updateFields** (collection): Update Fields
+  - Option: assigned_to (value: undefined)
+  - Option: blocked_note (value: undefined)
+  - Option: description (value: undefined)
+  - Option: is_blocked (value: undefined)
+  - Option: milestone (value: undefined)
+  - Option: status (value: undefined)
+  - Option: subject (value: undefined)
+  - Option: user_story (value: undefined)
+  - Option: us_order (value: undefined)
+  - Option: tags (value: undefined)
+  - Option: taskboard_order (value: undefined)
+- **operation** (options): Operation
+  - Option: Create (value: create)
+  - Option: Delete (value: delete)
+  - Option: Get (value: get)
+  - Option: Get Many (value: getAll)
+  - Option: Update (value: update)
+- **projectId** (options): ID of the project to which the user story belongs. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **subject** (string): Subject
+- **additionalFields** (collection): Additional Fields
+  - Option: assigned_to (value: undefined)
+  - Option: backlog_order (value: undefined)
+  - Option: blocked_note (value: undefined)
+  - Option: description (value: undefined)
+  - Option: is_blocked (value: undefined)
+  - Option: kanban_order (value: undefined)
+  - Option: milestone (value: undefined)
+  - Option: sprint_order (value: undefined)
+  - Option: status (value: undefined)
+  - Option: tags (value: undefined)
+  - Option: type (value: undefined)
+- **userStoryId** (string): ID of the user story to delete
+- **userStoryId** (string): ID of the user story to retrieve
+- **projectId** (options): ID of the project to which the user story belongs. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **returnAll** (boolean): Whether to return all results or only up to a given limit
+- **limit** (number): Max number of results to return
+- **filters** (collection): Filters
+  - Option: assigned_to (value: undefined)
+  - Option: epic (value: undefined)
+  - Option: statusIsClosed (value: undefined)
+  - Option: statusIsArchived (value: undefined)
+  - Option: milestone (value: undefined)
+  - Option: role (value: undefined)
+  - Option: status (value: undefined)
+  - Option: tags (value: undefined)
+- **projectId** (options): ID of the project to set the user story to. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.
+- **userStoryId** (string): ID of the user story to update
+- **updateFields** (collection): Update Fields
+  - Option: assigned_to (value: undefined)
+  - Option: backlog_order (value: undefined)
+  - Option: blocked_note (value: undefined)
+  - Option: description (value: undefined)
+  - Option: is_blocked (value: undefined)
+  - Option: kanban_order (value: undefined)
+  - Option: milestone (value: undefined)
+  - Option: subject (value: undefined)
+  - Option: sprint_order (value: undefined)
+  - Option: status (value: undefined)
+  - Option: tags (value: undefined)
+  - Option: type (value: undefined)
