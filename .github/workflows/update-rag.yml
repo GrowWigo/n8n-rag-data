@@ -22,7 +22,7 @@ jobs:
 
       - name: Install Latest n8n Nodes
         run: |
-          npm install --legacy-peer-deps n8n-nodes-base@latest @n8n/n8n-nodes-langchain@latest
+          npm install --ignore-scripts --legacy-peer-deps n8n-nodes-base@latest @n8n/n8n-nodes-langchain@latest
 
       - name: Extract Markdown Files
         run: |
@@ -44,10 +44,10 @@ jobs:
         if: success()
         shell: bash
         run: |
-          curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} -d text="✅ GitHub Actions: n8n RAG Data Updated Successfully!"
+          curl -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} -d text="✅ GitHub Actions: n8n RAG Data Updated Successfully!"
 
       - name: Send Telegram Failure Notification
         if: failure()
         shell: bash
         run: |
-          curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} -d text="❌ GitHub Actions: n8n Auto-Updater Failed! Please check the GitHub logs."
+          curl -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} -d text="❌ GitHub Actions: n8n Auto-Updater Failed! Please check the GitHub logs."
